@@ -79,6 +79,38 @@ img {
   background-image: url(../img/fv.png);
   background-size: cover;
   background-position: center;
-  text-align: center;
   position: relative;
+}
+
+.mv-info {
+  display: inline-block;
+  width: 102px;
+  height: 565px;
+  margin-top: 133px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  opacity: 1;
+  text-align: center;
+  vertical-align: middle;
+  padding: 18px 0 0;
+}
+
+.mv-info:nth-child(1) {
+  margin-left: 262px;
+}
+
+.mv-info:nth-child(2) {
+  margin-left: 80px;
+}
+
+.mv-info span {
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  font: normal normal bold 28px/34px Noto Sans JP;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: #444444;
+}
+
+.mv-info span .green {
+  color: #21A937;
 }
