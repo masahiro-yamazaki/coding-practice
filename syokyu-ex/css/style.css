@@ -71,5 +71,14 @@ img {
   height: 100%;
   top: 0px;
   left: -29px;
-  background: url('../img/telephone-icon.svg') no-repeat;
+  background: url(../img/telephone-icon.svg) no-repeat;
+}
+
+.mv {
+  height: 947px;
+  background-image: url(../img/fv.png);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  position: relative;
 }
