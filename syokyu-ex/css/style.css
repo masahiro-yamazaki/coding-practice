@@ -114,3 +114,70 @@ img {
 .mv-info span .green {
   color: #21A937;
 }
+
+.belief-inner {
+  height: 664px;
+}
+
+.belief-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.belief-title {
+  font: normal normal bold 24px/35px Noto Sans JP;
+  letter-spacing: 0px;
+  color: #444444;
+  opacity: 1;
+  position: relative;
+  margin-left: 31px;
+}
+
+.belief-title:nth-child(1) {
+  margin-top: 193px;
+}
+
+.belief-title:nth-child(2) {
+  margin-top: 32px;
+  margin-bottom: 37px;
+}
+
+.belief-title:nth-child(1)::before {
+  position: absolute;
+  content: '';
+  top: 25px;
+  left: 0px;
+  width: 276px;
+  height: 10px;
+  background: #99E5A5 0% 0% no-repeat padding-box;
+  opacity: 1;
+  z-index: -1;
+}
+
+.belief-title:nth-child(2)::before {
+  position: absolute;
+  content: '';
+  top: 25px;
+  left: 0px;
+  width: 216px;
+  height: 10px;
+  background: #99E5A5 0% 0% no-repeat padding-box;
+  opacity: 1;
+  z-index: -1;
+}
+
+.belief-desc {
+  font: normal normal normal 16px/38px Noto Sans JP;
+  letter-spacing: 0px;
+  color: #444444;
+  opacity: 1;
+  margin-left: 31px;
+  margin-right: 44px;
+}
+
+.belief-img {
+  width: 690px;
+  height: 420px;
+  margin-top: 162px;
+}
