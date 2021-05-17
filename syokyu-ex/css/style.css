@@ -217,3 +217,61 @@ img {
   z-index: -1;
   margin: auto;
 }
+
+.contents-desc {
+  margin-top: 70px;
+  margin-bottom: 34px;
+  text-align: center;
+  font: normal normal normal 16px/38px Noto Sans JP;
+  letter-spacing: 0px;
+  color: #444444;
+  opacity: 1;
+}
+
+.contents-block-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contents-block {
+  position: relative;
+  width: 380px;
+  height: 591px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 2px solid #C9C9C9;
+  border-radius: 10px;
+  opacity: 1;
+}
+
+.contents-block-title {
+  margin-top: 40px;
+  margin-bottom: 45px;
+  text-align: center;
+  font: normal normal bold 24px/38px Noto Sans JP;
+  letter-spacing: 0px;
+  color: #444444;
+  opacity: 1;
+}
+
+.contents-block-example {
+  padding: 0 28px;
+  font: normal normal bold 16px/38px Noto Sans JP;
+  letter-spacing: 0px;
+  color: #444444;
+  opacity: 1;
+  word-break: keep-all;
+}
+
+.contents-block-img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  vertical-align: bottom;
+}
+
+.contents-block-img img {
+  width: 187px;
+  height: 187px;
+}
