@@ -278,6 +278,7 @@ img {
 
 .info-title {
   margin-top: 82px;
+  margin-bottom: 70px;
   text-align: center;
   font: normal normal bold 24px/38px Noto Sans JP;
   letter-spacing: 0px;
@@ -299,4 +300,51 @@ img {
   opacity: 1;
   z-index: -1;
   margin: auto;
+}
+
+.info-list {
+  width: 1180px;
+  height: 390px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 30px;
+  opacity: 1;
+  padding: 49px 66px 0;
+}
+
+.info {
+}
+
+.info-date {
+  display: inline-block;
+  font: normal normal bold 16px/38px Noto Sans JP;
+  letter-spacing: 0px;
+  color: #21A937;
+  opacity: 1;
+  margin-right: 30px;
+}
+
+.info-category {
+  display: inline-block;
+  width: 80px;
+  height: 25px;
+  background: var(--ベースカラー) 0% 0% no-repeat padding-box;
+  background: #444444 0% 0% no-repeat padding-box;
+  margin-right: 30px;
+}
+
+.info-category span {
+  margin: auto 0;
+  font: normal normal bold 12px/12px Noto Sans JP;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+.info-body {
+  display: inline-block;
+  font: normal normal bold 16px/38px Noto Sans JP;
+  letter-spacing: 0px;
+  color: #444444;
+  opacity: 1;
 }
