@@ -348,3 +348,40 @@ img {
   color: #444444;
   opacity: 1;
 }
+
+.footer {
+  height: 799px;
+}
+
+.footer-inner {
+  max-width: 1180px;
+  padding-top: 196px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.footer-map {
+  margin-bottom: 163px;
+  margin-right: 34px;
+}
+
+.footer-logo {
+  margin-bottom: 25px;
+}
+
+.footer-logo img {
+  width: 263px;
+  height: 73px;
+}
+
+.footer-address {
+  display: inline-block;
+  font: normal normal normal 16px/38px Noto Sans JP;
+  letter-spacing: 0px;
+  color: #444444;
+  opacity: 1;
+}
+
+.footer-address:nth-child(1) {
+  margin-right: 12px;
+}
