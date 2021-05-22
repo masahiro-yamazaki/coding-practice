@@ -430,6 +430,18 @@ img {
   border-right: 2px solid #E7E7E7;
 }
 
+.footer-consultation-time-right {
+  display: inline-block;
+  font: normal normal normal 14px/24px Noto Sans JP;
+  letter-spacing: 0px;
+  color: #444444;
+  opacity: 1;
+}
+
+.footer-consultation-time-day-of-week div {
+  display: inline-block;
+}
+
 .footer-closed-days {
   margin-top: 31px;
   display: flex;
