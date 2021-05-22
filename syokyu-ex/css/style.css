@@ -376,7 +376,7 @@ img {
 
 .footer-address {
   display: inline-block;
-  font: normal normal normal 16px/38px Noto Sans JP;
+  font: normal normal normal 16px/24px Noto Sans JP;
   letter-spacing: 0px;
   color: #444444;
   opacity: 1;
@@ -384,4 +384,30 @@ img {
 
 .footer-address:nth-child(1) {
   margin-right: 12px;
+}
+
+.footer-tel {
+  height: 35px;
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+  padding-left: 30px;
+}
+
+.footer-tel span {
+  position: relative;
+  font: normal normal bold 24px/24px Noto Sans JP;
+  letter-spacing: 0px;
+  color: #21A937;
+  opacity: 1;
+}
+
+.footer-tel span::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: -29px;
+  background: url(../img/telephone-icon.svg) no-repeat;
 }
