@@ -353,6 +353,30 @@ img {
   opacity: 1;
 }
 
+.info-all {
+  position: relative;
+  padding-top: 38.5px;
+  text-align: right;
+}
+
+.info-all span {
+  font: normal normal bold 16px/24px Noto Sans JP;
+  letter-spacing: 0px;
+  color: #444444;
+  opacity: 1;
+}
+
+.info-all-triangle {
+  position: absolute;
+  top: 43.5px;
+  right: -17.52px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid #444444;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+}
+
 .footer {
   height: 799px;
 }
