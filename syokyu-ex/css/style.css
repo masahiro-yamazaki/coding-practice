@@ -204,12 +204,21 @@ img {
 
 .belief-inner {
   height: 664px;
+  max-width: 1180px;
+  width: 90%;
+  margin: 0 auto;
 }
 
-.belief-inner {
-  max-width: 1180px;
-  margin: 0 auto;
-  display: flex;
+@media (min-width: 769px) {
+  .belief-inner {
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  .belief-inner {
+    height: 750px;
+  }
 }
 
 .belief-title {
@@ -220,16 +229,29 @@ img {
   margin-left: 31px;
 }
 
-.belief-title:nth-child(1) {
-  margin-top: 193px;
+@media (min-width: 769px) {
+  .belief-title:nth-child(1) {
+    margin-top: 193px;
+  }
+  
+  .belief-title:nth-child(2) {
+    margin-top: 32px;
+    margin-bottom: 37px;
+  }
 }
 
-.belief-title:nth-child(2) {
-  margin-top: 32px;
-  margin-bottom: 37px;
+@media (max-width: 768px) {
+  .belief-title:nth-child(1) {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  .belief-title:nth-child(2) {
+    margin-bottom: 30px;
+  }
 }
 
-.belief-title:nth-child(1)::before {
+.belief-title::before {
   position: absolute;
   content: '';
   top: 25px;
@@ -241,28 +263,30 @@ img {
 }
 
 .belief-title:nth-child(2)::before {
-  position: absolute;
-  content: '';
-  top: 25px;
-  left: 0px;
   width: 216px;
-  height: 10px;
-  background: #99E5A5 0% 0% no-repeat padding-box;
-  z-index: -1;
 }
 
 .belief-desc {
   font: normal normal normal 16px/38px Noto Sans JP;
   letter-spacing: 0px;
   color: #444444;
-  margin-left: 31px;
-  margin-right: 44px;
+  margin: 0 44px 0 31px;
 }
 
-.belief-img {
-  width: 690px;
-  height: 420px;
-  margin-top: 162px;
+@media (min-width: 769px) {
+  .belief-img {
+    width: 690px;
+    height: 420px;
+    margin-top: 162px;
+  }
+}
+
+@media (max-width: 768px) {
+  .belief-img {
+    max-width: 690px;
+    width: 90%;
+    margin: 40px auto 0;
+  }
 }
 
 /* 治療内容 */
