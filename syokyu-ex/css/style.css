@@ -12,6 +12,8 @@ img {
   height: auto;
 }
 
+/* ヘッダー */
+
 .header {
   height: 130px;
 }
@@ -101,6 +103,8 @@ img {
   }
 }
 
+/* メインビジュアル */
+
 .mv {
   height: 947px;
   background-image: url(../img/fv.png);
@@ -139,6 +143,8 @@ img {
 .mv-info span .green {
   color: #21A937;
 }
+
+/* 理念 */
 
 .belief-inner {
   height: 664px;
@@ -202,6 +208,8 @@ img {
   height: 420px;
   margin-top: 162px;
 }
+
+/* 治療内容 */
 
 .contents {
   height: 1520px;
@@ -289,6 +297,8 @@ img {
   width: 187px;
   height: 187px;
 }
+
+/* お知らせ */
 
 .info-title {
   margin-top: 82px;
@@ -383,6 +393,8 @@ img {
   border-top: 7px solid transparent;
   border-bottom: 7px solid transparent;
 }
+
+/* フッター */
 
 .footer {
   height: 799px;
