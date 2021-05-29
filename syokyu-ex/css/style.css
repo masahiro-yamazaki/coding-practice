@@ -107,10 +107,14 @@ img {
 
 .mv {
   height: 947px;
-  background-image: url(../img/fv.png);
-  background-size: cover;
-  background-position: center;
+  background: url(../img/fv.png) no-repeat center/cover;
   position: relative;
+}
+
+@media (max-width: 768px) {
+  .mv {
+    height: 650px;
+  }
 }
 
 .mv-info {
@@ -124,12 +128,31 @@ img {
   padding: 18px 0 0;
 }
 
+@media (max-width: 768px) {
+  .mv-info {
+    width: 80px;
+    margin-top: 50px;
+  }
+}
+
 .mv-info:nth-child(1) {
   margin-left: 262px;
 }
 
+@media (max-width: 768px) {
+  .mv-info:nth-child(1) {
+    margin-left: 80px;
+  }
+}
+
 .mv-info:nth-child(2) {
   margin-left: 80px;
+}
+
+@media (max-width: 768px) {
+  .mv-info:nth-child(2) {
+    margin-left: 60px;
+  }
 }
 
 .mv-info span {
