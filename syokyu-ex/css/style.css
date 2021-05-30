@@ -461,12 +461,12 @@ img {
 }
 
 .info {
+  display: flex;
   padding: 18.5px 0 17.5px;
   border-bottom: 2px solid #E7E7E7;
 }
 
 .info-date {
-  display: inline-block;
   font: normal normal bold 16px/24px Noto Sans JP;
   letter-spacing: 0px;
   color: #21A937;
@@ -474,8 +474,7 @@ img {
 }
 
 .info-category {
-  display: inline-block;
-  width: 80px;
+  min-width: 80px;
   height: 25px;
   padding: 4px 0;
   text-align: center;
@@ -492,7 +491,6 @@ img {
 }
 
 .info-body {
-  display: inline-block;
   font: normal normal bold 16px/24px Noto Sans JP;
   letter-spacing: 0px;
   color: #444444;
