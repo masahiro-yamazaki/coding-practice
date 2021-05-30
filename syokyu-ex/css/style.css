@@ -627,6 +627,12 @@ img {
   }
 }
 
+@media (min-width: 769px) {
+  .footer-map-sp {
+    display: none;
+  }
+}
+
 .footer-info {
   flex-shrink: 0;
 }
