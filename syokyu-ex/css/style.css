@@ -317,6 +317,7 @@ img {
 
 .contents-inner {
   max-width: 1180px;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -366,6 +367,12 @@ img {
   background: #FFFFFF 0% 0% no-repeat padding-box;
   border: 2px solid #C9C9C9;
   border-radius: 10px;
+}
+
+@media (min-width: 769px) {
+  .contents-block:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 @media (max-width: 768px) {
