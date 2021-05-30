@@ -696,7 +696,7 @@ img {
 }
 
 .footer-consultation-time {
-  height: 95px;
+  min-height: 95px;
   display: flex;
 }
 
@@ -716,19 +716,23 @@ img {
 }
 
 .footer-consultation-time-day-of-week {
+  display: flex;
   margin-bottom: 13px;
 }
 
-.footer-consultation-time-day-of-week div {
-  display: inline-block;
+@media (min-width: 1021px) {
+  .footer-consultation-time-day-of-week div {
+    display: inline-block;
+  }
 }
 
-.footer-consultation-time-day-of-week div:nth-child(1) {
+.footer-day-of-week {
   margin-right: 23px;
   position: relative;
+  white-space: nowrap;
 }
 
-.footer-consultation-time-day-of-week div:nth-child(1):before {
+.footer-day-of-week:before {
   margin-right: 23px;
   position: absolute;
   content: '';
@@ -740,7 +744,7 @@ img {
   z-index: -1;
 }
 
-.footer-consultation-time-day-of-week div:nth-child(2) {
+.footer-time div:first-child {
   margin-right: 17px;
 }
 
