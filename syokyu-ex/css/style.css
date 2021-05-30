@@ -460,10 +460,22 @@ img {
   padding: 29.5px 66px 109.5px;
 }
 
+@media (max-width: 768px) {
+  .info-list {
+    height: 500px;
+  }
+}
+
 .info {
   display: flex;
   padding: 18.5px 0 17.5px;
   border-bottom: 2px solid #E7E7E7;
+}
+
+@media (min-width: 769px) {
+  .info {
+    max-height: 63px;
+  }
 }
 
 .info-date {
@@ -494,6 +506,15 @@ img {
   font: normal normal bold 16px/24px Noto Sans JP;
   letter-spacing: 0px;
   color: #444444;
+}
+
+@media (min-width: 769px) {
+  .info-body {
+    max-height: 24px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
 }
 
 .info-all {
