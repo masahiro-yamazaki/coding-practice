@@ -466,6 +466,12 @@ img {
   }
 }
 
+@media (max-width: 576px) {
+  .info-list {
+    height: 550px;
+  }
+}
+
 .info {
   display: flex;
   padding: 18.5px 0 17.5px;
@@ -475,6 +481,12 @@ img {
 @media (min-width: 769px) {
   .info {
     max-height: 63px;
+  }
+}
+
+@media (max-width: 576px) {
+  .info {
+    flex-wrap: wrap;
   }
 }
 
@@ -517,10 +529,19 @@ img {
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 577px) and (max-width: 768px) {
   .info-body {
     max-height: 48px;
     overflow: hidden;
+  }
+}
+
+@media (max-width: 576px) {
+  .info-body {
+    width: 100%;
+    max-height: 48px;
+    overflow: hidden;
+    margin-top: 5px;
   }
 }
 
