@@ -517,6 +517,13 @@ img {
   }
 }
 
+@media (max-width: 768px) {
+  .info-body {
+    max-height: 48px;
+    overflow: hidden;
+  }
+}
+
 .info-all {
   position: relative;
   padding-top: 38.5px;
