@@ -1,14 +1,199 @@
 <!DOCTYPE html>
-<html lang=ja>
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Your name’s Portfolio</title>
-<meta name="description" content="ここにサイトの説明文が入ります">
-<meta name="keywords" content="キーワード１, キーワード２">
-<link rel="stylesheet" href="https://use.typekit.net/mzd4mgq.css">
-</head>
-<body>
-</body>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your name’s Portfolio</title>
+    <meta name="description" content="ここにサイトの説明文が入ります" />
+    <meta name="keywords" content="キーワード１, キーワード２" />
+  </head>
+
+  <body>
+    <div id="container">
+      <header class="header">
+        <a href="#" class="nav_btn">
+          <div class="title">
+            <span class="nav_u">Your name’s Portfolio</span>
+          </div>
+        </a>
+        <div id="nav-open">
+          <div class="span_bg">
+            <span></span>
+          </div>
+        </div>
+        <div id="nav-content">
+          <nav class="header_nav">
+            <ul class="nav_list">
+              <li class="pc_none">
+                <a href="#main" class="nav_btn"> Top </a>
+              </li>
+              <li>
+                <a href="#about" class="nav_btn"> About </a>
+              </li>
+              <li>
+                <a href="#service" class="nav_btn"> Service </a>
+              </li>
+              <li>
+                <a href="#works" class="nav_btn"> Works </a>
+              </li>
+              <li>
+                <a href="#contact" class="nav_btn"> Contact </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <section id="main">
+        <div id="top-slide">
+          <img src="images/FV001.jpg" alt="topslide_1" />
+          <img src="images/FV002.jpg" alt="topslide_2" />
+        </div>
+        <h1>Hello, World!</h1>
+      </section>
+
+      <section id="about" class="bg-gray">
+        <h2>About</h2>
+        <div class="about-flex">
+          <div class="about-text-area">
+            <p>
+              テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+            </p>
+            <ul>
+              <li>テキストテキストテキストテキストテキスト</li>
+              <li>テキストテキストテキストテキストテキスト</li>
+              <li>テキストテキストテキストテキストテキスト</li>
+              <li>テキストテキストテキストテキストテキスト</li>
+            </ul>
+          </div>
+          <div class="about-img-area">
+            <img src="images/about_ex.jpg" class="sp_none" alt="about_img" />
+          </div>
+        </div>
+      </section>
+
+      <section id="service">
+        <h2>Service</h2>
+        <p class="summary">
+          テキストテキストテキストテキスト<br />テキストテキストテキストテキスト
+        </p>
+        <div class="service-list">
+          <div class="service-content">
+            <img src="images/service001.svg" alt="website" />
+            <p>
+              テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+            </p>
+          </div>
+          <div class="service-content">
+            <img src="images/service002.svg" alt="wordpress" />
+            <p>
+              テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+            </p>
+          </div>
+          <div class="service-content">
+            <img src="images/service003.svg" alt="writing" />
+            <p>
+              テキストテキストテキストテキストテキストテキストテキストテキストテキスト
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="works" class="bg-gray">
+        <h2>Works</h2>
+        <p class="summary">
+          テキストテキストテキストテキスト<br />テキストテキストテキストテキスト
+        </p>
+        <div class="work-list">
+          <div class="work-content">
+            <img src="images/works001.jpg" alt="site_1" />
+            <p>テキストテキストテキストテキストテキストテキスト</p>
+          </div>
+          <div class="work-content">
+            <img src="images/works002.jpg" alt="site_2" />
+            <p>テキストテキストテキストテキストテキストテキスト</p>
+          </div>
+          <div class="work-content">
+            <img src="images/works003.jpg" alt="site_3" />
+            <p>テキストテキストテキストテキストテキストテキスト</p>
+          </div>
+          <div class="work-content">
+            <img src="images/works004.jpg" alt="site_4" />
+            <p>テキストテキストテキストテキストテキストテキスト</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p class="summary">
+          テキストテキストテキストテキスト<br />テキストテキストテキストテキスト
+        </p>
+        <div class="contact-form">
+          <form>
+            <table>
+              <tr>
+                <td>
+                  <label for="name">お名前</label>
+                </td>
+                <td>
+                  <input type="text" name="name" id="name" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="mail">メールアドレス</label>
+                </td>
+                <td>
+                  <input type="email" name="mail" id="mail" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="content">内容</label>
+                </td>
+                <td>
+                  <textarea name="content" id="content"></textarea>
+                </td>
+              </tr>
+            </table>
+            <div class="btn-submit">
+              <input type="submit" value="送 信" />
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer-box">
+          <nav class="footer-nav">
+            <ul>
+              <li>
+                <a href="#about">About</a>
+              </li>
+              <li>
+                <a href="#service">Service</a>
+              </li>
+              <li>
+                <a href="#works">Works</a>
+              </li>
+              <li>
+                <a href="#contact">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="copyright">
+            <p>&copy;Copyright2021 Your name’s Portfolio</p>
+          </div>
+          <div class="sns-area">
+            <img src="images/twitter.svg" alt="twitter" />
+            <img src="images/facebook.svg" alt="facebook" />
+            <img src="images/youtube.svg" alt="youtube" />
+            <img src="images/instagram.svg" alt="instagram" />
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
