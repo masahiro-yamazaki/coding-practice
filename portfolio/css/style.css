@@ -101,7 +101,8 @@ header
   object-fit: cover;
 }
 #main h1 {
-  font-size: 100px;
+  font-family: '游ゴシック体', 'Yu Gothic', sans-serif;
+  font-size: 48px;
   white-space: nowrap;
   color: #fff;
   position: absolute;
@@ -429,7 +430,6 @@ header
     height: 600px;
   }
   #main h1 {
-    font-size: 80px;
     white-space: normal;
     text-align: center;
   }
