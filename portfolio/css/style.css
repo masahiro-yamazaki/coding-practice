@@ -290,7 +290,7 @@ footer
 .sns-area {
   float: right;
 }
-.sns-area img:not(:last-of-type) {
+.sns-area a:not(:last-of-type) {
   margin-right: 6px;
 }
 @media screen and (min-width: 768px) {
@@ -541,5 +541,9 @@ header
   .sns-area {
     float: unset;
     margin-top: 30px;
+  }
+  .sns-area a {
+    display: inline-block;
+    margin-left: 5px;
   }
 }
