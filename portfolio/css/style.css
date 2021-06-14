@@ -126,6 +126,7 @@ header
   margin: 0 auto;
 }
 .about-text-area {
+  font-family: '游ゴシック体', 'Yu Gothic', sans-serif;
   display: inline-block;
   width: 50%;
   margin-right: 24px;
@@ -159,6 +160,7 @@ header
   justify-content: space-between;
 }
 .service-content {
+  font-family: '游ゴシック体', 'Yu Gothic', sans-serif;
   width: 100%;
 }
 .service-content:not(:last-of-type) {
@@ -204,6 +206,7 @@ header
   padding: 30px 166px 50px;
 }
 #contact .summary {
+  font-family: '游ゴシック体', 'Yu Gothic', sans-serif;
   margin-bottom: 42px;
 }
 .contact-form table {
