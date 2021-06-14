@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section>
+    <ul class="tab-menu">
+      <li class="tab-menu__item"><span class="tab-trigger js-tab-trigger is-active" data-id="tab01">タブ1</span></li>
+      <li class="tab-menu__item"><span class="tab-trigger js-tab-trigger" data-id="tab02">タブ2</span></li>
+      <li class="tab-menu__item"><span class="tab-trigger js-tab-trigger" data-id="tab03">タブ3</span></li>
+    </ul><!-- .tab-menu -->
+    
+    <div class="tab-content">
+      <div class="tab-content__item js-tab-target is-active" id="tab01">
+        <p>実務未経験からいきなりweb制作のフリーランスになって2年、安定してきた最近はPHPやJavaScriptのスキルを高めながら、次のキャリアを考えています。 YouTubeチャンネルしょーごログでも発信しており、noteでコーディング教材を出しています。</p>
+      </div><!-- .tab-content__item -->
+      <div class="tab-content__item js-tab-target" id="tab02">
+        <p>しょーごログでは本業のweb制作やフリーランス情報を中心に、便利なサービスやガジェットなど、人生を自由で楽しくする情報を発信しています。フリーランスとしての働き方、Webを仕事にすることに憧れている人にクリティカルな情報をお届けする、そんなメディアです！</p>
+      </div><!-- .tab-content__item -->
+      <div class="tab-content__item js-tab-target" id="tab03">
+        <p>お問い合わせは下記のリンクから、もしくはTwitterのDMで受け付けております。お気軽にどうぞ！</p>
+      </div><!-- .tab-content__item -->
+    </div><!-- .tab-content -->
+  </section>
+  
+
+  <script src="main.js"></script>
+</body>
+</html>
