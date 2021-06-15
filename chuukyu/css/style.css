@@ -1,1 +1,14 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.header {
+  height: 94px;
+}
+
+.header-inner {
+  max-width: 1022px;
+  width: 90%;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=style.css.map */
