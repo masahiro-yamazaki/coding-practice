@@ -44,4 +44,23 @@ body {
   width: 47px;
   height: 47px;
 }
+
+.header-contact {
+  display: inline-block;
+  margin: 0 21px 0 0;
+  padding: 7px 0 10px;
+  width: 155px;
+  height: 37px;
+  text-align: center;
+  background: transparent -webkit-gradient(linear, left top, right top, from(#fa41cc), to(#6020b0)) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(90deg, #fa41cc 0%, #6020b0 100%) 0% 0% no-repeat padding-box;
+  -webkit-box-shadow: 0px 3px 6px #00000029;
+          box-shadow: 0px 3px 6px #00000029;
+  border-radius: 10px;
+}
+
+.header-contact span {
+  font: normal normal bold 14px/20px Noto Sans JP;
+  color: #ffffff;
+}
 /*# sourceMappingURL=style.css.map */
