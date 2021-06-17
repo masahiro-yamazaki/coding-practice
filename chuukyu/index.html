@@ -34,12 +34,13 @@
         <span>お問い合わせ</span>
       </a>
       <!-- iPad/SPのみ表示 -->
-      <div class="header-menu-button-sp js-header-menu-button">
+      <div class="header-menu-button-sp js-header-menu-button"
+           aria-controls="js-glabal-menu" aria-expanded="false" area-label="メニューを開閉する">
         <i class="fa fa-2x fa-bars"></i>
       </div>
     </div>
     <!-- iPad/SPのハンバーガーメニュー -->
-    <div class="hamburgar-menu-sp js-hamburgar-menu-sp">
+    <div id="js-glabal-menu" class="hamburgar-menu-sp js-hamburgar-menu-sp" aria-hidden="true">
     </div>
   </header>
   <!-- TODO: コンテンツ -->
