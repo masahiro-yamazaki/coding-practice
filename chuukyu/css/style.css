@@ -63,4 +63,13 @@ body {
   font: normal normal bold 14px/20px Noto Sans JP;
   color: #ffffff;
 }
+
+@media (max-width: 768px) {
+  .header-menu {
+    display: none;
+  }
+  .header-contact {
+    display: none;
+  }
+}
 /*# sourceMappingURL=style.css.map */
