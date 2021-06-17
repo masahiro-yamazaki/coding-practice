@@ -45,6 +45,16 @@ body {
   height: 47px;
 }
 
+.header-menu {
+  padding: 34px 0 36px;
+}
+
+.header-menu a {
+  font: normal normal bold 16px/24px Noto Sans JP;
+  color: #333333;
+  margin: 0 46px 0 0;
+}
+
 .header-contact {
   display: inline-block;
   margin: 0 21px 0 0;
@@ -64,7 +74,7 @@ body {
   color: #ffffff;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .header-menu {
     display: none;
   }
