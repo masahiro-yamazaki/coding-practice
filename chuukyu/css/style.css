@@ -80,11 +80,29 @@ body {
   color: #ffffff;
 }
 
+.header-menu-button-sp {
+  cursor: pointer;
+  border: 3px solid rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  margin: 0 21px 0 0;
+}
+
+.header-menu-button-sp i {
+  color: #333333;
+  padding: 8px 12px;
+}
+
 @media (max-width: 991px) {
   .header-menu {
     display: none;
   }
   .header-contact {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .header-menu-button-sp {
     display: none;
   }
 }
