@@ -102,6 +102,11 @@ body {
 }
 
 .hamburgar-menu-sp {
-  height: 100px;
+  height: 260px;
   background-color: blue;
+  display: none;
+}
+
+.hamburgar-menu-sp.show {
+  display: block;
 }

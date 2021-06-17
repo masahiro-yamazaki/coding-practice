@@ -1,6 +1,6 @@
 $(function () {
   // ハンバーガーメニュー
   $('.js-header-menu-button').click(function () {
-    alert('クリックされました！');
+    $('.js-hamburgar-menu-sp').toggleClass('show');
   });
 });
