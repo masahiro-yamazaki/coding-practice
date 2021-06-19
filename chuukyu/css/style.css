@@ -137,4 +137,15 @@ body {
   -webkit-transform: translateY(260px);
           transform: translateY(260px);
 }
+
+.main-margin {
+  width: 100%;
+  height: 94px;
+}
+
+.main {
+  background-color: blue;
+  width: 100%;
+  height: 94px;
+}
 /*# sourceMappingURL=style.css.map */

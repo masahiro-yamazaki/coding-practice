@@ -127,3 +127,16 @@ body {
 .hamburgar-menu-sp.show {
   transform: translateY(260px);
 }
+
+// ヘッダー部分の余白
+.main-margin {
+  width: 100%;
+  height: 94px;
+}
+
+// メイン
+.main {
+  background-color: blue;
+  width: 100%;
+  height: 94px;
+}
