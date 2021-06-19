@@ -7,11 +7,11 @@ $(function () {
     if ($(this).attr('aria-expanded') == 'false') {
       $(this).attr('aria-expanded', true);
       $('.js-hamburgar-menu-sp').css('visibility', 'visible');
-      $('.js-hamburgar-menu-sp').attr('area-hidden', 'false');
+      $('.js-hamburgar-menu-sp').attr('aria-hidden', 'false');
     } else {
       $(this).attr('aria-expanded', false);
       $('.js-hamburgar-menu-sp').css('visibility', 'hidden');
-      $('.js-hamburgar-menu-sp').attr('area-hidden', 'true');
+      $('.js-hamburgar-menu-sp').attr('aria-hidden', 'true');
     }
   });
 });
