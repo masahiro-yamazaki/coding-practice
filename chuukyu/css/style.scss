@@ -102,7 +102,15 @@ body {
 }
 
 .hamburgar-menu-sp {
+  top: -166px;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
   height: 260px;
   background-color: blue;
-  visibility: hidden;
+  transition: transform 0.5s;
+}
+
+.hamburgar-menu-sp.show {
+  transform: translateY(260px);
 }
