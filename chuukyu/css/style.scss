@@ -107,8 +107,21 @@ body {
   z-index: 99;
   width: 100%;
   height: 260px;
-  background-color: blue;
+  padding: 25px 0;
+  text-align: center;
+  background: #ffffff;
+  border-top: 1px solid #3ba6c9;
+  border-bottom: 1px solid #3ba6c9;
   transition: transform 0.5s;
+
+  div {
+    padding: 20px 0;
+
+    a {
+      font: normal normal bold 24px/30px Noto Sans JP;
+      color: #333333;
+    }
+  }
 }
 
 .hamburgar-menu-sp.show {
