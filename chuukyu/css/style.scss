@@ -130,13 +130,13 @@ body {
 
 // ヘッダー部分の余白
 .main-margin {
-  background-color: green;
   width: 100%;
-  height: 95px;
+  height: 94px;
 }
 
 // メイン
 .main {
+  border: 1px solid red;
   background-color: blue;
   width: 100%;
   height: 94px;
