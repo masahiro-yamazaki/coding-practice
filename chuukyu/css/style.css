@@ -162,12 +162,40 @@ body {
   margin: 0 0 0 20px;
 }
 
-.main-contents-title {
+.main-contents .main-contents-title {
   margin: 159px 0 0 0;
 }
 
-.main-contents-title p {
+.main-contents .main-contents-title p {
   font: normal normal bold 32px/46px Noto Sans JP;
   color: #333333;
+}
+
+.main-contents .main-contents-sub-title {
+  margin: 44px 0 0 0;
+}
+
+.main-contents .main-contents-sub-title p {
+  font: normal normal bold 16px/24px Noto Sans JP;
+  color: #333333;
+}
+
+.main-contents .main-contact {
+  display: block;
+  margin: 45px 0px 0 0;
+  padding: 7px 0 10px;
+  width: 155px;
+  height: 37px;
+  text-align: center;
+  background: transparent -webkit-gradient(linear, left top, right top, from(#fa41cc), to(#6020b0)) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(90deg, #fa41cc 0%, #6020b0 100%) 0% 0% no-repeat padding-box;
+  -webkit-box-shadow: 0px 3px 6px #00000029;
+          box-shadow: 0px 3px 6px #00000029;
+  border-radius: 10px;
+}
+
+.main-contents .main-contact span {
+  font: normal normal bold 14px/20px Noto Sans JP;
+  color: #ffffff;
 }
 /*# sourceMappingURL=style.css.map */
