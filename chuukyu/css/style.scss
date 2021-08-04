@@ -137,15 +137,25 @@ body {
 // メイン
 .main {
   width: 100%;
-  height: 674px;
   border-bottom: 1px solid blue;
+}
+
+@media (min-width: 768px) {
+  .main {
+    height: 674px;
+  }
 }
 
 .main-inner {
   max-width: 1022px;
   width: 90%;
   margin: 131px auto 0;
-  display: flex;
+}
+
+@media (min-width: 768px) {
+  .main-inner {
+    display: flex;
+  }
 }
 
 .main-contents {
@@ -192,5 +202,11 @@ body {
   .manager-image img {
     width: 518px;
     height: 430px;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-image {
+    margin: 10px 0 30px 0;
   }
 }
