@@ -146,6 +146,8 @@ body {
 .main {
   width: 100%;
   border-bottom: 1px solid blue;
+  background: transparent url("../img/main-circle.svg") no-repeat;
+  background-position: right -75px bottom;
 }
 
 @media (min-width: 768px) {
@@ -157,7 +159,8 @@ body {
 .main-inner {
   max-width: 1022px;
   width: 90%;
-  margin: 131px auto 0;
+  margin: 0 auto;
+  padding: 131px 0 0;
 }
 
 @media (min-width: 768px) {
