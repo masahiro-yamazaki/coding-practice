@@ -145,14 +145,14 @@ body {
 
 .main {
   width: 100%;
-  border-bottom: 1px solid blue;
   background: transparent url("../img/main-circle.svg") no-repeat;
-  background-position: right -75px bottom;
+  background-position: right -75px bottom 30px;
 }
 
 @media (min-width: 768px) {
   .main {
     height: 674px;
+    background-position: right -75px bottom 87px;
   }
 }
 
@@ -224,5 +224,25 @@ body {
   .main-image {
     margin: 10px 0 30px 0;
   }
+}
+
+.feature .feature-title {
+  text-align: center;
+  margin: 158px 0 0;
+}
+
+.feature .feature-title span {
+  font: normal normal bold 32px/46px Noto Sans JP;
+  color: #333333;
+}
+
+.feature .feature-sub-title {
+  text-align: center;
+  margin: 10px 0 57px;
+}
+
+.feature .feature-sub-title span {
+  font: normal normal bold 16px/24px Noto Sans JP;
+  color: #3BA6C9;
 }
 /*# sourceMappingURL=style.css.map */

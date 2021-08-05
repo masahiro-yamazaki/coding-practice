@@ -47,7 +47,6 @@ body {
 
 .header-menu {
   padding: 34px 0 36px;
-
   a {
     font: normal normal bold 16px/24px Noto Sans JP;
     color: #333333;
@@ -66,7 +65,6 @@ body {
     no-repeat padding-box;
   box-shadow: 0px 3px 6px #00000029;
   border-radius: 10px;
-
   span {
     font: normal normal bold 14px/20px Noto Sans JP;
     color: #ffffff;
@@ -78,7 +76,6 @@ body {
   border: 3px solid rgba(0, 0, 0, 0.3);
   border-radius: 3px;
   margin: 0 21px 0 0;
-
   i {
     color: #333333;
     padding: 8px 12px;
@@ -89,7 +86,6 @@ body {
   .header-menu {
     display: none;
   }
-
   .header-contact {
     display: none;
   }
@@ -113,7 +109,6 @@ body {
   border-top: 1px solid #3ba6c9;
   border-bottom: 1px solid #3ba6c9;
   transition: transform 0.5s;
-
   div {
     padding: 20px 0;
 
@@ -137,14 +132,14 @@ body {
 // メイン
 .main {
   width: 100%;
-  border-bottom: 1px solid blue;
   background: transparent url('../img/main-circle.svg') no-repeat;
-  background-position: right -75px bottom;
+  background-position: right -75px bottom 30px;
 }
 
 @media (min-width: 768px) {
   .main {
     height: 674px;
+    background-position: right -75px bottom 87px;
   }
 }
 
@@ -164,19 +159,15 @@ body {
 
 .main-contents {
   margin: 0 0 0 20px;
-
   .main-contents-title {
     margin: 28px 0 0 0;
-
     p {
       font: normal normal bold 32px/46px Noto Sans JP;
       color: #333333;
     }
   }
-
   .main-contents-sub-title {
     margin: 44px 0 0 0;
-
     p {
       font: normal normal bold 16px/24px Noto Sans JP;
       color: #333333;
@@ -194,7 +185,6 @@ body {
       0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000029;
     border-radius: 10px;
-
     span {
       font: normal normal bold 14px/20px Noto Sans JP;
       color: #ffffff;
@@ -212,5 +202,25 @@ body {
 @media (max-width: 767px) {
   .main-image {
     margin: 10px 0 30px 0;
+  }
+}
+
+// 3つの特徴
+.feature {
+  .feature-title {
+    text-align: center;
+    margin: 158px 0 0;
+    span {
+      font: normal normal bold 32px/46px Noto Sans JP;
+      color: #333333;
+    }
+  }
+  .feature-sub-title {
+    text-align: center;
+    margin: 10px 0 57px;
+    span {
+      font: normal normal bold 16px/24px Noto Sans JP;
+      color: #3BA6C9;
+    }
   }
 }
