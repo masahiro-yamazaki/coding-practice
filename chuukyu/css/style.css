@@ -1,5 +1,6 @@
 body {
   font-family: 'Noto Sans JP', sans-serif;
+  color: #333333;
 }
 
 .header {
@@ -36,7 +37,6 @@ body {
 
 .header-logo span {
   font: normal normal bold 24px/35px Noto Sans JP;
-  color: #333333;
   padding: 4px 0 0px 16px;
 }
 
@@ -57,7 +57,6 @@ body {
 
 .header-menu a {
   font: normal normal bold 16px/24px Noto Sans JP;
-  color: #333333;
   margin: 0 46px 0 0;
 }
 
@@ -88,7 +87,6 @@ body {
 }
 
 .header-menu-button-sp i {
-  color: #333333;
   padding: 8px 12px;
 }
 
@@ -184,7 +182,6 @@ body {
 
 .main-contents .main-contents-title p {
   font: normal normal bold 32px/46px Noto Sans JP;
-  color: #333333;
 }
 
 .main-contents .main-contents-sub-title {
@@ -193,7 +190,6 @@ body {
 
 .main-contents .main-contents-sub-title p {
   font: normal normal bold 16px/24px Noto Sans JP;
-  color: #333333;
 }
 
 .main-contents .main-contact {
@@ -233,7 +229,6 @@ body {
 
 .features .features-title span {
   font: normal normal bold 32px/46px Noto Sans JP;
-  color: #333333;
 }
 
 .features .features-sub-title {
@@ -244,5 +239,21 @@ body {
 .features .features-sub-title span {
   font: normal normal bold 16px/24px Noto Sans JP;
   color: #3BA6C9;
+}
+
+.features .feature-title {
+  text-align: center;
+}
+
+.features .feature-title span {
+  font: normal normal bold 28px/40px Noto Sans JP;
+}
+
+.features .feature-main-descreption p {
+  font: normal normal bold 24px/48px Noto Sans JP;
+}
+
+.features .feature-sub-descreption p {
+  font: normal normal bold 16px/26px Noto Sans JP;
 }
 /*# sourceMappingURL=style.css.map */

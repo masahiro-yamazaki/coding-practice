@@ -1,5 +1,6 @@
 body {
   font-family: 'Noto Sans JP', sans-serif;
+  color: #333333;
 }
 
 // ヘッダー
@@ -27,7 +28,6 @@ body {
 
   span {
     font: normal normal bold 24px/35px Noto Sans JP;
-    color: #333333;
     padding: 4px 0 0px 16px;
   }
 
@@ -49,7 +49,6 @@ body {
   padding: 34px 0 36px;
   a {
     font: normal normal bold 16px/24px Noto Sans JP;
-    color: #333333;
     margin: 0 46px 0 0;
   }
 }
@@ -77,7 +76,6 @@ body {
   border-radius: 3px;
   margin: 0 21px 0 0;
   i {
-    color: #333333;
     padding: 8px 12px;
   }
 }
@@ -163,14 +161,12 @@ body {
     margin: 28px 0 0 0;
     p {
       font: normal normal bold 32px/46px Noto Sans JP;
-      color: #333333;
     }
   }
   .main-contents-sub-title {
     margin: 44px 0 0 0;
     p {
       font: normal normal bold 16px/24px Noto Sans JP;
-      color: #333333;
     }
   }
 
@@ -212,7 +208,6 @@ body {
     margin: 158px 0 0;
     span {
       font: normal normal bold 32px/46px Noto Sans JP;
-      color: #333333;
     }
   }
   .features-sub-title {
@@ -221,6 +216,22 @@ body {
     span {
       font: normal normal bold 16px/24px Noto Sans JP;
       color: #3BA6C9;
+    }
+  }
+  .feature-title {
+    text-align: center;
+    span {
+      font: normal normal bold 28px/40px Noto Sans JP;
+    }
+  }
+  .feature-main-descreption {
+    p {
+      font: normal normal bold 24px/48px Noto Sans JP;
+    }
+  }
+  .feature-sub-descreption {
+    p {
+      font: normal normal bold 16px/26px Noto Sans JP;
     }
   }
 }
