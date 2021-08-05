@@ -226,22 +226,22 @@ body {
   }
 }
 
-.feature .feature-title {
+.features .features-title {
   text-align: center;
   margin: 158px 0 0;
 }
 
-.feature .feature-title span {
+.features .features-title span {
   font: normal normal bold 32px/46px Noto Sans JP;
   color: #333333;
 }
 
-.feature .feature-sub-title {
+.features .features-sub-title {
   text-align: center;
   margin: 10px 0 57px;
 }
 
-.feature .feature-sub-title span {
+.features .features-sub-title span {
   font: normal normal bold 16px/24px Noto Sans JP;
   color: #3BA6C9;
 }
