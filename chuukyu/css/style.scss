@@ -158,6 +158,7 @@ body {
 @media (min-width: 768px) {
   .main-inner {
     display: flex;
+    justify-content: space-between;
   }
 }
 
