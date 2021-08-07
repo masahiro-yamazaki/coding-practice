@@ -249,6 +249,24 @@ body {
   font: normal normal bold 28px/40px Noto Sans JP;
 }
 
+.features .feature-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.features .feature-img {
+  width: 50%;
+}
+
+.features .feature-img img {
+  width: 400px;
+}
+
+.features .feature-descreption {
+  width: 50%;
+}
+
 .features .feature-main-descreption p {
   font: normal normal bold 24px/48px Noto Sans JP;
 }
