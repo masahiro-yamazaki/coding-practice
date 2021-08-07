@@ -225,16 +225,37 @@ body {
     }
   }
   .feature-detail {
-    display: flex;
+    &.feature1 {
+      max-width: 1066px;
+      width: 90%;
+      margin: 49px auto 0;
+    }
+    @media (min-width: 768px) {
+      display: flex;
+      padding-left:57px;
+    }
   }
   .feature-img {
-    width: 50%;
-    img {
+    @media (min-width: 768px) {
+      width: 50%;
+    }
+    img.feature1 {
+      width: 380px;
+      height: 314px;
+    }
+    img.feature2 {
+      width: 479px;
+      height: 329px;
+    }
+    img.feature3 {
       width: 400px;
+      height: 290px;
     }
   }
   .feature-descreption {
-    width: 50%;
+    @media (min-width: 768px) {
+      width: 50%;
+    }
   }
   .feature-main-descreption {
     p {
