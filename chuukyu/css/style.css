@@ -278,20 +278,20 @@ body {
 
 @media (min-width: 768px) {
   .features .feature-img {
-    width: 50%;
+    max-width: 380px;
   }
 }
 
 .features .feature-img img {
-  width: 380px;
+  width: auto;
   height: auto;
   max-width: 100%;
   max-height: 100%;
 }
 
 @media (min-width: 768px) {
-  .features .feature-descreption {
-    width: 50%;
+  .features .feature-descreption.feature1 {
+    margin: 0 auto;
   }
 }
 
