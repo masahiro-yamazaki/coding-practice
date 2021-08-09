@@ -252,7 +252,19 @@ body {
 .features .feature-detail.feature1 {
   max-width: 1066px;
   width: 90%;
-  margin: 49px auto 0;
+  margin: 49px auto 86px;
+}
+
+.features .feature-detail.feature2 {
+  max-width: 1066px;
+  width: 90%;
+  margin: 59px auto 136px;
+}
+
+.features .feature-detail.feature3 {
+  max-width: 1066px;
+  width: 90%;
+  margin: 62px auto 154px;
 }
 
 @media (min-width: 768px) {

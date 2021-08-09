@@ -228,7 +228,17 @@ body {
     &.feature1 {
       max-width: 1066px;
       width: 90%;
-      margin: 49px auto 0;
+      margin: 49px auto 86px;
+    }
+    &.feature2 {
+      max-width: 1066px;
+      width: 90%;
+      margin: 59px auto 136px;
+    }
+    &.feature3 {
+      max-width: 1066px;
+      width: 90%;
+      margin: 62px auto 154px;
     }
     @media (min-width: 768px) {
       display: flex;
