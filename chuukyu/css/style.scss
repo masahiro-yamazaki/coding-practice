@@ -259,12 +259,12 @@ body {
   .feature-descreption {
     @media (min-width: 768px) {
       width: 50%;
-      // &.feature1 {
-      //   margin: 0 0 0 157px;
-      // }
     }
   }
   .feature-main-descreption {
+    &.feature1 {
+      margin: 47px 0 45px 0;
+    }
     p {
       font: normal normal bold 24px/48px Noto Sans JP;
     }

@@ -295,6 +295,10 @@ body {
   }
 }
 
+.features .feature-main-descreption.feature1 {
+  margin: 47px 0 45px 0;
+}
+
 .features .feature-main-descreption p {
   font: normal normal bold 24px/48px Noto Sans JP;
 }
