@@ -377,4 +377,26 @@ body {
   font: normal normal bold 16px/24px Noto Sans JP;
   color: #444444;
 }
+
+.faq {
+  padding: 55px 0 0;
+}
+
+.faq .faq-title {
+  text-align: center;
+}
+
+.faq .faq-title span {
+  font: normal normal bold 32px/46px Noto Sans JP;
+}
+
+.faq .faq-sub-title {
+  text-align: center;
+  margin: 11px 0 32px;
+}
+
+.faq .faq-sub-title span {
+  font: normal normal bold 16px/24px Noto Sans JP;
+  color: #3BA6C9;
+}
 /*# sourceMappingURL=style.css.map */
