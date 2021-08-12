@@ -316,11 +316,14 @@ body {
       vertical-align: middle;
       color: #333333;
       font: normal normal bold 16px/24px Noto Sans JP;
-      &:nth-child(1) {
-        padding-left: 19px;
-      }
-      &:nth-child(2) {
-        padding-left: 30.5px;
+      @media (min-width: 577px) {
+        &:nth-child(1) {
+          width: 290px;
+          padding-left: 19px;
+        }
+        &:nth-child(2) {
+          padding-left: 30.5px;
+        }
       }
       @media (max-width: 576px) {
         display: block;

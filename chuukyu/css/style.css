@@ -350,12 +350,14 @@ body {
   font: normal normal bold 16px/24px Noto Sans JP;
 }
 
-.price .price-table td:nth-child(1) {
-  padding-left: 19px;
-}
-
-.price .price-table td:nth-child(2) {
-  padding-left: 30.5px;
+@media (min-width: 577px) {
+  .price .price-table td:nth-child(1) {
+    width: 290px;
+    padding-left: 19px;
+  }
+  .price .price-table td:nth-child(2) {
+    padding-left: 30.5px;
+  }
 }
 
 @media (max-width: 576px) {
