@@ -283,7 +283,7 @@ body {
 // 価格
 .price {
   background: #EEFBFB;
-  height: 744px;
+  min-height: 744px;
   padding: 55px 0 68px;
 
   .price-title {
@@ -317,10 +317,15 @@ body {
       color: #333333;
       font: normal normal bold 16px/24px Noto Sans JP;
       &:nth-child(1) {
-        padding: 0 0 0 19px;
+        padding-left: 19px;
       }
       &:nth-child(2) {
-        padding: 0 0 0 30.5px;
+        padding-left: 30.5px;
+      }
+      @media (max-width: 576px) {
+        display: block;
+        text-align: center;
+        padding: 34.5px 0;
       }
     }
   }

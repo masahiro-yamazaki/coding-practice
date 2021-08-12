@@ -309,7 +309,7 @@ body {
 
 .price {
   background: #EEFBFB;
-  height: 744px;
+  min-height: 744px;
   padding: 55px 0 68px;
 }
 
@@ -351,11 +351,19 @@ body {
 }
 
 .price .price-table td:nth-child(1) {
-  padding: 0 0 0 19px;
+  padding-left: 19px;
 }
 
 .price .price-table td:nth-child(2) {
-  padding: 0 0 0 30.5px;
+  padding-left: 30.5px;
+}
+
+@media (max-width: 576px) {
+  .price .price-table td {
+    display: block;
+    text-align: center;
+    padding: 34.5px 0;
+  }
 }
 
 .price .price-note {
