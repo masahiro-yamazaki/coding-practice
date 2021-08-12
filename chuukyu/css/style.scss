@@ -279,3 +279,58 @@ body {
     }
   }
 }
+
+// 価格
+.price {
+  background: #EEFBFB;
+  height: 744px;
+  padding: 55px 0 68px;
+
+  .price-title {
+    text-align: center;
+    span {
+      font: normal normal bold 32px/46px Noto Sans JP;
+    }
+  }
+
+  .price-sub-title {
+    text-align: center;
+    margin: 11px 0 70px;
+    span {
+      font: normal normal bold 16px/24px Noto Sans JP;
+      color: #3BA6C9;
+    }
+  }
+
+  .price-table {
+    max-width: 926px;
+    width: 90%;
+    margin: 0 auto;
+    background: #ffffff;
+    box-shadow: 0px 3px 6px #00000029;
+    border-collapse: collapse;
+    border: hidden;
+    td {
+      border: 1px solid #E5E5E5;
+      height: 102.5px;
+      vertical-align: middle;
+      color: #333333;
+      font: normal normal bold 16px/24px Noto Sans JP;
+      &:nth-child(1) {
+        padding: 0 0 0 19px;
+      }
+      &:nth-child(2) {
+        padding: 0 0 0 30.5px;
+      }
+    }
+  }
+
+  .price-note {
+    text-align: center;
+    margin: 36px 0 0;
+    span {
+      font: normal normal bold 16px/24px Noto Sans JP;
+      color: #444444;
+    }    
+  }
+}

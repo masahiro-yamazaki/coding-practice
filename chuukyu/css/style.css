@@ -306,4 +306,65 @@ body {
 .features .feature-sub-descreption p {
   font: normal normal bold 16px/26px Noto Sans JP;
 }
+
+.price {
+  background: #EEFBFB;
+  height: 744px;
+  padding: 55px 0 68px;
+}
+
+.price .price-title {
+  text-align: center;
+}
+
+.price .price-title span {
+  font: normal normal bold 32px/46px Noto Sans JP;
+}
+
+.price .price-sub-title {
+  text-align: center;
+  margin: 11px 0 70px;
+}
+
+.price .price-sub-title span {
+  font: normal normal bold 16px/24px Noto Sans JP;
+  color: #3BA6C9;
+}
+
+.price .price-table {
+  max-width: 926px;
+  width: 90%;
+  margin: 0 auto;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 3px 6px #00000029;
+          box-shadow: 0px 3px 6px #00000029;
+  border-collapse: collapse;
+  border: hidden;
+}
+
+.price .price-table td {
+  border: 1px solid #E5E5E5;
+  height: 102.5px;
+  vertical-align: middle;
+  color: #333333;
+  font: normal normal bold 16px/24px Noto Sans JP;
+}
+
+.price .price-table td:nth-child(1) {
+  padding: 0 0 0 19px;
+}
+
+.price .price-table td:nth-child(2) {
+  padding: 0 0 0 30.5px;
+}
+
+.price .price-note {
+  text-align: center;
+  margin: 36px 0 0;
+}
+
+.price .price-note span {
+  font: normal normal bold 16px/24px Noto Sans JP;
+  color: #444444;
+}
 /*# sourceMappingURL=style.css.map */
