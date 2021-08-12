@@ -379,7 +379,7 @@ body {
 }
 
 .faq {
-  padding: 55px 0 0;
+  padding: 55px 0 86px;
 }
 
 .faq .faq-title {
@@ -398,5 +398,35 @@ body {
 .faq .faq-sub-title span {
   font: normal normal bold 16px/24px Noto Sans JP;
   color: #3BA6C9;
+}
+
+.faq .faq-list {
+  border: 1px solid #E5E5E5;
+  max-width: 907px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.faq .faq-list .faq-question-answer:not(:last-child) {
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.faq .faq-list .faq-question {
+  background: #ffffff;
+  padding: 18px 0 20px;
+}
+
+.faq .faq-list .faq-question p {
+  font: normal normal bold 14px/20px Noto Sans JP;
+  text-align: center;
+}
+
+.faq .faq-list .faq-answer {
+  background: #f2f2f2;
+  padding: 18px 35px 20px;
+}
+
+.faq .faq-list .faq-answer p {
+  font: normal normal bold 14px/20px Noto Sans JP;
 }
 /*# sourceMappingURL=style.css.map */
