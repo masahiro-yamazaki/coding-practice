@@ -414,6 +414,7 @@ body {
 .faq .faq-list .faq-question {
   background: #ffffff;
   padding: 18px 0 20px;
+  cursor: pointer;
 }
 
 .faq .faq-list .faq-question p {
@@ -424,6 +425,11 @@ body {
 .faq .faq-list .faq-answer {
   background: #f2f2f2;
   padding: 18px 35px 20px;
+  display: none;
+}
+
+.faq .faq-list .faq-answer.is-open {
+  display: block;
 }
 
 .faq .faq-list .faq-answer p {

@@ -24,4 +24,10 @@ $(function () {
       $('#js-glabal-menu').attr('aria-hidden', 'true');
     }
   });
+
+  // アコーディオン
+  $('.js-accordion-title').on('click', function () {
+    $(this).next().toggleClass('is-open');
+    $(this).toggleClass('is-active');
+  });
 });

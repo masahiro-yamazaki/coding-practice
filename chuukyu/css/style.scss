@@ -376,6 +376,7 @@ body {
     .faq-question {
       background: #ffffff;
       padding: 18px 0 20px;
+      cursor: pointer;
       p {
         font: normal normal bold 14px/20px Noto Sans JP;
         text-align: center;
@@ -384,6 +385,10 @@ body {
     .faq-answer {
       background: #f2f2f2;
       padding: 18px 35px 20px; // TODO: 修正
+      display: none;
+      &.is-open {
+        display: block;
+      }
       p {
         font: normal normal bold 14px/20px Noto Sans JP;
       }
