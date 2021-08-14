@@ -466,6 +466,30 @@ body {
   }
 }
 
+//お問い合わせ
+.contact {
+  background: transparent linear-gradient(90deg, #05A5FA 0%, #63FBD7 100%, #67FFD6 100%) 0% 0% no-repeat padding-box;
+  height: 1027px;
+  text-align: center;
+
+  .contact-title {
+    padding: 63px 0 7px;
+    font: normal normal bold 32px/46px Noto Sans JP;
+    color: #FFFFFF;
+  }
+
+  .contact-sub-title {
+    padding: 0px 0 36px;
+    font: normal normal bold 16px/24px Noto Sans JP;
+    color: #FFFFFF;
+  }
+
+  .contact-description {
+    font: normal normal bold 16px/24px Noto Sans JP;
+    color: #FFFFFF;
+  }
+}
+
 // フッター
 .footer {
   background-color: #f8f8f8;
