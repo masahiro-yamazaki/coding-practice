@@ -547,9 +547,33 @@ body {
   max-width: 908px;
   height: 689px;
   margin: 44px auto 0;
+  padding: 31px 62px 35px;
   background: #ffffff;
   -webkit-box-shadow: 0px 3px 6px #00000029;
           box-shadow: 0px 3px 6px #00000029;
+}
+
+.contact .contact-content .contact-item {
+  text-align: left;
+  margin: 0 0 36px;
+}
+
+.contact .contact-content .contact-item label {
+  font: normal normal bold 16px/24px Noto Sans JP;
+  color: #333333;
+  padding: 3px 0;
+}
+
+.contact .contact-content .contact-item .required {
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+  background: #0C449B;
+  color: #ffffff;
+  font: normal normal bold 14px/20px Noto Sans JP;
+  border-radius: 10px;
+  margin: 0 0 0 19px;
+  padding: 4px 16px 6px 16px;
 }
 
 .footer {
