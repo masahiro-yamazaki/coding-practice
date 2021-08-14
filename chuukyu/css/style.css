@@ -435,4 +435,28 @@ body {
 .faq .faq-list .faq-answer p {
   font: normal normal bold 14px/20px Noto Sans JP;
 }
+
+.blog {
+  background: #EEFBFB;
+  min-height: 668px;
+  padding: 55px 0 91px;
+}
+
+.blog .blog-title {
+  text-align: center;
+}
+
+.blog .blog-title span {
+  font: normal normal bold 32px/46px Noto Sans JP;
+}
+
+.blog .blog-sub-title {
+  text-align: center;
+  margin: 11px 0 54px;
+}
+
+.blog .blog-sub-title span {
+  font: normal normal bold 16px/24px Noto Sans JP;
+  color: #3BA6C9;
+}
 /*# sourceMappingURL=style.css.map */
