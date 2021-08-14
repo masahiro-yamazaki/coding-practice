@@ -498,6 +498,13 @@ body {
   }
 }
 
+.blog .blog-articles .blog-article .blog-image {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
 .blog .blog-articles .blog-article .blog-article-title {
   font: normal normal bold 18px/26px Noto Sans JP;
   color: #333333;
