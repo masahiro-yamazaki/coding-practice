@@ -616,6 +616,26 @@ body {
   color: #333333;
 }
 
+.contact .contact-content .submit {
+  text-align: center;
+}
+
+.contact .contact-content .submit .submit-button {
+  width: 155px;
+  height: 37px;
+  margin: 30px 0 0;
+  color: #ffffff;
+  background: transparent -webkit-gradient(linear, left top, right top, from(#FA41CC), to(#6020B0)) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(90deg, #FA41CC 0%, #6020B0 100%) 0% 0% no-repeat padding-box;
+  -webkit-box-shadow: 0px 3px 6px #00000029;
+          box-shadow: 0px 3px 6px #00000029;
+  border: none;
+  border-radius: 10px;
+  font: normal normal bold 14px/20px Noto Sans JP;
+  text-align: center;
+  cursor: pointer;
+}
+
 .footer {
   background-color: #f8f8f8;
   height: 244px;

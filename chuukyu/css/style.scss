@@ -493,7 +493,7 @@ body {
     max-width: 908px;
     height: 689px;
     margin: 44px auto 0;
-    padding: 6px 62px 35px;
+    padding: 6px 62px 35px; // TODO: 35pxになるように調整
     background: #ffffff;
     box-shadow: 0px 3px 6px #00000029;
     text-align: left;
@@ -553,6 +553,23 @@ body {
         vertical-align: middle;
         font: normal normal bold 16px/24px Noto Sans JP;
         color: #333333;
+      }
+    }
+
+    .submit {
+      text-align: center;
+      .submit-button {
+        width: 155px;
+        height: 37px;
+        margin: 30px 0 0;
+        color: #ffffff;
+        background: transparent linear-gradient(90deg, #FA41CC 0%, #6020B0 100%) 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 6px #00000029;
+        border: none;
+        border-radius: 10px;
+        font: normal normal bold 14px/20px Noto Sans JP;
+        text-align: center;
+        cursor: pointer;
       }
     }
   }
