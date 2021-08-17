@@ -570,6 +570,10 @@ body {
         font: normal normal bold 14px/20px Noto Sans JP;
         text-align: center;
         cursor: pointer;
+        &:disabled {
+          opacity: 0.65;
+          cursor: not-allowed;
+        }
       }
     }
   }

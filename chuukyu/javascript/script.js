@@ -30,4 +30,11 @@ $(function () {
     $(this).next().toggleClass('is-open');
     $(this).toggleClass('is-active');
   });
+
+  // プライバシーポリシー
+  const $submitButton = $('.js-submit-button')
+  $('.js-privacy-policy-check').on('click', function () {
+    const disabled = $submitButton.prop('disabled');
+    $submitButton.prop('disabled', !disabled);
+  });
 });
