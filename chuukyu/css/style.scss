@@ -466,6 +466,28 @@ body {
   }
 }
 
+// 制作実績
+.works {
+  min-height: 668px;
+  padding: 55px 0 91px;
+
+  .works-title {
+    text-align: center;
+    span {
+      font: normal normal bold 32px/46px Noto Sans JP;
+    }
+  }
+
+  .works-sub-title {
+    text-align: center;
+    margin: 11px 0 54px;
+    span {
+      font: normal normal bold 16px/24px Noto Sans JP;
+      color: #3BA6C9;
+    }
+  }
+}
+
 //お問い合わせ
 .contact {
   background: transparent linear-gradient(90deg, #05A5FA 0%, #63FBD7 100%, #67FFD6 100%) 0% 0% no-repeat padding-box;

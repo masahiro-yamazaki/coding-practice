@@ -519,6 +519,29 @@ body {
   color: #444444;
 }
 
+.works {
+  min-height: 668px;
+  padding: 55px 0 91px;
+}
+
+.works .works-title {
+  text-align: center;
+}
+
+.works .works-title span {
+  font: normal normal bold 32px/46px Noto Sans JP;
+}
+
+.works .works-sub-title {
+  text-align: center;
+  margin: 11px 0 54px;
+}
+
+.works .works-sub-title span {
+  font: normal normal bold 16px/24px Noto Sans JP;
+  color: #3BA6C9;
+}
+
 .contact {
   background: transparent -webkit-gradient(linear, left top, right top, from(#05A5FA), color-stop(100%, #63FBD7), to(#67FFD6)) 0% 0% no-repeat padding-box;
   background: transparent linear-gradient(90deg, #05A5FA 0%, #63FBD7 100%, #67FFD6 100%) 0% 0% no-repeat padding-box;
