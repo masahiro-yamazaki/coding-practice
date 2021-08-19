@@ -468,8 +468,7 @@ body {
 
 // 制作実績
 .works {
-  min-height: 668px;
-  padding: 55px 0 91px;
+  padding: 55px 0 90px;
 
   .works-title {
     text-align: center;
@@ -480,10 +479,21 @@ body {
 
   .works-sub-title {
     text-align: center;
-    margin: 11px 0 54px;
+    margin: 11px 0 68px;
     span {
       font: normal normal bold 16px/24px Noto Sans JP;
       color: #3BA6C9;
+    }
+  }
+
+  .swiper-container {
+    .swiper-wrapper {
+      .swiper-slide {
+        width: 322px;
+        height: 407px;
+        border: 1px solid #DDDDDD;
+        border-radius: 8px;
+      }
     }
   }
 }
