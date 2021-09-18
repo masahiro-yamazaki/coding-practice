@@ -1,5 +1,4 @@
-@charset "utf-8";
-
+@charset "UTF-8";
 /* 共通項目 */
 body {
   margin: 0;
@@ -7,6 +6,7 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+
 p,
 h1,
 h2,
@@ -15,6 +15,7 @@ h4,
 a {
   margin: 0;
 }
+
 a {
   text-decoration: none;
   cursor: pointer;
@@ -26,7 +27,9 @@ a {
   background-color: #66CC99;
 }
 
-.header-inner {
+.header .header-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 20px 30px;
 }
@@ -55,3 +58,4 @@ a {
   padding: 10px 20px;
   border-radius: 12px;
 }
+/*# sourceMappingURL=style.css.map */
