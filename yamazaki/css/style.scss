@@ -106,6 +106,13 @@ a {
     padding-top: 30px;
   }
 
+  .profile-sub-title {
+    font: bold 20px/24px sans-serif;
+    color: #333333;
+    text-align: center;
+    padding-top: 10px;
+  }
+
   .profile-contents {
     padding: 30px;
 
@@ -163,6 +170,13 @@ a {
       padding-top: 30px;
     }
 
+    .works-sub-title {
+      font: bold 20px/24px sans-serif;
+      color: #333333;
+      text-align: center;
+      padding-top: 10px;
+    }
+
     .works-contents {
       .works-content {
         margin-bottom: 20px;
@@ -190,6 +204,13 @@ a {
       color: #333333;
       text-align: center;
       padding-top: 30px;
+    }
+
+    .service-sub-title {
+      font: bold 20px/24px sans-serif;
+      color: #333333;
+      text-align: center;
+      padding-top: 10px;
     }
   }
 }

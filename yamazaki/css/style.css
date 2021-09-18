@@ -114,6 +114,13 @@ a {
   padding-top: 30px;
 }
 
+.profile .profile-sub-title {
+  font: bold 20px/24px sans-serif;
+  color: #333333;
+  text-align: center;
+  padding-top: 10px;
+}
+
 .profile .profile-contents {
   padding: 30px;
 }
@@ -185,6 +192,13 @@ a {
   padding-top: 30px;
 }
 
+.works .works-inner .works-sub-title {
+  font: bold 20px/24px sans-serif;
+  color: #333333;
+  text-align: center;
+  padding-top: 10px;
+}
+
 .works .works-inner .works-contents .works-content {
   margin-bottom: 20px;
 }
@@ -210,6 +224,13 @@ a {
   color: #333333;
   text-align: center;
   padding-top: 30px;
+}
+
+.service .service-inner .service-sub-title {
+  font: bold 20px/24px sans-serif;
+  color: #333333;
+  text-align: center;
+  padding-top: 10px;
 }
 
 /* お問い合わせ */
