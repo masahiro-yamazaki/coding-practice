@@ -67,6 +67,10 @@ a {
   margin-right: 40px;
 }
 
+.header .header-inner .header-menu a:hover {
+  opacity: 0.5;
+}
+
 @media (max-width: 767px) {
   .header .header-inner .header-contact {
     display: none;

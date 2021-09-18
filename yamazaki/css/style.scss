@@ -53,6 +53,10 @@ a {
         color: white;
         font: 16px/16px sans-serif;
         margin-right: 40px;
+
+        &:hover {
+          opacity: 0.5;
+        }
       }
     }
 
