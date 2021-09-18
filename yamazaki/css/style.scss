@@ -196,7 +196,7 @@ a {
 
 /* お問い合わせ */
 .contact {
-  height: 600px;
+  height: 400px;
   background-color: #E6FFE9;
 
   .contact-inner {
@@ -209,6 +209,26 @@ a {
       color: #333333;
       text-align: center;
       padding-top: 60px;
+    }
+
+    .contact-description {
+      text-align: center;
+      font: 20px/24px sans-serif;
+      color: #333333;
+      margin: 30px 0 0;
+    }
+
+    .contact-button-wrapper {
+      margin: 60px 0 0;
+      text-align: center;
+
+      .contact-button {
+        background-color: #66CC99;
+        color: white;
+        font: bold 28px/28px sans-serif;
+        padding: 20px 36px;
+        border-radius: 12px;
+      }
     }
   }
 }
