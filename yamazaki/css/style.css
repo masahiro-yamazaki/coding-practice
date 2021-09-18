@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+/* 共通項目 */
+body {
+  margin: 0;
+  font-family: adobe-arabic, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+a {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* ヘッダー */
+.header {
+  min-height: 60px;
+  background-color: #66CC99;
+}
+
+.header-inner {
+  display: flex;
+  padding: 20px 30px;
+}
+
+.header .header-inner .header-title {
+  width: 35%;
+  color: white;
+  font: bold 24px/24px sans-serif;
+}
+
+.header .header-inner .header-menu {
+  width: 35%;
+  padding: 0 20px;
+}
+
+.header .header-inner .header-menu a {
+  color: white;
+  font: 16px/16px sans-serif;
+  margin-right: 10px;
+}
+
+.header .header-inner .header-contact .header-contact-button {
+  background-color: white;
+  color: #66CC99;
+  font: bold 16px/16px sans-serif;
+  padding: 10px 20px;
+  border-radius: 12px;
+}
