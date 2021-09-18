@@ -7,14 +7,15 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
-    <title>Masahiro Yamazaki Official Website</title>
+    <title>Masahiro Yamazaki's Portfolio</title>
     <meta
       name="description"
-      content="当サイトはフリーランスエンジニアやまざきまさひろの公式サイトです。当サイトでは制作実績のご紹介、お仕事のご相談などを承っております。"
+      content="当サイトはフリーランスエンジニアやまざきまさひろ公式サイトです。制作実績のご紹介、お仕事のご相談などを承っております。"
     />
     <meta name="keywords" content="Web開発, Web制作, エンジニア" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
 
   <body>
@@ -33,7 +34,7 @@
       </div>
     </header>
     <!-- メイン画像 -->
-    <article class="main">
+    <article class="main" data-aos="fade-up">
       <div class="main-image">
         <div class="main-message">
           <p>お客様のニーズに</p>
@@ -42,7 +43,7 @@
       </div>
     </article>
     <!-- 自己紹介 -->
-    <article id="profile" class="profile">
+    <article id="profile" class="profile" data-aos="fade-up">
       <div class="profile-inner">
         <div class="profile-title">Profile</div>
         <div class="profile-sub-title">- プロフィール -</div>
@@ -64,7 +65,7 @@
       </div>
     </article>
     <!-- 実績紹介 -->
-    <article id="works" class="works">
+    <article id="works" class="works" data-aos="fade-up">
       <div class="works-inner">
         <div class="works-title">Works</div>
         <div class="works-sub-title">- 主な実績紹介 -</div>
@@ -98,14 +99,14 @@
       </div>
     </article>
     <!-- サービス紹介 -->
-    <article id="service" class="service">
+    <article id="service" class="service" data-aos="fade-up">
       <div class="service-inner">
         <div class="service-title">Service</div>
         <div class="service-sub-title">- サービス内容 -</div>
       </div>
     </article>
     <!-- お問い合わせ -->
-    <article class="contact">
+    <article class="contact" data-aos="fade-up">
       <div class="contact-inner">
         <div class="contact-title">お気軽にお問い合わせください</div>
         <div class="contact-description">
@@ -123,5 +124,9 @@
         <div class="footer-copyright">Copyright © 2021 Masahiro Yamazaki's Portfolio All Rights Reserved.</div>
       </div>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="javascript/script.js"></script>
   </body>
 </html>
