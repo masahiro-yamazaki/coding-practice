@@ -238,8 +238,9 @@ a {
 
 /* サービス紹介 */
 .service {
-  height: 600px;
+  min-height: 500px;
   background-color: white;
+  padding-bottom: 30px;
 }
 
 .service .service-inner {
@@ -259,7 +260,16 @@ a {
   font: bold 20px/24px sans-serif;
   color: #333333;
   text-align: center;
-  padding-top: 10px;
+  padding: 10px 0 40px;
+}
+
+.service .service-inner .service-contents .service-content {
+  margin-bottom: 35px;
+}
+
+.service .service-inner .service-contents .service-content .service-content-title {
+  font: bold 20px/28px sans-serif;
+  margin-bottom: 20px;
 }
 
 /* お問い合わせ */
