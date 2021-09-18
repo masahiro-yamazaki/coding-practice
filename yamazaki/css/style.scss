@@ -96,8 +96,54 @@ a {
 
 /* プロフィール */
 .profile {
-  height: 600px;
-  background-color: white
+  min-height: 500px;
+  background-color: white;
+
+  .profile-title {
+    font: bold 48px/60px sans-serif;
+    color: #333333;
+    text-align: center;
+    padding-top: 30px;
+  }
+
+  .profile-contents {
+    padding: 30px;
+
+    @media (min-width: 768px) {
+      display: flex;
+    }
+
+    .profile-photo {
+      padding: 0 30px;
+      @media (min-width: 768px) {
+        width: 50%;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .profile-description {
+      padding: 0 30px;
+      @media (min-width: 768px) {
+        width: 50%;
+      }
+      @media (max-width: 767px) {
+        margin-top: 30px;
+      }
+
+      p {
+        font: 20px/24px sans-serif;
+
+        &.profile-name {
+          font: bold 28px/32px sans-serif;
+          margin: 0 0 20px;
+        }
+      }
+    }
+  }
 }
 
 /* スキル */
