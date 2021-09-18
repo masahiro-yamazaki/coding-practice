@@ -80,4 +80,24 @@ a {
   padding: 10px 20px;
   border-radius: 12px;
 }
+
+/* メイン画像 */
+.main .main-image {
+  background: url("../img/web_production.png");
+  height: 450px;
+  padding-top: 150px;
+}
+
+.main .main-image .main-message {
+  height: 200px;
+  background-color: rgba(139, 202, 154, 0.7);
+  color: white;
+  padding: 100px 30px 0;
+}
+
+.main .main-image .main-message p {
+  color: white;
+  font: bold 48px/60px sans-serif;
+  text-align: center;
+}
 /*# sourceMappingURL=style.css.map */
