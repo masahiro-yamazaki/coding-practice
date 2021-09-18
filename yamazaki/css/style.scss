@@ -157,6 +157,7 @@ a {
 .works {
   min-height: 500px;
   background-color: #E6FFE9;
+  padding-bottom: 30px;
 
   .works-inner {
     width: 90%;
@@ -174,7 +175,7 @@ a {
       font: bold 20px/24px sans-serif;
       color: #333333;
       text-align: center;
-      padding-top: 10px;
+      padding: 10px 0 30px;
     }
 
     .works-contents {
@@ -183,6 +184,7 @@ a {
 
         .works-content-title {
           font: bold 20px/28px sans-serif;
+          margin-bottom: 20px;
         }
       }
     }
