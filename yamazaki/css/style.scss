@@ -67,11 +67,11 @@ a {
         font: bold 16px/16px sans-serif;
         padding: 10px 20px;
         border-radius: 12px;
+        box-shadow: 0px 2px 5px 0px #999999;
 
         &:hover {
           background-color: #66CC99;
           color: white;
-          border: 1px solid white;
         }
       }
     }
@@ -199,6 +199,7 @@ a {
             padding: 8px 16px;
             border-radius: 12px;
             margin-left: 10px;
+            box-shadow: 0px 2px 5px 0px #999999;
 
             &:hover {
               background-color: white;
@@ -271,6 +272,7 @@ a {
         font: bold 28px/28px sans-serif;
         padding: 20px 36px;
         border-radius: 12px;
+        box-shadow: 0px 2px 5px 0px #999999;
 
         &:hover {
           background-color: white;
