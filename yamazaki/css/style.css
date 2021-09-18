@@ -35,20 +35,42 @@ a {
 }
 
 .header .header-inner .header-title {
-  width: 35%;
   color: white;
   font: bold 24px/24px sans-serif;
 }
 
+@media (min-width: 768px) {
+  .header .header-inner .header-title {
+    width: 35%;
+  }
+}
+
 .header .header-inner .header-menu {
-  width: 35%;
   padding: 0 20px;
+}
+
+@media (max-width: 767px) {
+  .header .header-inner .header-menu {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .header .header-inner .header-menu {
+    width: 35%;
+  }
 }
 
 .header .header-inner .header-menu a {
   color: white;
   font: 16px/16px sans-serif;
   margin-right: 10px;
+}
+
+@media (max-width: 767px) {
+  .header .header-inner .header-contact {
+    display: none;
+  }
 }
 
 .header .header-inner .header-contact .header-contact-button {
