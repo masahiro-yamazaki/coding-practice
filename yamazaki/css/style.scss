@@ -34,7 +34,7 @@ a {
       font: bold 24px/24px sans-serif;
 
       @media (min-width: 768px) {
-        width: 35%;
+        width: 40%;
       }
     }
 
@@ -52,7 +52,7 @@ a {
       a {
         color: white;
         font: 16px/16px sans-serif;
-        margin-right: 20px;
+        margin-right: 30px;
       }
     }
 
@@ -146,20 +146,87 @@ a {
   }
 }
 
-/* スキル */
-.skill {
-  height: 600px;
-  background-color: #E6FFE9;
-}
-
 /* 実績紹介 */
 .works {
-  height: 600px;
-  background-color: white;
+  min-height: 500px;
+  background-color: #E6FFE9;
+
+  .works-inner {
+    width: 90%;
+    max-width: 1180px;
+    margin: 0 auto;
+
+    .works-title {
+      font: bold 48px/60px sans-serif;
+      color: #333333;
+      text-align: center;
+      padding-top: 30px;
+    }
+
+    .works-contents {
+      .works-content {
+        margin-bottom: 20px;
+
+        .works-content-title {
+          font: bold 20px/28px sans-serif;
+        }
+      }
+    }
+  }
 }
 
 /* サービス紹介 */
 .service {
   height: 600px;
+  background-color: white;
+
+  .service-inner {
+    width: 90%;
+    max-width: 1180px;
+    margin: 0 auto;
+
+    .service-title {
+      font: bold 48px/60px sans-serif;
+      color: #333333;
+      text-align: center;
+      padding-top: 30px;
+    }
+  }
+}
+
+/* お問い合わせ */
+.contact {
+  height: 600px;
   background-color: #E6FFE9;
+
+  .contact-inner {
+    width: 90%;
+    max-width: 1180px;
+    margin: 0 auto;
+
+    .contact-title {
+      font: bold 48px/60px sans-serif;
+      color: #333333;
+      text-align: center;
+      padding-top: 60px;
+    }
+  }
+}
+
+/* フッター */
+.footer {
+  height: 80px;
+  background-color: #66CC99;
+
+  .footer-inner {
+    width: 90%;
+    max-width: 1180px;
+    margin: 0 auto;
+
+    .footer-copyright {
+      font: 16px/80px sans-serif;
+      color: white;
+      text-align: center;
+    }
+  }
 }
