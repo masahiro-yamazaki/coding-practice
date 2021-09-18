@@ -52,7 +52,7 @@ a {
       a {
         color: white;
         font: 16px/16px sans-serif;
-        margin-right: 10px;
+        margin-right: 20px;
       }
     }
 
@@ -92,4 +92,28 @@ a {
       }
     }
   }
+}
+
+/* プロフィール */
+.profile {
+  height: 600px;
+  background-color: white
+}
+
+/* スキル */
+.skill {
+  height: 600px;
+  background-color: #E6FFE9;
+}
+
+/* 実績紹介 */
+.works {
+  height: 600px;
+  background-color: white;
+}
+
+/* サービス紹介 */
+.service {
+  height: 600px;
+  background-color: #E6FFE9;
 }
