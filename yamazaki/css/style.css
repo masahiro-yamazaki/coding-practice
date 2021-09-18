@@ -41,7 +41,7 @@ a {
 
 @media (min-width: 768px) {
   .header .header-inner .header-title {
-    width: 40%;
+    width: calc((100% - 200px) / 2);
   }
 }
 
@@ -57,7 +57,7 @@ a {
 
 @media (min-width: 768px) {
   .header .header-inner .header-menu {
-    width: 35%;
+    width: calc((100% - 200px) / 2);
   }
 }
 
@@ -69,6 +69,10 @@ a {
 
 .header .header-inner .header-menu a:hover {
   opacity: 0.5;
+}
+
+.header .header-inner .header-contact {
+  min-width: 200px;
 }
 
 @media (max-width: 767px) {
