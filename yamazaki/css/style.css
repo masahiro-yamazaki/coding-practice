@@ -124,14 +124,14 @@ a {
 }
 
 .profile .profile-title {
-  font: bold 48px/60px sans-serif;
+  font: bold 36px/40px sans-serif;
   color: #333333;
   text-align: center;
   padding-top: 30px;
 }
 
 .profile .profile-sub-title {
-  font: bold 20px/24px sans-serif;
+  font: bold 16px/20px sans-serif;
   color: #333333;
   text-align: center;
   padding-top: 10px;
@@ -203,14 +203,14 @@ a {
 }
 
 .works .works-inner .works-title {
-  font: bold 48px/60px sans-serif;
+  font: bold 36px/40px sans-serif;
   color: #333333;
   text-align: center;
   padding-top: 30px;
 }
 
 .works .works-inner .works-sub-title {
-  font: bold 20px/24px sans-serif;
+  font: bold 16px/20px sans-serif;
   color: #333333;
   text-align: center;
   padding: 10px 0 40px;
@@ -255,14 +255,14 @@ a {
 }
 
 .service .service-inner .service-title {
-  font: bold 48px/60px sans-serif;
+  font: bold 36px/40px sans-serif;
   color: #333333;
   text-align: center;
   padding-top: 30px;
 }
 
 .service .service-inner .service-sub-title {
-  font: bold 20px/24px sans-serif;
+  font: bold 16px/20px sans-serif;
   color: #333333;
   text-align: center;
   padding: 10px 0 40px;
@@ -290,7 +290,7 @@ a {
 }
 
 .contact .contact-inner .contact-title {
-  font: bold 48px/60px sans-serif;
+  font: bold 40px/48px sans-serif;
   color: #333333;
   text-align: center;
   padding-top: 60px;
