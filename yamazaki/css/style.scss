@@ -20,10 +20,14 @@ a {
   cursor: pointer;
 }
 
+/* 色指定 */
+$base-color: #66CC99;
+$base-light-color: #E6FFE9;
+
 /* ヘッダー */
 .header {
   min-height: 60px;
-  background-color: #66CC99;
+  background-color: $base-color;
 
   .header-inner {
     display: flex;
@@ -69,14 +73,14 @@ a {
 
       .header-contact-button {
         background-color: white;
-        color: #66CC99;
+        color: $base-color;
         font: bold 16px/16px sans-serif;
         padding: 10px 20px;
         border-radius: 12px;
         box-shadow: 0px 2px 5px 0px #999999;
 
         &:hover {
-          background-color: #66CC99;
+          background-color: $base-color;
           color: white;
         }
       }
@@ -168,7 +172,7 @@ a {
 /* 実績紹介 */
 .works {
   min-height: 500px;
-  background-color: #E6FFE9;
+  background-color: $base-light-color;
   padding-bottom: 30px;
 
   .works-inner {
@@ -199,7 +203,7 @@ a {
           margin-bottom: 20px;
 
           .works-link {
-            background-color: #66CC99;
+            background-color: $base-color;
             color: white;
             font: 14px/14px sans-serif;
             padding: 8px 16px;
@@ -209,7 +213,7 @@ a {
 
             &:hover {
               background-color: white;
-              color: #66CC99;
+              color: $base-color;
             }
           }
         }
@@ -259,7 +263,7 @@ a {
 /* お問い合わせ */
 .contact {
   height: 400px;
-  background-color: #E6FFE9;
+  background-color: $base-light-color;
 
   .contact-inner {
     width: 90%;
@@ -285,7 +289,7 @@ a {
       text-align: center;
 
       .contact-button {
-        background-color: #66CC99;
+        background-color: $base-color;
         color: white;
         font: bold 28px/28px sans-serif;
         padding: 20px 36px;
@@ -294,7 +298,7 @@ a {
 
         &:hover {
           background-color: white;
-          color: #66CC99;
+          color: $base-color;
         }
       }
     }
@@ -304,7 +308,7 @@ a {
 /* フッター */
 .footer {
   height: 80px;
-  background-color: #66CC99;
+  background-color: $base-color;
 
   .footer-inner {
     width: 90%;
