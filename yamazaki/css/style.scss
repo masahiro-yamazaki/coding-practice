@@ -88,6 +88,22 @@ $base-light-color: #E6FFE9;
         }
       }
     }
+
+    .header-menu-button-sp {
+      @media (min-width: 768px) {
+        display: none;
+      }
+
+      height:30px;
+      cursor: pointer;
+      border: 3px solid rgba(255, 255, 255, 0.7);
+      border-radius: 3px;
+      margin: 0 21px 0 0;
+      i {
+        color: white;
+        padding: 8px 12px;
+      }
+    }
   }
 }
 

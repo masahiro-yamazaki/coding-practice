@@ -24,6 +24,7 @@
     <header class="header">
       <div class="header-inner">
         <div class="header-title">Masahiro Yamazaki's Portfolio</div>
+        <!-- PCのみ表示 -->
         <div class="header-menu">
           <a href="#profile">Profile</a>
           <a href="#works">Works</a>
@@ -31,6 +32,11 @@
         </div>
         <div class="header-contact">
           <a class="header-contact-button" href="https://docs.google.com/forms/d/1g0cAhrHXaaE2LM3_d1x-kw0aXeO9bqtU_IqGKxaOTAM/" target="_brank">無料相談はこちらから</a>
+        </div>
+        <!-- iPad/SPのみ表示 -->
+        <div id="js-menu-button" class="header-menu-button-sp"
+             aria-controls="js-glabal-menu" aria-expanded="false" area-label="メニューを開閉する">
+          <i class="fa fa-bars"></i>
         </div>
       </div>
     </header>
