@@ -334,7 +334,7 @@ a {
 
 /* フッター */
 .footer {
-  height: 80px;
+  min-height: 80px;
   background-color: #66CC99;
 }
 
@@ -342,10 +342,11 @@ a {
   width: 90%;
   max-width: 1180px;
   margin: 0 auto;
+  padding: 32px 0;
 }
 
 .footer .footer-inner .footer-copyright {
-  font: 16px/80px sans-serif;
+  font: 16px/16px sans-serif;
   color: white;
   text-align: center;
 }
