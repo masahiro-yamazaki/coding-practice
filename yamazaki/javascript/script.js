@@ -1,4 +1,6 @@
 $(function () {
+  const headerHeight = 60;
+
   // AOS
   AOS.init({
     offset: 100,
@@ -26,13 +28,12 @@ $(function () {
   });
 
   // ヘッダー固定表示時に、アンカーポイントがヘッダーと被らない対応
-  const headerHeight = 60;
-  const speed = 500;
-  $('a[href^="#"]').click(function(){
-    const href= $(this).attr("href");
-    const target = $(href == "#" || href == "" ? 'html' : href);
+  $('a[href^="#"]').click(function() {
+    const href= $(this).attr('href');
+    const target = $(href == '#' || href == '' ? 'html' : href);
     const position = target.offset().top - headerHeight;
-    $("html, body").animate({scrollTop:position}, speed, "swing");
+    const speed = 500;
+    $('html, body').animate({ scrollTop: position }, speed, 'swing');
     return false;
   });
 });
