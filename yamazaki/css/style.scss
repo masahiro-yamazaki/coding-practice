@@ -24,8 +24,13 @@ a {
 $base-color: #66CC99;
 $base-light-color: #E6FFE9;
 
+/* PC/SPのブレイクポイント指定 */
+$sp-max-width: 767px;
+$pc-min-width: 768px;
+
 /* ヘッダー */
 .header {
+  position: relative;
   min-height: 60px;
   background-color: $base-color;
   position: fixed;
@@ -40,7 +45,7 @@ $base-light-color: #E6FFE9;
       color: white;
       font: bold 20px/20px sans-serif;
 
-      @media (min-width: 768px) {
+      @media (min-width: $pc-min-width) {
         width: calc((100% - 200px) / 2);
       }
     }
@@ -48,11 +53,11 @@ $base-light-color: #E6FFE9;
     .header-menu {
       padding: 0 20px;
 
-      @media (max-width: 767px) {
+      @media (max-width: $sp-max-width) {
         display: none;
       }
 
-      @media (min-width: 768px) {
+      @media (min-width: $pc-min-width) {
         width: calc((100% - 200px) / 2);
       }
 
@@ -70,7 +75,7 @@ $base-light-color: #E6FFE9;
     .header-contact {
         min-width: 200px;
 
-      @media (max-width: 767px) {
+      @media (max-width: $sp-max-width) {
         display: none;
       }
 
@@ -88,21 +93,24 @@ $base-light-color: #E6FFE9;
         }
       }
     }
+  }
 
-    .header-menu-button-sp {
-      @media (min-width: 768px) {
-        display: none;
-      }
+  .header-menu-button-sp {
+    @media (min-width: $pc-min-width) {
+      display: none;
+    }
 
-      height:30px;
-      cursor: pointer;
-      border: 3px solid rgba(255, 255, 255, 0.7);
-      border-radius: 3px;
-      margin: 0 21px 0 0;
-      i {
-        color: white;
-        padding: 8px 12px;
-      }
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    height: 30px;
+    cursor: pointer;
+    border: 3px solid rgba(255, 255, 255, 0.7);
+    border-radius: 3px;
+    margin: 0 21px 0 0;
+    i {
+      color: white;
+      padding: 8px 12px;
     }
   }
 }
@@ -157,13 +165,13 @@ $base-light-color: #E6FFE9;
   .profile-contents {
     padding: 30px;
 
-    @media (min-width: 768px) {
+    @media (min-width: $pc-min-width) {
       display: flex;
     }
 
     .profile-photo {
       padding: 0 30px;
-      @media (min-width: 768px) {
+      @media (min-width: $pc-min-width) {
         width: 50%;
       }
 
@@ -175,10 +183,10 @@ $base-light-color: #E6FFE9;
 
     .profile-description {
       padding: 0 30px;
-      @media (min-width: 768px) {
+      @media (min-width: $pc-min-width) {
         width: 50%;
       }
-      @media (max-width: 767px) {
+      @media (max-width: $sp-max-width) {
         margin-top: 30px;
       }
 

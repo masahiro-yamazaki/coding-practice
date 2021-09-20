@@ -22,8 +22,10 @@ a {
 }
 
 /* 色指定 */
+/* PC/SPのブレイクポイント指定 */
 /* ヘッダー */
 .header {
+  position: relative;
   min-height: 60px;
   background-color: #66CC99;
   position: fixed;
@@ -100,7 +102,10 @@ a {
   color: white;
 }
 
-.header .header-inner .header-menu-button-sp {
+.header .header-menu-button-sp {
+  position: absolute;
+  top: 12px;
+  right: 15px;
   height: 30px;
   cursor: pointer;
   border: 3px solid rgba(255, 255, 255, 0.7);
@@ -109,12 +114,12 @@ a {
 }
 
 @media (min-width: 768px) {
-  .header .header-inner .header-menu-button-sp {
+  .header .header-menu-button-sp {
     display: none;
   }
 }
 
-.header .header-inner .header-menu-button-sp i {
+.header .header-menu-button-sp i {
   color: white;
   padding: 8px 12px;
 }
