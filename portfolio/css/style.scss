@@ -134,6 +134,10 @@ $pc-min-width: 768px;
     a {
       font: normal normal bold 16px/20px Noto Sans JP;
       color: #333333;
+
+      &:hover {
+        opacity: 0.5;
+      }
     }
   }
 
@@ -335,15 +339,19 @@ $pc-min-width: 768px;
     margin: 0 auto;
 
     .contact-title {
-      font: bold 40px/48px sans-serif;
+      font: bold 36px/40px sans-serif;
       color: #333333;
       text-align: center;
       padding-top: 60px;
+
+      @media (max-width: $sp-max-width) {
+        font: bold 32px/40px sans-serif;
+      }
     }
 
     .contact-description {
       text-align: center;
-      font: 20px/24px sans-serif;
+      font: 16px/20px sans-serif;
       color: #333333;
       margin: 30px 0 0;
     }

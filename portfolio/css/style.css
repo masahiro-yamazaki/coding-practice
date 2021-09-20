@@ -151,6 +151,10 @@ a {
   color: #333333;
 }
 
+.hamburgar-menu-sp div a:hover {
+  opacity: 0.5;
+}
+
 .hamburgar-menu-sp.show {
   -webkit-transform: translateY(180px);
           transform: translateY(180px);
@@ -361,15 +365,21 @@ a {
 }
 
 .contact .contact-inner .contact-title {
-  font: bold 40px/48px sans-serif;
+  font: bold 36px/40px sans-serif;
   color: #333333;
   text-align: center;
   padding-top: 60px;
 }
 
+@media (max-width: 767px) {
+  .contact .contact-inner .contact-title {
+    font: bold 32px/40px sans-serif;
+  }
+}
+
 .contact .contact-inner .contact-description {
   text-align: center;
-  font: 20px/24px sans-serif;
+  font: 16px/20px sans-serif;
   color: #333333;
   margin: 30px 0 0;
 }
