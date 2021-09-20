@@ -165,6 +165,10 @@ $pc-min-width: 768px;
         color: white;
         font: bold 48px/60px sans-serif;
         text-align: center;
+
+        @media (max-width: $sp-max-width) {
+          font: bold 36px/40px sans-serif;
+        }
       }
     }
   }
@@ -218,7 +222,7 @@ $pc-min-width: 768px;
       }
 
       p {
-        font: 20px/24px sans-serif;
+        font: 16px/20px sans-serif;
 
         &.profile-name {
           font: bold 28px/32px sans-serif;
