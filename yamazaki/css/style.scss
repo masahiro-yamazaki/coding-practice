@@ -174,6 +174,8 @@ $pc-min-width: 768px;
 .profile {
   min-height: 500px;
   background-color: white;
+  margin-top: -60px;
+  padding-top: 60px;
 
   .profile-title {
     font: bold 36px/40px sans-serif;
@@ -233,6 +235,8 @@ $pc-min-width: 768px;
 .works {
   min-height: 500px;
   background-color: $base-light-color;
+  margin-top: -60px;
+  padding-top: 60px;
   padding-bottom: 30px;
 
   .works-inner {
@@ -286,6 +290,8 @@ $pc-min-width: 768px;
 .service {
   min-height: 500px;
   background-color: white;
+  margin-top: -60px;
+  padding-top: 60px;
   padding-bottom: 30px;
 
   .service-inner {

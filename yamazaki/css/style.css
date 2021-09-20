@@ -186,6 +186,8 @@ a {
 .profile {
   min-height: 500px;
   background-color: white;
+  margin-top: -60px;
+  padding-top: 60px;
 }
 
 .profile .profile-title {
@@ -258,6 +260,8 @@ a {
 .works {
   min-height: 500px;
   background-color: #E6FFE9;
+  margin-top: -60px;
+  padding-top: 60px;
   padding-bottom: 30px;
 }
 
@@ -310,6 +314,8 @@ a {
 .service {
   min-height: 500px;
   background-color: white;
+  margin-top: -60px;
+  padding-top: 60px;
   padding-bottom: 30px;
 }
 
