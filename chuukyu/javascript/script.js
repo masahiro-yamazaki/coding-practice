@@ -32,31 +32,31 @@ $(function () {
   });
 
   // swiper
-  const mySwiper = new Swiper ('.swiper-container', {
-    slidesPerView: 1,
-    centeredSlides : true,
-    autoplay: {
-      delay: 5000,
-    },
-    loop: true,
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true,
-    },
-    breakpoints: {
-      // 768px以上の場合
-      768: {
-        slidesPerView: 2.5,
-        spaceBetween: 30
-      },
-      // 980px以上の場合
-      980: {
-        slidesPerView: 3.5,
-        spaceBetween: 56
-      },
-    }
-  });
+  // const mySwiper = new Swiper ('.swiper-container', {
+  //   slidesPerView: 1,
+  //   centeredSlides : true,
+  //   autoplay: {
+  //     delay: 5000,
+  //   },
+  //   loop: true,
+  //   pagination: {
+  //     el: '.swiper-pagination',
+  //     type: 'bullets',
+  //     clickable: true,
+  //   },
+  //   breakpoints: {
+  //     // 768px以上の場合
+  //     768: {
+  //       slidesPerView: 2.5,
+  //       spaceBetween: 30
+  //     },
+  //     // 980px以上の場合
+  //     980: {
+  //       slidesPerView: 3.5,
+  //       spaceBetween: 56
+  //     },
+  //   }
+  // });
 
   // プライバシーポリシー
   const $submitButton = $('.js-submit-button')

@@ -541,11 +541,29 @@ body {
   color: #3BA6C9;
 }
 
-.works .swiper-container .swiper-wrapper .swiper-slide {
+.works .work-content {
   width: 322px;
   height: 407px;
   border: 1px solid #DDDDDD;
   border-radius: 8px;
+  margin-right: 30px;
+}
+
+.works .work-content .work-img {
+  width: 322px;
+  height: 210px;
+}
+
+.works .work-content .work-title {
+  font: normal normal bold 16px/24px Noto Sans JP;
+  color: #333333;
+  padding: 19px 16px 30px 18px;
+}
+
+.works .work-content .work-description {
+  font: normal normal bold 14px/20px Noto Sans JP;
+  color: #333333;
+  padding-left: 18px;
 }
 
 .contact {
