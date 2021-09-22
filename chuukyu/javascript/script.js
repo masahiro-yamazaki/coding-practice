@@ -33,27 +33,18 @@ $(function () {
 
   // swiper
   const mySwiper = new Swiper ('.swiper-container', {
-    slidesPerView: 1,
-    centeredSlides : true,
+    slidesPerView: 'auto',
+    loop: true,
+    loopedSlides: 1,
+    centeredSlides: true,
     autoplay: {
       delay: 5000,
     },
-    loop: true,
     pagination: {
       el: '.swiper-pagination',
       type: 'bullets',
       clickable: true,
     },
-    breakpoints: {
-      // 768px以上の場合
-      768: {
-        slidesPerView: 3
-      },
-      // 980px以上の場合
-      980: {
-        slidesPerView: 4
-      },
-    }
   });
 
   // プライバシーポリシー

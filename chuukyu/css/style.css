@@ -542,6 +542,7 @@ body {
 }
 
 .works .work-content {
+  width: 322px;
   height: 407px;
   border: 1px solid #DDDDDD;
   border-radius: 8px;
@@ -549,7 +550,7 @@ body {
 }
 
 .works .work-content .work-img {
-  width: 100%;
+  width: 322px;
   height: 210px;
 }
 
