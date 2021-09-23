@@ -49,13 +49,6 @@ $(function () {
     },
   });
 
-  // プライバシーポリシー
-  const $submitButton = $('.js-submit-button')
-  $('.js-privacy-policy-check').on('click', function () {
-    const disabled = $submitButton.prop('disabled');
-    $submitButton.prop('disabled', !disabled);
-  });
-
   // ヘッダー固定表示時に、アンカーポイントがヘッダーと被らない対応
   $('a[href^="#"]').click(function() {
     const href= $(this).attr('href');
@@ -66,3 +59,13 @@ $(function () {
     return false;
   });
 });
+
+// プライバシーポリシー
+function checkIsSubmittable() {
+  const isPrivacyPolicyChecked = $('.js-privacy-policy-check').prop('checked');
+  const isNameInputted = $('.js-contact-name').val().trim().length;
+  const isEmailInputted = $('.js-contact-email').val().trim().length;
+  const isContentInputted = $('.js-contact-content').val().trim().length;
+  const isSubmittable = isPrivacyPolicyChecked && isNameInputted && isEmailInputted && isContentInputted;
+  $('.js-submit-button').prop('disabled', !isSubmittable);
+}

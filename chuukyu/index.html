@@ -254,19 +254,19 @@
         <label>お名前</label>
         <div class="required">必須</div>
       </div>
-      <input type="text" class="contact-text">
+      <input type="text" class="contact-text js-contact-name" onchange="checkIsSubmittable()">
       <div class="contact-item">
         <label>メールアドレス</label>
         <div class="required">必須</div>
       </div>
-      <input type="text" class="contact-text">
+      <input type="text" class="contact-text js-contact-email" onchange="checkIsSubmittable()">
       <div class="contact-item">
         <label>お問い合わせ内容</label>
         <div class="required">必須</div>
       </div>
-      <input type="textarea" class="contact-textarea">
+      <input type="textarea" class="contact-textarea js-contact-content" onchange="checkIsSubmittable()">
       <div class="privacy-policy">
-        <input type="checkbox" class="js-privacy-policy-check">
+        <input type="checkbox" class="js-privacy-policy-check" onclick="checkIsSubmittable()">
         <span>プライバシーポリシーに同意する</span>
       </div>
       <div class="submit">
