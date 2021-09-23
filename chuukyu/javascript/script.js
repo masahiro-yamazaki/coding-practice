@@ -27,6 +27,13 @@ $(function () {
     }
   });
 
+  // SPでハンバーガーのナビゲーションリンククリック後、ナビが閉じる対応
+  $('.js-sp-hamburgar-menu').click(function() {
+    $(this).attr('aria-expanded', false);
+    $('#js-glabal-menu').removeClass('show');
+    $('#js-glabal-menu').attr('aria-hidden', 'true');
+  });
+
   // アコーディオン
   $('.js-accordion-title').on('click', function () {
     $(this).next().toggleClass('is-open');
