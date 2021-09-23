@@ -1,4 +1,6 @@
 $(function () {
+  const headerHeight = 94;
+
   // AOS
   AOS.init({
     offset: 100,
@@ -52,5 +54,15 @@ $(function () {
   $('.js-privacy-policy-check').on('click', function () {
     const disabled = $submitButton.prop('disabled');
     $submitButton.prop('disabled', !disabled);
+  });
+
+  // ヘッダー固定表示時に、アンカーポイントがヘッダーと被らない対応
+  $('a[href^="#"]').click(function() {
+    const href= $(this).attr('href');
+    const target = $(href == '#' || href == '' ? 'html' : href);
+    const position = target.offset().top - headerHeight;
+    const speed = 500;
+    $('html, body').animate({ scrollTop: position }, speed, 'swing');
+    return false;
   });
 });
