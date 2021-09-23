@@ -50,6 +50,9 @@ body {
   a {
     font: normal normal bold 16px/24px Noto Sans JP;
     margin: 0 46px 0 0;
+    &:hover {
+      opacity: 0.5;
+    }
   }
 }
 
@@ -113,6 +116,9 @@ body {
     a {
       font: normal normal bold 24px/30px Noto Sans JP;
       color: #333333;
+      &:hover {
+        opacity: 0.5;
+      }
     }
   }
 }

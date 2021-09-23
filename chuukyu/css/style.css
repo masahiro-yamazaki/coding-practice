@@ -60,6 +60,10 @@ body {
   margin: 0 46px 0 0;
 }
 
+.header-menu a:hover {
+  opacity: 0.5;
+}
+
 .header-contact {
   display: inline-block;
   margin: 0 21px 0 0;
@@ -129,6 +133,10 @@ body {
 .hamburgar-menu-sp div a {
   font: normal normal bold 24px/30px Noto Sans JP;
   color: #333333;
+}
+
+.hamburgar-menu-sp div a:hover {
+  opacity: 0.5;
 }
 
 .hamburgar-menu-sp.show {
