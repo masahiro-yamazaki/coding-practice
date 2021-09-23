@@ -51,6 +51,12 @@ a {
   }
 }
 
+@media (max-width: 767px) {
+  .header .header-inner .header-title {
+    font: bold 14px/20px sans-serif;
+  }
+}
+
 .header .header-inner .header-menu {
   padding: 0 20px;
 }

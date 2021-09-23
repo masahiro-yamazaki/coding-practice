@@ -48,6 +48,9 @@ $pc-min-width: 768px;
       @media (min-width: $pc-min-width) {
         width: calc((100% - 200px) / 2);
       }
+      @media (max-width: $sp-max-width) {
+        font: bold 14px/20px sans-serif;
+      }
     }
 
     .header-menu {
