@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /* 色指定 */
 /* PC/SPのブレイクポイント指定 */
+/* ヘッダーのPC/SPのブレイクポイント指定 */
 body {
   font-family: 'Noto Sans JP', sans-serif;
   color: #333333;
@@ -46,12 +47,6 @@ body {
 .header-logo img {
   width: 47px;
   height: 47px;
-}
-
-@media (max-width: 576px) {
-  .header-logo span {
-    font: normal normal bold 20px/35px Noto Sans JP;
-  }
 }
 
 .header-menu {

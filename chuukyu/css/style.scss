@@ -5,6 +5,10 @@ $button-color: linear-gradient(90deg, #fa41cc 0%, #6020b0 100%);
 $sp-max-width: 768px;
 $pc-min-width: 767px;
 
+/* ヘッダーのPC/SPのブレイクポイント指定 */
+$sp-header-max-width: 992px;
+$pc-header-min-width: 991px;
+
 body {
   font-family: 'Noto Sans JP', sans-serif;
   color: #333333;
@@ -18,90 +22,74 @@ body {
   box-shadow: 0px 3px 6px #00000029;
   position: fixed;
   z-index: 100;
-}
 
-.header-inner {
-  max-width: 1022px;
-  width: 90%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  .header-inner {
+    max-width: 1022px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-.header-logo {
-  display: flex;
-  margin: 24px 0 23px 20px;
-
-  span {
-    font: normal normal bold 24px/35px Noto Sans JP;
-    padding: 4px 0 0px 16px;
-  }
-
-  img {
-    width: 47px;
-    height: 47px;
-  }
-}
-
-@media (max-width: 576px) {
-  .header-logo {
-    span {
-      font: normal normal bold 20px/35px Noto Sans JP;
+    .header-logo {
+      display: flex;
+      margin: 24px 0 23px 20px;
+      span {
+        font: normal normal bold 24px/35px Noto Sans JP;
+        padding: 4px 0 0px 16px;
+      }
+      img {
+        width: 47px;
+        height: 47px;
+      }
     }
-  }
-}
 
-.header-menu {
-  padding: 34px 0 36px;
-  a {
-    font: normal normal bold 16px/24px Noto Sans JP;
-    margin: 0 46px 0 0;
-    &:hover {
-      opacity: 0.5;
+    .header-menu {
+      padding: 34px 0 36px;
+      a {
+        font: normal normal bold 16px/24px Noto Sans JP;
+        margin: 0 46px 0 0;
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+      @media (max-width: $header-sp-max-width) {
+        display: none;
+      }
     }
-  }
-}
 
-.header-contact {
-  display: inline-block;
-  margin: 0 21px 0 0;
-  padding: 7px 0 10px;
-  width: 155px;
-  height: 37px;
-  text-align: center;
-  background: transparent $button-color 0% 0% no-repeat padding-box;
-  box-shadow: 0px 3px 6px #00000029;
-  border-radius: 10px;
-  span {
-    font: normal normal bold 14px/20px Noto Sans JP;
-    color: #ffffff;
-  }
-}
+    .header-contact {
+      display: inline-block;
+      margin: 0 21px 0 0;
+      padding: 7px 0 10px;
+      width: 155px;
+      height: 37px;
+      text-align: center;
+      background: transparent $button-color 0% 0% no-repeat padding-box;
+      box-shadow: 0px 3px 6px #00000029;
+      border-radius: 10px;
+      span {
+        font: normal normal bold 14px/20px Noto Sans JP;
+        color: #ffffff;
+      }
+      @media (max-width: $header-sp-max-width) {
+        display: none;
+      }
+    }
 
-.header-menu-button-sp {
-  cursor: pointer;
-  border: 3px solid rgba(0, 0, 0, 0.3);
-  border-radius: 3px;
-  margin: 0 21px 0 0;
-  i {
-    padding: 8px 12px;
-  }
-}
-
-@media (max-width: 991px) {
-  .header-menu {
-    display: none;
-  }
-  .header-contact {
-    display: none;
-  }
-}
-
-@media (min-width: 992px) {
-  .header-menu-button-sp {
-    display: none;
-  }
+    .header-menu-button-sp {
+      cursor: pointer;
+      border: 3px solid rgba(0, 0, 0, 0.3);
+      border-radius: 3px;
+      margin: 0 21px 0 0;
+      i {
+        padding: 8px 12px;
+      }
+      @media (min-width: $header-pc-min-width) {
+        display: none;
+      }
+    }
+  }  
 }
 
 .hamburgar-menu-sp {
