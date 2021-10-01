@@ -248,6 +248,9 @@ body {
     }
     @media (min-width: 768px) {
       display: flex;
+      &.feature2 {
+        flex-direction: row-reverse;
+      }
     }
   }
   .feature-img {
