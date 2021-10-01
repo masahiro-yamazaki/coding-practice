@@ -285,20 +285,34 @@ body {
 
 @media (min-width: 768px) {
   .features .feature-img {
-    max-width: 380px;
+    width: 50%;
   }
 }
 
-.features .feature-img img {
-  width: auto;
-  height: auto;
+.features .feature-img .feature1-img {
+  width: 380px;
+  height: 317px;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.features .feature-img .feature2-img {
+  width: 479px;
+  height: 329px;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.features .feature-img .feature3-img {
+  width: 400px;
+  height: 290px;
   max-width: 100%;
   max-height: 100%;
 }
 
 @media (min-width: 768px) {
-  .features .feature-descreption.feature1 {
-    margin: 0 auto;
+  .features .feature-descreption {
+    width: 50%;
   }
 }
 
