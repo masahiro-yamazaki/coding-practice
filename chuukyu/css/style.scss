@@ -1,6 +1,10 @@
 /* 色指定 */
 $button-color: linear-gradient(90deg, #fa41cc 0%, #6020b0 100%);
 
+/* PC/SPのブレイクポイント指定 */
+$sp-max-width: 768px;
+$pc-min-width: 767px;
+
 body {
   font-family: 'Noto Sans JP', sans-serif;
   color: #333333;
@@ -142,7 +146,7 @@ body {
   background-position: right -75px bottom 30px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $pc-min-width) {
   .main {
     height: 674px;
     background-position: right -75px bottom 87px;
@@ -156,7 +160,7 @@ body {
   padding: 131px 0 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $pc-min-width) {
   .main-inner {
     display: flex;
     justify-content: space-between;
@@ -202,7 +206,7 @@ body {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: $sp-max-width) {
   .main-image {
     margin: 10px 0 30px 0;
   }
@@ -250,37 +254,37 @@ body {
       width: 90%;
       margin: 62px auto 154px;
     }
-    @media (min-width: 768px) {
+    @media (min-width: $pc-min-width) {
       display: flex;
       &.feature2 {
         flex-direction: row-reverse;
       }
     }
     .feature-img {
-      @media (min-width: 768px) {
+      @media (min-width: $pc-min-width) {
         width: 50%;
       }
       .feature-img-block {
         &.feature1 {
-          @media (max-width: 767px) {
+          @media (max-width: $sp-max-width) {
             margin: 0 auto;
             max-width: 380px;
             width: 90%;
           }
         }
         &.feature2 {
-          @media (max-width: 767px) {
+          @media (max-width: $sp-max-width) {
             margin: 0 auto;
             max-width: 479px;
             width: 90%;
           }
-          @media (min-width: 768px) {
+          @media (min-width: $pc-min-width) {
             width: 479px;
             margin-left: auto;
           }
         }
         &.feature3 {
-          @media (max-width: 767px) {
+          @media (max-width: $sp-max-width) {
             margin: 0 auto;
             max-width: 400px;
             width: 90%;
@@ -291,7 +295,7 @@ body {
           height: 317px;
           max-width: 100%;
           max-height: 100%;
-          @media (min-width: 768px) {
+          @media (min-width: $pc-min-width) {
             padding-left: 37px;
           }
         }
@@ -310,10 +314,10 @@ body {
       }
     }
     .feature-descreption {
-      @media (min-width: 768px) {
+      @media (min-width: $pc-min-width) {
         width: 50%;
       }
-      @media (max-width: 767px) {
+      @media (max-width: $sp-max-width) {
         width: 90%;
         margin: 30px auto 0;
         &.feature1 {
@@ -332,13 +336,13 @@ body {
         }
         &.feature2 {
           margin: 2px 0 40px;
-          @media (min-width: 768px) {
+          @media (min-width: $pc-min-width) {
             padding-left: 86px; // (1098 - 926) / 2 px
           }
         }
         &.feature3 {
           margin: 20px 0 33px;
-          @media (min-width: 768px) {
+          @media (min-width: $pc-min-width) {
             width: 350px;
             margin-left: auto;
           }
@@ -349,12 +353,12 @@ body {
       }
       .feature-sub-descreption {
         &.feature2 {
-          @media (min-width: 768px) {
+          @media (min-width: $pc-min-width) {
             padding-left: 86px; // (1098 - 926) / 2 px
           }
         }
         &.feature3 {
-          @media (min-width: 768px) {
+          @media (min-width: $pc-min-width) {
             width: 350px;
             margin-left: auto;
           }
@@ -403,7 +407,7 @@ body {
       vertical-align: middle;
       color: #333333;
       font: normal normal bold 16px/24px Noto Sans JP;
-      @media (min-width: 577px) {
+      @media (min-width: $pc-min-width) {
         &:nth-child(1) {
           width: 290px;
           padding-left: 19px;
@@ -412,7 +416,7 @@ body {
           padding-left: 30.5px;
         }
       }
-      @media (max-width: 576px) {
+      @media (max-width: $sp-max-width) {
         display: block;
         text-align: center;
         padding: 34.5px 0;
@@ -510,16 +514,16 @@ body {
     max-width: 1127px;
     width: 90%;
 
-    @media (min-width: 768px) {
+    @media (min-width: $pc-min-width) {
       display: flex;
       justify-content: space-between;
     }
 
     .blog-article {
-      @media (min-width: 768px) {
+      @media (min-width: $pc-min-width) {
         width: 30%;
       }
-      @media (max-width: 767px) {
+      @media (max-width: $sp-max-width) {
         width: 100%;
         margin-top: 30px;
       }
