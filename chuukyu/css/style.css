@@ -328,35 +328,49 @@ body {
   }
 }
 
-.features .feature-main-descreption.feature1 {
+.features .feature-descreption .feature-main-descreption.feature1 {
   margin: 47px 0 45px;
 }
 
-.features .feature-main-descreption.feature2 {
+.features .feature-descreption .feature-main-descreption.feature2 {
   margin: 2px 0 40px;
 }
 
 @media (min-width: 768px) {
-  .features .feature-main-descreption.feature2 {
+  .features .feature-descreption .feature-main-descreption.feature2 {
     padding-left: 86px;
   }
 }
 
-.features .feature-main-descreption.feature3 {
+.features .feature-descreption .feature-main-descreption.feature3 {
   margin: 20px 0 33px;
 }
 
-.features .feature-main-descreption p {
+@media (min-width: 768px) {
+  .features .feature-descreption .feature-main-descreption.feature3 {
+    width: 350px;
+    margin-left: auto;
+  }
+}
+
+.features .feature-descreption .feature-main-descreption p {
   font: normal normal bold 24px/48px Noto Sans JP;
 }
 
 @media (min-width: 768px) {
-  .features .feature-sub-descreption.feature2 {
+  .features .feature-descreption .feature-sub-descreption.feature2 {
     padding-left: 86px;
   }
 }
 
-.features .feature-sub-descreption p {
+@media (min-width: 768px) {
+  .features .feature-descreption .feature-sub-descreption.feature3 {
+    width: 350px;
+    margin-left: auto;
+  }
+}
+
+.features .feature-descreption .feature-sub-descreption p {
   font: normal normal bold 16px/26px Noto Sans JP;
 }
 
