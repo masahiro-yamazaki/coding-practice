@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/* 色指定 */
 body {
   font-family: 'Noto Sans JP', sans-serif;
   color: #333333;
@@ -798,8 +800,8 @@ body {
   height: 37px;
   margin: 30px 0 0;
   color: #ffffff;
-  background: transparent -webkit-gradient(linear, left top, right top, from(#FA41CC), to(#6020B0)) 0% 0% no-repeat padding-box;
-  background: transparent linear-gradient(90deg, #FA41CC 0%, #6020B0 100%) 0% 0% no-repeat padding-box;
+  background: transparent -webkit-gradient(linear, left top, right top, from(#fa41cc), to(#6020b0)) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(90deg, #fa41cc 0%, #6020b0 100%) 0% 0% no-repeat padding-box;
   -webkit-box-shadow: 0px 3px 6px #00000029;
           box-shadow: 0px 3px 6px #00000029;
   border: none;
