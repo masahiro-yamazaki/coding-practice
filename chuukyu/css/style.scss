@@ -132,71 +132,62 @@ body {
   width: 100%;
   background: transparent url('../img/main-circle.svg') no-repeat;
   background-position: right -75px bottom 30px;
-}
-
-@media (min-width: $pc-min-width) {
-  .main {
+  @media (min-width: $pc-min-width) {
     height: 674px;
     background-position: right -75px bottom 87px;
   }
-}
 
-.main-inner {
-  max-width: 1022px;
-  width: 90%;
-  margin: 0 auto;
-  padding: 131px 0 0;
-}
-
-@media (min-width: $pc-min-width) {
   .main-inner {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
-.main-contents {
-  margin: 0 0 0 20px;
-  .main-contents-title {
-    margin: 28px 0 0 0;
-    p {
-      font: normal normal bold 32px/46px Noto Sans JP;
+    max-width: 1022px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 131px 0 0;
+    @media (min-width: $pc-min-width) {
+      display: flex;
+      justify-content: space-between;
     }
-  }
-  .main-contents-sub-title {
-    margin: 44px 0 0 0;
-    p {
-      font: normal normal bold 16px/24px Noto Sans JP;
+
+    .main-contents {
+      margin: 0 0 0 20px;
+      .main-contents-title {
+        margin: 28px 0 0 0;
+        p {
+          font: normal normal bold 32px/46px Noto Sans JP;
+        }
+      }
+      .main-contents-sub-title {
+        margin: 44px 0 0 0;
+        p {
+          font: normal normal bold 16px/24px Noto Sans JP;
+        }
+      }
+    
+      .main-contact {
+        display: block;
+        margin: 45px 0px 0 0;
+        padding: 7px 0 10px;
+        width: 155px;
+        height: 37px;
+        text-align: center;
+        background: transparent $button-color 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 6px #00000029;
+        border-radius: 10px;
+        span {
+          font: normal normal bold 14px/20px Noto Sans JP;
+          color: #ffffff;
+        }
+      }
     }
-  }
 
-  .main-contact {
-    display: block;
-    margin: 45px 0px 0 0;
-    padding: 7px 0 10px;
-    width: 155px;
-    height: 37px;
-    text-align: center;
-    background: transparent $button-color 0% 0% no-repeat padding-box;
-    box-shadow: 0px 3px 6px #00000029;
-    border-radius: 10px;
-    span {
-      font: normal normal bold 14px/20px Noto Sans JP;
-      color: #ffffff;
+    .main-image {
+      @media (max-width: $sp-max-width) {
+        margin: 10px 0 30px 0;
+      }
+      .manager-image img {
+        width: 518px;
+        height: 430px;
+      }
     }
-  }
-}
-
-.main-image {
-  .manager-image img {
-    width: 518px;
-    height: 430px;
-  }
-}
-
-@media (max-width: $sp-max-width) {
-  .main-image {
-    margin: 10px 0 30px 0;
   }
 }
 
