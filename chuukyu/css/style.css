@@ -323,7 +323,15 @@ body {
 }
 
 .features .feature-main-descreption.feature1 {
-  margin: 47px 0 45px 0;
+  margin: 47px 0 45px;
+}
+
+.features .feature-main-descreption.feature2 {
+  margin: 2px 0 40px;
+}
+
+.features .feature-main-descreption.feature3 {
+  margin: 20px 0 33px;
 }
 
 .features .feature-main-descreption p {

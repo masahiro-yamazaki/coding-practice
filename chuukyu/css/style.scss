@@ -283,7 +283,13 @@ body {
   }
   .feature-main-descreption {
     &.feature1 {
-      margin: 47px 0 45px 0;
+      margin: 47px 0 45px;
+    }
+    &.feature2 {
+      margin: 2px 0 40px;
+    }
+    &.feature3 {
+      margin: 20px 0 33px;
     }
     p {
       font: normal normal bold 24px/48px Noto Sans JP;
