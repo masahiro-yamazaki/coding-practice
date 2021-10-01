@@ -262,10 +262,29 @@ body {
     }
 
     .feature-img-block {
-      @media (min-width: 768px) {
-        &.feature2 {
+      &.feature1 {
+        @media (max-width: 767px) {
+          margin: 0 auto;
+          max-width: 380px;
+          width: 90%;
+        }
+      }
+      &.feature2 {
+        @media (max-width: 767px) {
+          margin: 0 auto;
+          max-width: 479px;
+          width: 90%;
+        }
+        @media (min-width: 768px) {
           width: 479px;
           margin-left: auto;
+        }
+      }
+      &.feature3 {
+        @media (max-width: 767px) {
+          margin: 0 auto;
+          max-width: 400px;
+          width: 90%;
         }
       }
       .feature1-img {

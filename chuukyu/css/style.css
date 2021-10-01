@@ -295,10 +295,34 @@ body {
   }
 }
 
+@media (max-width: 767px) {
+  .features .feature-img .feature-img-block.feature1 {
+    margin: 0 auto;
+    max-width: 380px;
+    width: 90%;
+  }
+}
+
+@media (max-width: 767px) {
+  .features .feature-img .feature-img-block.feature2 {
+    margin: 0 auto;
+    max-width: 479px;
+    width: 90%;
+  }
+}
+
 @media (min-width: 768px) {
   .features .feature-img .feature-img-block.feature2 {
     width: 479px;
     margin-left: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .features .feature-img .feature-img-block.feature3 {
+    margin: 0 auto;
+    max-width: 400px;
+    width: 90%;
   }
 }
 
