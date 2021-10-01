@@ -572,13 +572,23 @@ body {
     max-width: 908px;
     height: 689px;
     margin: 44px auto 0;
-    padding: 6px 62px 35px; // TODO: 35pxになるように調整
+    padding: 6px 62px 35px;
     background: #ffffff;
     box-shadow: 0px 3px 6px #00000029;
     text-align: left;
 
     .contact-item {
-      margin: 25px 0 36px;
+      &.name {
+        margin: 25px 0 25px;
+      }
+
+      &.email {
+        margin: 35px 0 19px;
+      }
+
+      &.content {
+        margin: 35px 0 36px;
+      }
 
       label {
         font: normal normal bold 16px/24px Noto Sans JP;
