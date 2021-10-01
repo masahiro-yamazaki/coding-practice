@@ -232,17 +232,20 @@ body {
   }
   .feature-detail {
     &.feature1 {
-      max-width: 1066px;
+      // 右端がヘッダー(1022px)より37px右にずれているため、左右に37pxずつ広げて1098pxを設定
+      max-width: 1098px;
       width: 90%;
       margin: 49px auto 86px;
     }
     &.feature2 {
-      max-width: 1066px;
+      // 右端がヘッダー(1022px)より37px右にずれているため、左右に37pxずつ広げて1098pxを設定
+      max-width: 1098px;
       width: 90%;
       margin: 59px auto 136px;
     }
     &.feature3 {
-      max-width: 1066px;
+      // 価格表の横幅と同じ926pxを設定
+      max-width: 926px;
       width: 90%;
       margin: 62px auto 154px;
     }
@@ -262,6 +265,9 @@ body {
       height: 317px;
       max-width: 100%;
       max-height: 100%;
+      @media (min-width: 768px) {
+        padding-left: 37px;
+      }
     }
     .feature2-img {
       width: 479px;
@@ -287,6 +293,9 @@ body {
     }
     &.feature2 {
       margin: 2px 0 40px;
+      @media (min-width: 768px) {
+        padding-left: 86px; // (1098 - 926) / 2 px
+      }
     }
     &.feature3 {
       margin: 20px 0 33px;
@@ -296,6 +305,11 @@ body {
     }
   }
   .feature-sub-descreption {
+    &.feature2 {
+      @media (min-width: 768px) {
+        padding-left: 86px; // (1098 - 926) / 2 px
+      }
+    }
     p {
       font: normal normal bold 16px/26px Noto Sans JP;
     }
