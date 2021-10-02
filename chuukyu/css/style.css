@@ -237,6 +237,13 @@ body {
   height: 430px;
 }
 
+@media (max-width: 767px) {
+  .main .main-inner .main-image .manager-image img {
+    width: 100%;
+    height: auto;
+  }
+}
+
 .features .features-title {
   text-align: center;
   margin: 158px 0 0;
