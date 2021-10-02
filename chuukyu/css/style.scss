@@ -6,6 +6,7 @@ $sp-max-width: 768px;
 $pc-min-width: 767px;
 
 /* ヘッダーのPC/SPのブレイクポイント指定 */
+$sp-header-logo-max-width: 576px;
 $sp-header-max-width: 992px;
 $pc-header-min-width: 991px;
 
@@ -37,6 +38,9 @@ body {
       span {
         font: normal normal bold 24px/35px Noto Sans JP;
         padding: 4px 0 0px 16px;
+        @media (max-width: $sp-header-logo-max-width) {
+          font: normal normal bold 16px/35px Noto Sans JP;
+        }
       }
       img {
         width: 47px;
@@ -53,7 +57,7 @@ body {
           opacity: 0.5;
         }
       }
-      @media (max-width: $header-sp-max-width) {
+      @media (max-width: $sp-header-max-width) {
         display: none;
       }
     }
@@ -72,7 +76,7 @@ body {
         font: normal normal bold 14px/20px Noto Sans JP;
         color: #ffffff;
       }
-      @media (max-width: $header-sp-max-width) {
+      @media (max-width: $sp-header-max-width) {
         display: none;
       }
     }
@@ -85,7 +89,7 @@ body {
       i {
         padding: 8px 12px;
       }
-      @media (min-width: $header-pc-min-width) {
+      @media (min-width: $pc-header-min-width) {
         display: none;
       }
     }
