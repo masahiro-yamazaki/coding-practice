@@ -805,6 +805,7 @@ body {
   height: 179px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  resize: none;
 }
 
 .contact .contact-content .privacy-policy {
