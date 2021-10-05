@@ -740,6 +740,7 @@ body {
 
 .contact .contact-content {
   max-width: 908px;
+  width: 90%;
   height: 689px;
   margin: 44px auto 0;
   padding: 6px 62px 35px;
