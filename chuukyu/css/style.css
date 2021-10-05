@@ -750,6 +750,12 @@ body {
   text-align: left;
 }
 
+@media (max-width: 767px) {
+  .contact .contact-content {
+    padding: 6px calc(8%) 35px;
+  }
+}
+
 .contact .contact-content .contact-item.name {
   margin: 25px 0 25px;
 }
