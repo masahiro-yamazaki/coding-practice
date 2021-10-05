@@ -184,6 +184,9 @@ body {
     }
 
     .main-image {
+      @media (min-width: $pc-min-width) {
+        width: 50%;
+      }
       @media (max-width: $sp-max-width) {
         margin: 10px 0 30px 0;
       }
