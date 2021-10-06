@@ -184,13 +184,17 @@ body {
     }
 
     .main-image {
+      @media (min-width: $pc-min-width) {
+        width: 50%;
+      }
       @media (max-width: $sp-max-width) {
         margin: 10px 0 30px 0;
       }
       .manager-image img {
         width: 518px;
         height: 430px;
-        @media (max-width: $sp-max-width) {
+        // iPad表示の場合に、画像が横幅をオーバーしないように修正
+        @media (max-width: $sp-header-max-width) {
           width: 100%;
           height: auto;
         }
@@ -253,25 +257,28 @@ body {
       }
       .feature-img-block {
         &.feature1 {
-          @media (max-width: $sp-max-width) {
+          // iPad表示の場合に、画像が横幅をオーバーしないように修正
+          @media (max-width: $sp-header-max-width) {
             margin: 0 auto;
             max-width: 380px;
             width: 90%;
           }
         }
         &.feature2 {
-          @media (max-width: $sp-max-width) {
+          // iPad表示の場合に、画像が横幅をオーバーしないように修正
+          @media (max-width: $sp-header-max-width) {
             margin: 0 auto;
             max-width: 479px;
             width: 90%;
           }
-          @media (min-width: $pc-min-width) {
+          @media (min-width: $pc-header-min-width) {
             width: 479px;
             margin-left: auto;
           }
         }
         &.feature3 {
-          @media (max-width: $sp-max-width) {
+          // iPad表示の場合に、画像が横幅をオーバーしないように修正
+          @media (max-width: $sp-header-max-width) {
             margin: 0 auto;
             max-width: 400px;
             width: 90%;
@@ -285,18 +292,30 @@ body {
           @media (min-width: $pc-min-width) {
             padding-left: 37px;
           }
+          // iPad表示の場合に、画像が横幅をオーバーしないように修正
+          @media (max-width: $sp-header-max-width) {
+            height: auto;
+          }
         }
         .feature2-img {
           width: 479px;
           height: 329px;
           max-width: 100%;
           max-height: 100%;
+          // iPad表示の場合に、画像が横幅をオーバーしないように修正
+          @media (max-width: $sp-header-max-width) {
+            height: auto;
+          }
         }
         .feature3-img {
           width: 400px;
           height: 290px;
           max-width: 100%;
           max-height: 100%;
+          // iPad表示の場合に、画像が横幅をオーバーしないように修正
+          @media (max-width: $sp-header-max-width) {
+            height: auto;
+          }
         }
       }
     }
@@ -519,6 +538,7 @@ body {
       margin: 0 auto;
       background: #ffffff;
       position: relative;
+      box-shadow: 0px 3px 6px #00000029;
 
       .blog-image {
         width: auto;
@@ -613,12 +633,16 @@ body {
 
   .contact-content {
     max-width: 908px;
+    width: 90%;
     height: 689px;
     margin: 44px auto 0;
     padding: 6px 62px 35px;
     background: #ffffff;
     box-shadow: 0px 3px 6px rgba(0,0,0,0.16);
     text-align: left;
+    @media (max-width: $sp-max-width) {
+      padding: 6px calc(8%) 35px;
+    }
 
     .contact-item {
       &.name {
@@ -665,6 +689,7 @@ body {
       width: 100%;
       height: 179px;
       box-sizing: border-box;
+      resize: none;
     }
 
     .privacy-policy {
