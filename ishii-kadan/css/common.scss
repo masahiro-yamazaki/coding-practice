@@ -123,14 +123,18 @@ body {
   background: #ffffff;
   position: fixed;
   z-index: 100;
-  display: none;
+  transform: scale(0);
+  transition: all 0.8s;
   &.show {
-    display: block;
+    transform: scale(1);
+    @media (min-width: $pc-min-width) {
+      display: none;
+    }
   }
   .hmenu-contents {
     position: absolute;
     top: calc(50% - 40px);
-    left: 50%;
+    left: calc(50% - 30px);
     div {
       text-align: center;
       font: normal normal 700 20px/20px YuMincho;
