@@ -112,6 +112,12 @@ body {
       &.header-hmenu-button--white {
         color: #ffffff;
       }
+      i {
+        display: none;
+        &.show {
+          display: block;
+        }
+      }
     }
   }
 }

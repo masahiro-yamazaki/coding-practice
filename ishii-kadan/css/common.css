@@ -139,6 +139,14 @@ body {
   color: #ffffff;
 }
 
+.header .header-reservation-hmenu .header-hmenu-button i {
+  display: none;
+}
+
+.header .header-reservation-hmenu .header-hmenu-button i.show {
+  display: block;
+}
+
 .hmenu {
   top: 80px;
   width: 100%;
