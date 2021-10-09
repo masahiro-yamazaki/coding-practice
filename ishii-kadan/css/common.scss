@@ -37,8 +37,8 @@ body {
         width: 200px;
         height: 40px;
         @media (max-width: $sp-max-width) {
-          width: 150px;
-          height: 30px;
+          width: 120px;
+          height: 24px;
         }
         &.header-image--scrolled {
           display: none;
@@ -80,15 +80,15 @@ body {
       vertical-align: top;
     }
     @media (max-width: $ipad-max-width) {
-      padding: 6px 18px;
-      width: 120px;
-      height: 30px;
+      padding: 4px 10px;
+      width: 100px;
+      height: 24px;
       img {
-        width: 18px;
-        height: 18px;
+        width: 16px;
+        height: 16px;
       }
       span {
-        font: normal normal 800 14px/18px YuMincho;
+        font: normal normal 800 14px/16px YuMincho;
         margin-left: 4px;
       }
     }

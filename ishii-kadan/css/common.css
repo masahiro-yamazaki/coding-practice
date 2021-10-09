@@ -46,8 +46,8 @@ body {
 
 @media (max-width: 519px) {
   .header .header-logo-menu .header-logo img {
-    width: 150px;
-    height: 30px;
+    width: 120px;
+    height: 24px;
   }
 }
 
@@ -96,16 +96,16 @@ body {
 
 @media (max-width: 959px) {
   .header .header-reservation {
-    padding: 6px 18px;
-    width: 120px;
-    height: 30px;
+    padding: 4px 10px;
+    width: 100px;
+    height: 24px;
   }
   .header .header-reservation img {
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
   }
   .header .header-reservation span {
-    font: normal normal 800 14px/18px YuMincho;
+    font: normal normal 800 14px/16px YuMincho;
     margin-left: 4px;
   }
 }
