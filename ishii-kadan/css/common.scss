@@ -127,4 +127,16 @@ body {
   &.show {
     display: block;
   }
+  .hmenu-contents {
+    position: absolute;
+    top: calc(50% - 40px);
+    left: 50%;
+    div {
+      text-align: center;
+      font: normal normal 700 20px/20px YuMincho;
+      &:not(:last-child) {
+        padding-bottom: 30px;
+      }
+    }
+  }
 }

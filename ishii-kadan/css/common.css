@@ -152,4 +152,19 @@ body {
 .hmenu.show {
   display: block;
 }
+
+.hmenu .hmenu-contents {
+  position: absolute;
+  top: calc(50% - 40px);
+  left: 50%;
+}
+
+.hmenu .hmenu-contents div {
+  text-align: center;
+  font: normal normal 700 20px/20px YuMincho;
+}
+
+.hmenu .hmenu-contents div:not(:last-child) {
+  padding-bottom: 30px;
+}
 /*# sourceMappingURL=common.css.map */
