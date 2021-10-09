@@ -195,4 +195,89 @@ body {
 .hmenu .hmenu-contents div:not(:last-child) {
   padding-bottom: 30px;
 }
+
+.modal-area {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 101;
+  visibility: hidden;
+}
+
+.modal-area.show {
+  visibility: visible;
+}
+
+.modal-area .modal-background {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: rgba(30, 30, 30, 0.7);
+}
+
+.modal-area .modal-background .modal-wrapper {
+  position: absolute;
+  top: calc(50% - 275px);
+  left: calc(50% - 300px);
+  width: 550px;
+  height: 600px;
+  background: #ffffff;
+  padding: 0 60px;
+}
+
+@media (max-width: 610px) {
+  .modal-area .modal-background .modal-wrapper {
+    width: 90%;
+    left: 5%;
+  }
+}
+
+.modal-area .modal-background .modal-wrapper .close-icon {
+  position: absolute;
+  top: 20px;
+  right: 22px;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.modal-area .modal-background .modal-wrapper .modal-title {
+  font: normal normal 500 20px/20px YuMincho;
+  text-align: center;
+  padding: 29px 0 30.5px;
+  border-bottom: 1px solid #E7E7E7;
+  margin-bottom: 35.5px;
+}
+
+.modal-area .modal-background .modal-wrapper .modal-content-title {
+  font: normal normal medium 16px/16px YuMincho;
+  margin-bottom: 14px;
+}
+
+.modal-area .modal-background .modal-wrapper .modal-content {
+  max-width: 429px;
+  width: 100%;
+  height: 32px;
+  border: 1px solid #E7E7E7;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 9px 10px;
+  margin-bottom: 14px;
+}
+
+.modal-area .modal-background .modal-wrapper .modal-content::-webkit-input-placeholder {
+  color: #797878;
+}
+
+.modal-area .modal-background .modal-wrapper .modal-content:-ms-input-placeholder {
+  color: #797878;
+}
+
+.modal-area .modal-background .modal-wrapper .modal-content::-ms-input-placeholder {
+  color: #797878;
+}
+
+.modal-area .modal-background .modal-wrapper .modal-content::placeholder {
+  color: #797878;
+}
 /*# sourceMappingURL=common.css.map */

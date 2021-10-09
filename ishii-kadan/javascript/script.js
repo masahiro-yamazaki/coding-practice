@@ -15,4 +15,20 @@ $(function () {
       $('.hmenu').attr('aria-hidden', 'true');
     }
   });
+
+  // 宿泊予約モーダル
+  $('.header-reservation').click(function () {
+    $('body').addClass('no-scroll');
+    $('.modal-area').addClass('show');
+  });
+
+  $('.modal-background').click(function () {
+    $('body').removeClass('no-scroll');
+    $('.modal-area').removeClass('show');
+  });
+
+  $('.close-icon').click(function () {
+    $('body').removeClass('no-scroll');
+    $('.modal-area').removeClass('show');
+  });
 });
