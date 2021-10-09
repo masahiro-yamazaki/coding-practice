@@ -66,9 +66,14 @@ body {
     background-color: #978F10;
     color: #ffffff;
     cursor: pointer;
+    img {
+      width: 22px;
+      height: 22px;
+    }
     span {
       font: normal normal 800 16px/22px YuMincho;
       margin-left: 6px;
+      vertical-align: top;
     }
   }
 }

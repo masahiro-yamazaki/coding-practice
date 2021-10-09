@@ -76,8 +76,14 @@ body {
   cursor: pointer;
 }
 
+.header .header-reservation img {
+  width: 22px;
+  height: 22px;
+}
+
 .header .header-reservation span {
   font: normal normal 800 16px/22px YuMincho;
   margin-left: 6px;
+  vertical-align: top;
 }
 /*# sourceMappingURL=common.css.map */
