@@ -104,8 +104,10 @@ body {
         display: none;
       }
       margin-right: 20px;
-      color: #ffffff;
       cursor: pointer;
+      &.header-hmenu-button--white {
+        color: #ffffff;
+      }
     }
   }
 }

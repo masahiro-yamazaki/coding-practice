@@ -122,7 +122,6 @@ body {
 
 .header .header-reservation-hmenu .header-hmenu-button {
   margin-right: 20px;
-  color: #ffffff;
   cursor: pointer;
 }
 
@@ -130,5 +129,9 @@ body {
   .header .header-reservation-hmenu .header-hmenu-button {
     display: none;
   }
+}
+
+.header .header-reservation-hmenu .header-hmenu-button.header-hmenu-button--white {
+  color: #ffffff;
 }
 /*# sourceMappingURL=common.css.map */

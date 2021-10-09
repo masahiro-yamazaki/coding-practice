@@ -30,9 +30,16 @@
         <a href=''>温泉</a>
       </div>
     </div>
-    <div class='header-reservation' href=''>
-      <img src='../img/calender@2x.png' alt='宿泊予約'>
-      <span>宿泊予約</span>
+    <div class='header-reservation-hmenu'>
+      <div class='header-reservation' href=''>
+        <img src='../img/calender@2x.png' alt='宿泊予約'>
+        <span>宿泊予約</span>
+      </div>
+      <!-- iPad/SPのみ表示 -->
+      <div id='js-hmenu-button' class='header-hmenu-button'
+            aria-controls='js-glabal-menu' aria-expanded='false' area-label='メニューを開閉する'>
+        <i class='fa fa-2x fa-bars'></i>
+      </div>
     </div>
   </header>
   <div style='background: yellow; height: 100px;'></div>
