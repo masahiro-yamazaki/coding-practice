@@ -73,7 +73,16 @@ body {
   color: #ffffff;
 }
 
-.header .header-reservation {
+.header .header-reservation-hmenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .header-reservation-hmenu .header-reservation {
   margin-right: 20px;
   padding: 16px 37px;
   width: 170px;
@@ -83,30 +92,43 @@ body {
   cursor: pointer;
 }
 
-.header .header-reservation img {
+.header .header-reservation-hmenu .header-reservation img {
   width: 22px;
   height: 22px;
 }
 
-.header .header-reservation span {
+.header .header-reservation-hmenu .header-reservation span {
   font: normal normal 800 16px/22px YuMincho;
   margin-left: 6px;
   vertical-align: top;
 }
 
 @media (max-width: 959px) {
-  .header .header-reservation {
+  .header .header-reservation-hmenu .header-reservation {
+    margin-right: 10px;
     padding: 4px 10px;
     width: 100px;
     height: 24px;
   }
-  .header .header-reservation img {
+  .header .header-reservation-hmenu .header-reservation img {
     width: 16px;
     height: 16px;
   }
-  .header .header-reservation span {
+  .header .header-reservation-hmenu .header-reservation span {
     font: normal normal 800 14px/16px YuMincho;
     margin-left: 4px;
+  }
+}
+
+.header .header-reservation-hmenu .header-hmenu-button {
+  margin-right: 20px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+@media (min-width: 960px) {
+  .header .header-reservation-hmenu .header-hmenu-button {
+    display: none;
   }
 }
 /*# sourceMappingURL=common.css.map */

@@ -62,35 +62,50 @@ body {
     }
   }
 
-  .header-reservation {
-    margin-right: 20px;
-    padding: 16px 37px;
-    width: 170px;
-    height: 54px;
-    background-color: #978F10;
-    color: #ffffff;
-    cursor: pointer;
-    img {
-      width: 22px;
-      height: 22px;
-    }
-    span {
-      font: normal normal 800 16px/22px YuMincho;
-      margin-left: 6px;
-      vertical-align: top;
-    }
-    @media (max-width: $ipad-max-width) {
-      padding: 4px 10px;
-      width: 100px;
-      height: 24px;
+  .header-reservation-hmenu {
+    display: flex;
+    align-items: center;
+
+    .header-reservation {
+      margin-right: 20px;
+      padding: 16px 37px;
+      width: 170px;
+      height: 54px;
+      background-color: #978F10;
+      color: #ffffff;
+      cursor: pointer;
       img {
-        width: 16px;
-        height: 16px;
+        width: 22px;
+        height: 22px;
       }
       span {
-        font: normal normal 800 14px/16px YuMincho;
-        margin-left: 4px;
+        font: normal normal 800 16px/22px YuMincho;
+        margin-left: 6px;
+        vertical-align: top;
       }
+      @media (max-width: $ipad-max-width) {
+        margin-right: 10px;
+        padding: 4px 10px;
+        width: 100px;
+        height: 24px;
+        img {
+          width: 16px;
+          height: 16px;
+        }
+        span {
+          font: normal normal 800 14px/16px YuMincho;
+          margin-left: 4px;
+        }
+      }
+    }
+
+    .header-hmenu-button {
+      @media (min-width: $pc-min-width) {
+        display: none;
+      }
+      margin-right: 20px;
+      color: #ffffff;
+      cursor: pointer;
     }
   }
 }
