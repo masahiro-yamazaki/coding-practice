@@ -126,6 +126,8 @@ body {
 
 .header .header-reservation-hmenu .header-hmenu-button {
   margin-right: 20px;
+  background-color: #ffffff;
+  border: none;
   cursor: pointer;
 }
 
@@ -135,16 +137,23 @@ body {
   }
 }
 
-.header .header-reservation-hmenu .header-hmenu-button.header-hmenu-button--white {
-  color: #ffffff;
-}
-
 .header .header-reservation-hmenu .header-hmenu-button i {
+  background-color: #ffffff;
+  color: #000000;
   display: none;
 }
 
 .header .header-reservation-hmenu .header-hmenu-button i.show {
   display: block;
+}
+
+.header .header-reservation-hmenu .header-hmenu-button.header-hmenu-button--white {
+  background-color: #000000;
+}
+
+.header .header-reservation-hmenu .header-hmenu-button.header-hmenu-button--white i {
+  background-color: #000000;
+  color: #ffffff;
 }
 
 .hmenu {

@@ -108,14 +108,22 @@ body {
         display: none;
       }
       margin-right: 20px;
+      background-color: #ffffff;
+      border: none;
       cursor: pointer;
-      &.header-hmenu-button--white {
-        color: #ffffff;
-      }
       i {
+        background-color: #ffffff;
+        color: #000000;
         display: none;
         &.show {
           display: block;
+        }
+      }
+      &.header-hmenu-button--white {
+          background-color: #000000;
+        i {
+          background-color: #000000;
+          color: #ffffff;
         }
       }
     }
