@@ -18,6 +18,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.header.header--black {
+  background-color: transparent;
 }
 
 .header .header-logo-menu {
@@ -38,6 +44,10 @@ body {
   height: 40px;
 }
 
+.header .header-logo-menu .header-logo img.header-image--scrolled {
+  display: none;
+}
+
 .header .header-logo-menu .header-menu {
   margin-left: 120px;
 }
@@ -49,8 +59,11 @@ body {
 }
 
 .header .header-logo-menu .header-menu a {
-  color: #000000;
   margin-right: 30px;
+}
+
+.header .header-logo-menu .header-menu.header-menu--white a {
+  color: #ffffff;
 }
 
 .header .header-reservation {

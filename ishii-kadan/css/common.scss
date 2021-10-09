@@ -22,6 +22,10 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: all .5s;
+  &.header--black {
+    background-color: transparent;
+  }
 
   .header-logo-menu {
     display: flex;
@@ -32,6 +36,9 @@ body {
       img {
         width: 200px;
         height: 40px;
+        &.header-image--scrolled {
+          display: none;
+        }
       }
     }
   
@@ -41,8 +48,12 @@ body {
         display: none;
       }
       a {
-        color: #000000;
         margin-right: 30px;
+      }
+      &.header-menu--white {
+        a {
+          color: #ffffff;
+        }
       }
     }
   }
