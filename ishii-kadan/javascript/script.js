@@ -15,4 +15,10 @@ $(function () {
       $('.header-hmenu-button').addClass('header-hmenu-button--white');
     }
   });
+
+  // ハンバーガーメニュー
+  $('#js-hmenu-button').click(function () {
+    $('body').toggleClass('no-scroll');
+    $('.hmenu').toggleClass('show');
+  });
 });

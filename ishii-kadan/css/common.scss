@@ -7,6 +7,10 @@ $ipad-max-width: 959px;
 $pc-min-width: 960px;
 
 // 共通で使用するCSS
+.no-scroll {
+  overflow: hidden;
+}
+
 body {
   font-family: 'Times New Roman', '游明朝', 'Yu Mincho', '游明朝体', 'YuMincho',
                'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', 'HiraMinProN-W3',
@@ -109,5 +113,18 @@ body {
         color: #ffffff;
       }
     }
+  }
+}
+
+.hmenu {
+  top: 80px;
+  width: 100%;
+  height: calc(100% - 80px);
+  background: #ffffff;
+  position: fixed;
+  z-index: 100;
+  display: none;
+  &.show {
+    display: block;
   }
 }
