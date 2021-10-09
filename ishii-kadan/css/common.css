@@ -1,6 +1,6 @@
+@charset "UTF-8";
 body {
-  font-family: 'Noto Sans JP', sans-serif;
-  color: #333333;
+  font-family: 'Times New Roman', '游明朝', 'Yu Mincho', '游明朝体', 'YuMincho', 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', 'HiraMinProN-W3', 'HGS明朝E', 'ＭＳ Ｐ明朝', 'MS PMincho', serif;
 }
 
 .header {
@@ -9,9 +9,6 @@ body {
   background-color: gray;
   position: fixed;
   z-index: 100;
-}
-
-.header .header-inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -21,11 +18,42 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 20px;
 }
 
-.header .header-inner .header-logo img {
+.header .header-logo-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .header-logo-menu .header-logo {
+  margin: 0 120px 0 20px;
+}
+
+.header .header-logo-menu .header-logo img {
   width: 200px;
   height: 40px;
+}
+
+.header .header-logo-menu .header-menu a {
+  color: #FFFFFF;
+  margin-right: 30px;
+}
+
+.header .header-reservation {
+  margin-right: 20px;
+  padding: 16px 37px;
+  width: 170px;
+  height: 54px;
+  background-color: #978F10;
+  color: #FFFFFF;
+}
+
+.header .header-reservation span {
+  font: normal normal 800 16px/22px YuMincho;
+  margin-left: 6px;
 }
 /*# sourceMappingURL=common.css.map */
