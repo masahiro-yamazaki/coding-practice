@@ -1,1 +1,12 @@
 // トップページ
+// ヘッダーのCSSはcommon.scssで定義されているので、トップページでの色を定義
+.header {
+  background-color: black;
+  .header-logo-menu {
+    .header-menu {
+      a {
+        color: #ffffff;
+      }
+    }
+  }
+}

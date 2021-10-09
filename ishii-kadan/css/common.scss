@@ -1,3 +1,11 @@
+// PC/iPad/SPのブレイクポイント指定
+// ブレイクポイント指定の理由は以下の記事を参照
+// https://hashimotosan.hatenablog.jp/entry/2020/12/06/182327
+$sp-max-width: 519px;
+$ipad-min-width: 520px;
+$ipad-max-width: 959px;
+$pc-min-width: 960px;
+
 // 共通で使用するCSS
 body {
   font-family: 'Times New Roman', '游明朝', 'Yu Mincho', '游明朝体', 'YuMincho',
@@ -8,7 +16,7 @@ body {
 .header {
   width: 100%;
   height: 80px;
-  background-color: gray;
+  background-color: #ffffff;
   position: fixed;
   z-index: 100;
   display: flex;
@@ -20,8 +28,7 @@ body {
     align-items: center;
 
     .header-logo {
-      margin: 0 120px 0 20px;
-
+      margin-left: 20px;
       img {
         width: 200px;
         height: 40px;
@@ -29,8 +36,12 @@ body {
     }
   
     .header-menu {
+      margin-left: 120px;
+      @media (max-width: $ipad-max-width) {
+        display: none;
+      }
       a {
-        color: #FFFFFF;
+        color: #000000;
         margin-right: 30px;
       }
     }
@@ -42,7 +53,8 @@ body {
     width: 170px;
     height: 54px;
     background-color: #978F10;
-    color: #FFFFFF;
+    color: #ffffff;
+    cursor: pointer;
     span {
       font: normal normal 800 16px/22px YuMincho;
       margin-left: 6px;
