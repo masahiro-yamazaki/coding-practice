@@ -36,6 +36,10 @@ body {
       img {
         width: 200px;
         height: 40px;
+        @media (max-width: $sp-max-width) {
+          width: 150px;
+          height: 30px;
+        }
         &.header-image--scrolled {
           display: none;
         }
@@ -74,6 +78,19 @@ body {
       font: normal normal 800 16px/22px YuMincho;
       margin-left: 6px;
       vertical-align: top;
+    }
+    @media (max-width: $ipad-max-width) {
+      padding: 6px 18px;
+      width: 120px;
+      height: 30px;
+      img {
+        width: 18px;
+        height: 18px;
+      }
+      span {
+        font: normal normal 800 14px/18px YuMincho;
+        margin-left: 4px;
+      }
     }
   }
 }
