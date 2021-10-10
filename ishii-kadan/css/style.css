@@ -2,15 +2,12 @@
   0% {
     opacity: 0;
   }
-  30% {
-    opacity: 1;
-  }
   35% {
     opacity: 1;
   }
-  50% {
+  60% {
     opacity: 0;
-    z-index: 9;
+    z-index: -1;
     -webkit-transform: scale(1.2);
             transform: scale(1.2);
   }
@@ -23,15 +20,12 @@
   0% {
     opacity: 0;
   }
-  30% {
-    opacity: 1;
-  }
   35% {
     opacity: 1;
   }
-  50% {
+  60% {
     opacity: 0;
-    z-index: 9;
+    z-index: -1;
     -webkit-transform: scale(1.2);
             transform: scale(1.2);
   }
@@ -43,16 +37,38 @@
 .first-view {
   width: 100%;
   height: 1079px;
+  position: relative;
 }
 
 .first-view .first-view-img {
   width: 100%;
   height: 1079px;
-  background-image: url("../img/mainbg01.png");
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -2;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  -webkit-animation: anime 24s 0s infinite;
-          animation: anime 24s 0s infinite;
+  -webkit-animation: anime 30s 0s infinite;
+          animation: anime 30s 0s infinite;
+}
+
+.first-view .first-view-img.img1 {
+  background-image: url("../img/mainbg01.jpg");
+  -webkit-animation-duration: 0s;
+          animation-duration: 0s;
+}
+
+.first-view .first-view-img.img2 {
+  background-image: url("../img/mainbg02.jpg");
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+}
+
+.first-view .first-view-img.img3 {
+  background-image: url("../img/mainbg03.jpg");
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
 }
 /*# sourceMappingURL=style.css.map */
