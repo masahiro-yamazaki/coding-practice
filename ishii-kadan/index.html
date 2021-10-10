@@ -56,15 +56,21 @@
   </div>
   <!-- モーダルエリア -->
   <section class='modal-area'>
-    <div class='modal-background'>
-      <div class='modal-wrapper'>
-        <img src='img/close@2x.png' class='close-icon'>
+    <div class='modal-background'></div>
+    <div class='modal-wrapper'>
+      <img src='img/close@2x.png' class='close-icon'>
+      <form class='modal-form'>
         <div class='modal-title'>宿泊予約</div>
         <div class='modal-content-title'>お名前</div>
         <input type='text' class='modal-content' placeholder='例：石井正悟'>
         <div class='modal-content-title'>メールアドレス</div>
         <input type='text' class='modal-content' placeholder='例：Example@example.com'>
-      </div>
+        <div class='modal-content-title'>ご希望プラン（空いているプランのみ表示されます）</div>
+        <input type='text' class='modal-content' placeholder='プランを選択してください'>
+        <div class='modal-content-title'>日時選択</div>
+        <input type='text' class='modal-content' placeholder='日時を選択してください'>
+        <button class='reservation-submit-button'>送信する</button>
+      </form>
     </div>
   </section>
   <!-- ファーストビュー -->

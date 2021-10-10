@@ -215,7 +215,7 @@ body {
   background: rgba(30, 30, 30, 0.7);
 }
 
-.modal-area .modal-background .modal-wrapper {
+.modal-area .modal-wrapper {
   position: absolute;
   top: calc(50% - 275px);
   left: calc(50% - 300px);
@@ -226,13 +226,13 @@ body {
 }
 
 @media (max-width: 610px) {
-  .modal-area .modal-background .modal-wrapper {
+  .modal-area .modal-wrapper {
     width: 90%;
     left: 5%;
   }
 }
 
-.modal-area .modal-background .modal-wrapper .close-icon {
+.modal-area .modal-wrapper .close-icon {
   position: absolute;
   top: 20px;
   right: 22px;
@@ -241,7 +241,7 @@ body {
   cursor: pointer;
 }
 
-.modal-area .modal-background .modal-wrapper .modal-title {
+.modal-area .modal-wrapper .modal-title {
   font: normal normal 500 20px/20px YuMincho;
   text-align: center;
   padding: 29px 0 30.5px;
@@ -249,12 +249,12 @@ body {
   margin-bottom: 35.5px;
 }
 
-.modal-area .modal-background .modal-wrapper .modal-content-title {
+.modal-area .modal-wrapper .modal-content-title {
   font: normal normal medium 16px/16px YuMincho;
   margin-bottom: 14px;
 }
 
-.modal-area .modal-background .modal-wrapper .modal-content {
+.modal-area .modal-wrapper .modal-content {
   max-width: 429px;
   width: 100%;
   height: 32px;
@@ -265,19 +265,32 @@ body {
   margin-bottom: 14px;
 }
 
-.modal-area .modal-background .modal-wrapper .modal-content::-webkit-input-placeholder {
+.modal-area .modal-wrapper .modal-content::-webkit-input-placeholder {
   color: #797878;
 }
 
-.modal-area .modal-background .modal-wrapper .modal-content:-ms-input-placeholder {
+.modal-area .modal-wrapper .modal-content:-ms-input-placeholder {
   color: #797878;
 }
 
-.modal-area .modal-background .modal-wrapper .modal-content::-ms-input-placeholder {
+.modal-area .modal-wrapper .modal-content::-ms-input-placeholder {
   color: #797878;
 }
 
-.modal-area .modal-background .modal-wrapper .modal-content::placeholder {
+.modal-area .modal-wrapper .modal-content::placeholder {
   color: #797878;
+}
+
+.modal-area .modal-wrapper .reservation-submit-button {
+  margin: 50px auto 90px;
+  width: 198px;
+  height: 42px;
+  display: block;
+  background: #ffffff;
+  border: 1px solid #707070;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font: normal normal 500 16px/16px YuMincho;
+  cursor: pointer;
 }
 /*# sourceMappingURL=common.css.map */
