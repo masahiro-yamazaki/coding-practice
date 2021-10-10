@@ -215,7 +215,17 @@ body {
       padding: 9px 10px;
       margin-bottom: 14px;
       &::placeholder {
-        color: #797878;;
+        color: #6b6767;
+      }
+      &.modal-content-plan-select {
+        appearance: none;
+        padding: 8px 10px;
+        &.default-color {
+          color: #6b6767;
+        }
+        option:first-child {
+          display: none;
+        }
       }
     }
     .reservation-submit-button {

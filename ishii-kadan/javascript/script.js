@@ -31,4 +31,9 @@ $(function () {
     $('body').removeClass('no-scroll');
     $('.modal-area').removeClass('show');
   });
+
+  // プランが選択された場合、色を変更
+  $('.modal-content-plan-select').click(function () {
+    $(this).removeClass('default-color');
+  });
 });

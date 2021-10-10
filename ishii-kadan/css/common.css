@@ -266,19 +266,34 @@ body {
 }
 
 .modal-area .modal-wrapper .modal-content::-webkit-input-placeholder {
-  color: #797878;
+  color: #6b6767;
 }
 
 .modal-area .modal-wrapper .modal-content:-ms-input-placeholder {
-  color: #797878;
+  color: #6b6767;
 }
 
 .modal-area .modal-wrapper .modal-content::-ms-input-placeholder {
-  color: #797878;
+  color: #6b6767;
 }
 
 .modal-area .modal-wrapper .modal-content::placeholder {
-  color: #797878;
+  color: #6b6767;
+}
+
+.modal-area .modal-wrapper .modal-content.modal-content-plan-select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: 8px 10px;
+}
+
+.modal-area .modal-wrapper .modal-content.modal-content-plan-select.default-color {
+  color: #6b6767;
+}
+
+.modal-area .modal-wrapper .modal-content.modal-content-plan-select option:first-child {
+  display: none;
 }
 
 .modal-area .modal-wrapper .reservation-submit-button {
