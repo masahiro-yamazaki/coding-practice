@@ -36,4 +36,10 @@ $(function () {
   $('.modal-content-plan-select').click(function () {
     $(this).removeClass('default-color');
   });
+
+  // 日付選択
+  flatpickr('#js-datepicker', {
+    mode: 'range',
+    minDate: 'today'
+  });
 });

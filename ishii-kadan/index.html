@@ -14,7 +14,7 @@
   <link href='https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&amp;display=swap' rel='stylesheet'>
   <link href='https://use.fontawesome.com/releases/v5.6.1/css/all.css' rel='stylesheet'>
   <link href='https://unpkg.com/aos@2.3.1/dist/aos.css' rel='stylesheet'>
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.css'>
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css'>
 </head>
 
 <body>
@@ -73,7 +73,8 @@
           <option>絶景貸切露天と個室会席を満喫できるファミリープラン</option>
         </select>
         <div class='modal-content-title'>日時選択</div>
-        <input type='text' class='modal-content' placeholder='日時を選択してください'>
+        <input type='text' name='datepicker' id='js-datepicker'
+               class='modal-content' placeholder='日時を選択してください'>
         <button class='reservation-submit-button'>送信する</button>
       </form>
     </div>
@@ -89,6 +90,7 @@
   </div>
 
   <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+  <script src='https://cdn.jsdelivr.net/npm/flatpickr'></script>
   <script src='javascript/script.js'></script>
   <script src='javascript/top_script.js'></script>
 </body>
