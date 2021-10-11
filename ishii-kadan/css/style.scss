@@ -1,10 +1,14 @@
 // トップページ
 // 下層ページと共通するCSSはcommon.scssで定義
+// https://www.esz.co.jp/blog/185.html
 @keyframes anime {
   0% {
     opacity: 0;
   }
-  35% {
+  16% {
+    opacity: 1;
+  }
+  34% {
     opacity: 1;
   }
   60% {
@@ -21,6 +25,7 @@
   width: 100%;
   height: 1079px;
   position: relative;
+  overflow: hidden;
 
   .first-view-img {
     width: 100%;
@@ -29,21 +34,21 @@
     top: 0px;
     left: 0px;
     z-index: -2;
+    opacity: 0;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    animation: anime 30s 0s infinite;
+    animation: anime 21s 0s infinite;
     &.img1 {
       background-image: url('../img/mainbg01.jpg');
-      animation-duration: 0s;
     }
     &.img2 {
       background-image: url('../img/mainbg02.jpg');
-      animation-duration: 10s;
+      animation-duration: 8s;
     }
     &.img3 {
       background-image: url('../img/mainbg03.jpg');
-      animation-duration: 20s;
+      animation-duration: 16s;
     }
   }
 }
