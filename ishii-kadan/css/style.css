@@ -5,7 +5,7 @@
   16% {
     opacity: 1;
   }
-  34% {
+  33% {
     opacity: 1;
   }
   60% {
@@ -26,7 +26,7 @@
   16% {
     opacity: 1;
   }
-  34% {
+  33% {
     opacity: 1;
   }
   60% {
@@ -58,23 +58,17 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  -webkit-animation: anime 21s 0s infinite;
-          animation: anime 21s 0s infinite;
+  -webkit-animation: anime 30s 0s infinite;
+          animation: anime 30s 0s infinite;
 }
 
-.first-view .first-view-img.img1 {
-  background-image: url("../img/mainbg01.jpg");
+.first-view .first-view-img:nth-child(2) {
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
 }
 
-.first-view .first-view-img.img2 {
-  background-image: url("../img/mainbg02.jpg");
-  -webkit-animation-duration: 8s;
-          animation-duration: 8s;
-}
-
-.first-view .first-view-img.img3 {
-  background-image: url("../img/mainbg03.jpg");
-  -webkit-animation-duration: 16s;
-          animation-duration: 16s;
+.first-view .first-view-img:nth-child(3) {
+  -webkit-animation-delay: 20s;
+          animation-delay: 20s;
 }
 /*# sourceMappingURL=style.css.map */
