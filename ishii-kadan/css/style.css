@@ -71,4 +71,23 @@
   -webkit-animation-delay: 20s;
           animation-delay: 20s;
 }
+
+.first-view .first-view-copy {
+  position: absolute;
+  top: 362px;
+  right: 25%;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+}
+
+.first-view .first-view-copy p {
+  font: normal normal 800 34px/42px YuMincho;
+  color: #FFFFFF;
+  letter-spacing: 7px;
+}
+
+.first-view .first-view-copy p:first-child {
+  margin-left: 51px;
+}
 /*# sourceMappingURL=style.css.map */
