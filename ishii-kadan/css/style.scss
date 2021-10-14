@@ -88,4 +88,36 @@ $pc-min-width: 960px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  .preface-inner {
+    max-width: 1180px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+    .preface-title {
+      font: normal normal 500 28px/28px YuMincho;
+      letter-spacing: 14px;
+      writing-mode: vertical-rl;
+      margin: 64px 101px 0 118px;
+      p:nth-child(2) {
+        margin: 85px 33px 0 0;
+      }
+    }
+    .preface-content {
+      font: normal normal 500 16px/16px YuMincho;
+      letter-spacing: 6px;
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+      margin: 149px 0 0 118px;
+      p:not(:first-child) {
+        margin: 0 22px 0 0;
+      }
+    }
+    .preface-name {
+      font: normal normal 500 22px/22px YuMincho;
+      letter-spacing: 10px;
+      writing-mode: vertical-rl;
+      margin-top: 443px;
+    }
+  }
 }
