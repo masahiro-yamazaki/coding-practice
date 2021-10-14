@@ -81,13 +81,28 @@
           writing-mode: vertical-rl;
 }
 
+@media (max-width: 959px) {
+  .first-view .first-view-copy {
+    right: 20%;
+  }
+}
+
 .first-view .first-view-copy p {
-  font: normal normal 800 34px/42px YuMincho;
+  font: normal normal 800 34px/34px YuMincho;
   color: #FFFFFF;
-  letter-spacing: 7px;
+  letter-spacing: 8px;
 }
 
 .first-view .first-view-copy p:first-child {
   margin-left: 51px;
+}
+
+@media (max-width: 519px) {
+  .first-view .first-view-copy p {
+    font: normal normal 800 28px/28px YuMincho;
+  }
+  .first-view .first-view-copy p:first-child {
+    margin-left: 30px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,5 +1,14 @@
 // トップページ
 // 下層ページと共通するCSSはcommon.scssで定義
+
+// PC/iPad/SPのブレイクポイント指定
+// ブレイクポイント指定の理由は以下の記事を参照
+// https://hashimotosan.hatenablog.jp/entry/2020/12/06/182327
+$sp-max-width: 519px;
+$ipad-min-width: 520px;
+$ipad-max-width: 959px;
+$pc-min-width: 960px;
+
 // https://www.esz.co.jp/blog/185.html
 @keyframes anime {
   0% {
@@ -52,12 +61,21 @@
     top: 362px;
     right: 25%;
     writing-mode: vertical-rl;
+    @media (max-width: $ipad-max-width) {
+      right: 20%;
+    }
     p {
-      font: normal normal 800 34px/42px YuMincho;
+      font: normal normal 800 34px/34px YuMincho;
       color: #FFFFFF;
-      letter-spacing: 7px;
+      letter-spacing: 8px;
       &:first-child {
         margin-left: 51px;
+      }
+      @media (max-width: $sp-max-width) {
+        font: normal normal 800 28px/28px YuMincho;
+        &:first-child {
+          margin-left: 30px;
+        }
       }
     }
   }
