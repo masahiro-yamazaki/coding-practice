@@ -137,8 +137,55 @@
   margin: 64px 101px 0 118px;
 }
 
+@media (max-width: 1180px) {
+  .preface .preface-inner .preface-title {
+    margin-left: 90px;
+  }
+}
+
+@media (max-width: 959px) {
+  .preface .preface-inner .preface-title {
+    margin-left: 70px;
+    margin-right: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .preface .preface-inner .preface-title {
+    margin-left: 50px;
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 519px) {
+  .preface .preface-inner .preface-title {
+    font-size: 20px;
+    line-height: 20px;
+    margin-left: 30px;
+    margin-right: 10px;
+  }
+}
+
 .preface .preface-inner .preface-title p:nth-child(2) {
   margin: 85px 33px 0 0;
+}
+
+@media (max-width: 959px) {
+  .preface .preface-inner .preface-title p:nth-child(2) {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .preface .preface-inner .preface-title p:nth-child(2) {
+    margin-right: 12px;
+  }
+}
+
+@media (max-width: 519px) {
+  .preface .preface-inner .preface-title p:nth-child(2) {
+    margin-right: 4px;
+  }
 }
 
 .preface .preface-inner .preface-content {
@@ -151,8 +198,52 @@
   margin: 149px 0 0 118px;
 }
 
+@media (max-width: 1180px) {
+  .preface .preface-inner .preface-content {
+    margin-left: 90px;
+  }
+}
+
+@media (max-width: 959px) {
+  .preface .preface-inner .preface-content {
+    margin-left: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .preface .preface-inner .preface-content {
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 519px) {
+  .preface .preface-inner .preface-content {
+    font-size: 12px;
+    line-height: 12px;
+    margin-left: 30px;
+  }
+}
+
 .preface .preface-inner .preface-content p:not(:first-child) {
   margin: 0 22px 0 0;
+}
+
+@media (max-width: 959px) {
+  .preface .preface-inner .preface-content p:not(:first-child) {
+    margin-right: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .preface .preface-inner .preface-content p:not(:first-child) {
+    margin-right: 8px;
+  }
+}
+
+@media (max-width: 519px) {
+  .preface .preface-inner .preface-content p:not(:first-child) {
+    margin-right: 4px;
+  }
 }
 
 .preface .preface-inner .preface-name {
@@ -162,5 +253,11 @@
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
   margin-top: 443px;
+}
+
+@media (max-width: 519px) {
+  .preface .preface-inner .preface-name {
+    font-size: 18px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

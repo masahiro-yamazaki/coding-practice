@@ -99,8 +99,34 @@ $pc-min-width: 960px;
       letter-spacing: 14px;
       writing-mode: vertical-rl;
       margin: 64px 101px 0 118px;
+      @media (max-width: 1180px) {
+        margin-left: 90px;
+      }
+      @media (max-width: $ipad-max-width) {
+        margin-left: 70px;
+        margin-right: 40px;
+      }
+      @media (max-width: 768px) {
+        margin-left: 50px;
+        margin-right: 20px;
+      }
+      @media (max-width: $sp-max-width) {
+        font-size: 20px;
+        line-height: 20px;
+        margin-left: 30px;
+        margin-right: 10px;
+      }
       p:nth-child(2) {
         margin: 85px 33px 0 0;
+        @media (max-width: $ipad-max-width) {
+          margin-right: 20px;
+        }
+        @media (max-width: 768px) {
+          margin-right: 12px;
+        }
+        @media (max-width: $sp-max-width) {
+          margin-right: 4px;
+        }  
       }
     }
     .preface-content {
@@ -109,8 +135,31 @@ $pc-min-width: 960px;
       writing-mode: vertical-rl;
       text-orientation: upright;
       margin: 149px 0 0 118px;
+      @media (max-width: 1180px) {
+        margin-left: 90px;
+      }
+      @media (max-width: $ipad-max-width) {
+        margin-left: 70px;
+      }
+      @media (max-width: 768px) {
+        margin-left: 50px;
+      }
+      @media (max-width: $sp-max-width) {
+        font-size: 12px;
+        line-height: 12px;
+        margin-left: 30px;
+      }
       p:not(:first-child) {
         margin: 0 22px 0 0;
+        @media (max-width: $ipad-max-width) {
+          margin-right: 12px;
+        }
+        @media (max-width: 768px) {
+          margin-right: 8px;
+        }
+        @media (max-width: $sp-max-width) {
+          margin-right: 4px;
+        }
       }
     }
     .preface-name {
@@ -118,6 +167,9 @@ $pc-min-width: 960px;
       letter-spacing: 10px;
       writing-mode: vertical-rl;
       margin-top: 443px;
+      @media (max-width: $sp-max-width) {
+        font-size: 18px;
+      }
     }
   }
 }
