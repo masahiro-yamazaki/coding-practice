@@ -452,4 +452,83 @@
   margin-top: 75px;
   cursor: pointer;
 }
+
+.hot-spring {
+  margin-top: 122px;
+  min-height: 545px;
+}
+
+@media (min-width: 960px) {
+  .hot-spring {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width: 960px) {
+  .hot-spring .hot-spring-img-block {
+    width: 55%;
+  }
+}
+
+.hot-spring .hot-spring-img-block .hot-spring-img {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 960px) {
+  .hot-spring .hot-spring-about {
+    width: 45%;
+    padding: 0 5%;
+  }
+}
+
+@media (max-width: 959px) {
+  .hot-spring .hot-spring-about {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+.hot-spring .hot-spring-about .hot-spring-title {
+  margin-top: 22px;
+}
+
+.hot-spring .hot-spring-about .hot-spring-title p {
+  font: normal normal 500 36px/62px YuMincho;
+}
+
+@media (max-width: 959px) {
+  .hot-spring .hot-spring-about .hot-spring-title p {
+    font: normal normal 500 30px/48px YuMincho;
+  }
+}
+
+@media (max-width: 519px) {
+  .hot-spring .hot-spring-about .hot-spring-title p {
+    font: normal normal 500 24px/40px YuMincho;
+  }
+}
+
+.hot-spring .hot-spring-about .hot-spring-content {
+  margin-top: 75px;
+}
+
+.hot-spring .hot-spring-about .hot-spring-content p {
+  font: normal normal 500 16px/32px YuMincho;
+}
+
+.hot-spring .hot-spring-about .hot-spring-button {
+  width: 200px;
+  height: 56px;
+  background: #ffffff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #707070;
+  font: normal normal 500 16px/32px YuMincho;
+  margin-top: 75px;
+  cursor: pointer;
+}
 /*# sourceMappingURL=style.css.map */

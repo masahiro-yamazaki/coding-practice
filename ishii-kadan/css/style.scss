@@ -251,7 +251,7 @@ $pc-min-width: 960px;
 }
 
 // 料理について
-.food{
+.food {
   margin-top: 122px;
   min-height: 545px;
   @media (min-width: $pc-min-width) {
@@ -296,6 +296,63 @@ $pc-min-width: 960px;
       }
     }
     .food-button {
+      width: 200px;
+      height: 56px;
+      background: #ffffff;
+      box-sizing: border-box;
+      border: 1px solid #707070;
+      font: normal normal 500 16px/32px YuMincho;
+      margin-top: 75px;
+      cursor: pointer;
+    }
+  }
+}
+
+// 温泉について
+.hot-spring {
+  margin-top: 122px;
+  min-height: 545px;
+  @media (min-width: $pc-min-width) {
+    display: flex;
+  }
+  .hot-spring-img-block {
+    @media (min-width: $pc-min-width) {
+      width: 55%;
+    }
+    .hot-spring-img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .hot-spring-about {
+    @media (min-width: $pc-min-width) {
+      width: 45%;
+      padding: 0 5%;
+    }
+    @media (max-width: $ipad-max-width) {
+      width: 90%;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .hot-spring-title {
+      margin-top: 22px;
+      p {
+        font: normal normal 500 36px/62px YuMincho;
+        @media (max-width: $ipad-max-width) {
+          font: normal normal 500 30px/48px YuMincho;
+        }
+        @media (max-width: $sp-max-width) {
+          font: normal normal 500 24px/40px YuMincho;
+        }
+      }
+    }
+    .hot-spring-content {
+      margin-top: 75px;
+      p {
+        font: normal normal 500 16px/32px YuMincho;
+      }
+    }
+    .hot-spring-button {
       width: 200px;
       height: 56px;
       background: #ffffff;
