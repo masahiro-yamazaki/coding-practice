@@ -27,4 +27,10 @@ $(function () {
   });
 
   // お知らせのタブクリック時に表示内容を変更
+  $('.info-tabs > p').click(function() {
+    const tabIndex = $('.info-tabs p').index(this);
+    $('.info-tabs > p').removeClass('active');
+    $(this).addClass('active');
+    $('.info-contents > div').removeClass('show').eq(tabIndex).addClass('show');
+  });
 });

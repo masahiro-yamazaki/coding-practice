@@ -636,7 +636,24 @@
           justify-content: center;
 }
 
+.info .info-inner .info-tabs p {
+  cursor: pointer;
+}
+
 .info .info-inner .info-tabs p:not(:last-child) {
   margin-right: 53px;
+}
+
+.info .info-inner .info-tabs p.active {
+  border-bottom: 1px solid #707070;
+  cursor: auto;
+}
+
+.info .info-inner .info-contents div {
+  display: none;
+}
+
+.info .info-inner .info-contents div.show {
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */
