@@ -195,7 +195,8 @@ $pc-min-width: 960px;
 
 // お部屋について
 .room {
-  padding-top: 100px;
+  margin-top: 106px;
+  min-height: 545px;
   @media (min-width: $pc-min-width) {
     display: flex;
   }
@@ -209,7 +210,6 @@ $pc-min-width: 960px;
     }
   }
   .room-about {
-    min-height: 651px;
     @media (min-width: $pc-min-width) {
       width: 45%;
       padding: 0 5%;
@@ -238,6 +238,64 @@ $pc-min-width: 960px;
       }
     }
     .room-button {
+      width: 200px;
+      height: 56px;
+      background: #ffffff;
+      box-sizing: border-box;
+      border: 1px solid #707070;
+      font: normal normal 500 16px/32px YuMincho;
+      margin-top: 75px;
+      cursor: pointer;
+    }
+  }
+}
+
+// 料理について
+.food{
+  margin-top: 122px;
+  min-height: 545px;
+  @media (min-width: $pc-min-width) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .food-img-block {
+    @media (min-width: $pc-min-width) {
+      width: 55%;
+    }
+    .food-img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .food-about {
+    @media (min-width: $pc-min-width) {
+      width: 45%;
+      padding: 0 5%;
+    }
+    @media (max-width: $ipad-max-width) {
+      width: 90%;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .food-title {
+      margin-top: 22px;
+      p {
+        font: normal normal 500 36px/62px YuMincho;
+        @media (max-width: $ipad-max-width) {
+          font: normal normal 500 30px/48px YuMincho;
+        }
+        @media (max-width: $sp-max-width) {
+          font: normal normal 500 24px/40px YuMincho;
+        }
+      }
+    }
+    .food-content {
+      margin-top: 75px;
+      p {
+        font: normal normal 500 16px/32px YuMincho;
+      }
+    }
+    .food-button {
       width: 200px;
       height: 56px;
       background: #ffffff;
