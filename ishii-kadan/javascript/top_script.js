@@ -25,4 +25,6 @@ $(function () {
       $('.header-hmenu-button').addClass('header-hmenu-button--white');
     }
   });
+
+  // お知らせのタブクリック時に表示内容を変更
 });
