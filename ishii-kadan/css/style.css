@@ -134,7 +134,7 @@
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
-  margin: 64px 101px 0 118px;
+  margin: 149px 101px 0 118px;
 }
 
 @media (max-width: 1180px) {
@@ -166,8 +166,8 @@
   }
 }
 
-.preface .preface-inner .preface-title p:nth-child(2) {
-  margin: 85px 33px 0 0;
+.preface .preface-inner .preface-title p:first-child {
+  text-indent: -3em;
 }
 
 @media (max-width: 959px) {

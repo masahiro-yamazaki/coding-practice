@@ -98,7 +98,7 @@ $pc-min-width: 960px;
       font: normal normal 500 28px/28px YuMincho;
       letter-spacing: 14px;
       writing-mode: vertical-rl;
-      margin: 64px 101px 0 118px;
+      margin: 149px 101px 0 118px;
       @media (max-width: 1180px) {
         margin-left: 90px;
       }
@@ -116,8 +116,10 @@ $pc-min-width: 960px;
         margin-left: 30px;
         margin-right: 10px;
       }
+      p:first-child {
+        text-indent: -3em;
+      }
       p:nth-child(2) {
-        margin: 85px 33px 0 0;
         @media (max-width: $ipad-max-width) {
           margin-right: 20px;
         }
