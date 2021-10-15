@@ -531,4 +531,77 @@
   margin-top: 75px;
   cursor: pointer;
 }
+
+.plan {
+  width: 100%;
+  min-height: 775px;
+  background-image: url("../img/bg02.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.plan .plan-inner {
+  width: 90%;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.plan .plan-inner .plan-icon {
+  padding-top: 60px;
+  text-align: center;
+}
+
+.plan .plan-inner .plan-title {
+  font: normal normal 500 36px/36px YuMincho;
+  margin: 22px 0 66px;
+  text-align: center;
+}
+
+@media (min-width: 960px) {
+  .plan .plan-inner .plan-contents {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media (max-width: 959px) {
+  .plan .plan-inner .plan-contents {
+    margin: 0 auto;
+    width: 60%;
+    min-width: 320px;
+  }
+}
+
+@media (min-width: 960px) {
+  .plan .plan-inner .plan-contents .plan-content {
+    max-width: 331px;
+    width: 30%;
+  }
+}
+
+@media (max-width: 959px) {
+  .plan .plan-inner .plan-contents .plan-content {
+    padding-bottom: 50px;
+  }
+}
+
+.plan .plan-inner .plan-contents .plan-content .plan-img {
+  width: 100%;
+  height: 209px;
+}
+
+.plan .plan-inner .plan-contents .plan-content .plan-content-title {
+  font: normal normal 500 20px/32px YuMincho;
+  margin-top: 20px;
+}
+
+.plan .plan-inner .plan-contents .plan-content .plan-content-description {
+  font: normal normal 500 16px/32px YuMincho;
+  margin-top: 20px;
+}
 /*# sourceMappingURL=style.css.map */
