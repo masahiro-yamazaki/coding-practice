@@ -159,15 +159,27 @@
 
 @media (max-width: 519px) {
   .preface .preface-inner .preface-title {
-    font-size: 20px;
-    line-height: 20px;
     margin-left: 30px;
     margin-right: 10px;
   }
 }
 
+@media (max-width: 375px) {
+  .preface .preface-inner .preface-title {
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 8px;
+    margin-left: 25px;
+    margin-right: 0px;
+  }
+}
+
 .preface .preface-inner .preface-title p:first-child {
   text-indent: -3em;
+}
+
+.preface .preface-inner .preface-title p:nth-child(2) {
+  margin-right: 33px;
 }
 
 @media (max-width: 959px) {
@@ -183,6 +195,12 @@
 }
 
 @media (max-width: 519px) {
+  .preface .preface-inner .preface-title p:nth-child(2) {
+    margin-right: 6px;
+  }
+}
+
+@media (max-width: 374px) {
   .preface .preface-inner .preface-title p:nth-child(2) {
     margin-right: 4px;
   }
@@ -218,9 +236,15 @@
 
 @media (max-width: 519px) {
   .preface .preface-inner .preface-content {
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 375px) {
+  .preface .preface-inner .preface-content {
     font-size: 12px;
     line-height: 12px;
-    margin-left: 30px;
+    margin-left: 25px;
   }
 }
 
@@ -242,6 +266,12 @@
 
 @media (max-width: 519px) {
   .preface .preface-inner .preface-content p:not(:first-child) {
+    margin-right: 5px;
+  }
+}
+
+@media (max-width: 375px) {
+  .preface .preface-inner .preface-content p:not(:first-child) {
     margin-right: 4px;
   }
 }
@@ -255,7 +285,7 @@
   margin-top: 443px;
 }
 
-@media (max-width: 519px) {
+@media (max-width: 375px) {
   .preface .preface-inner .preface-name {
     font-size: 18px;
   }

@@ -111,15 +111,21 @@ $pc-min-width: 960px;
         margin-right: 20px;
       }
       @media (max-width: $sp-max-width) {
-        font-size: 20px;
-        line-height: 20px;
         margin-left: 30px;
         margin-right: 10px;
+      }
+      @media (max-width: 375px) {
+        font-size: 20px;
+        line-height: 20px;
+        letter-spacing: 8px;
+        margin-left: 25px;
+        margin-right: 0px;
       }
       p:first-child {
         text-indent: -3em;
       }
       p:nth-child(2) {
+        margin-right: 33px;
         @media (max-width: $ipad-max-width) {
           margin-right: 20px;
         }
@@ -127,6 +133,9 @@ $pc-min-width: 960px;
           margin-right: 12px;
         }
         @media (max-width: $sp-max-width) {
+          margin-right: 6px;
+        }  
+        @media (max-width: 374px) {
           margin-right: 4px;
         }  
       }
@@ -147,9 +156,12 @@ $pc-min-width: 960px;
         margin-left: 50px;
       }
       @media (max-width: $sp-max-width) {
+        margin-left: 30px;
+      }
+      @media (max-width: 375px) {
         font-size: 12px;
         line-height: 12px;
-        margin-left: 30px;
+        margin-left: 25px;
       }
       p:not(:first-child) {
         margin: 0 22px 0 0;
@@ -160,6 +172,9 @@ $pc-min-width: 960px;
           margin-right: 8px;
         }
         @media (max-width: $sp-max-width) {
+          margin-right: 5px;
+        }
+        @media (max-width: 375px) {
           margin-right: 4px;
         }
       }
@@ -169,7 +184,7 @@ $pc-min-width: 960px;
       letter-spacing: 10px;
       writing-mode: vertical-rl;
       margin-top: 443px;
-      @media (max-width: $sp-max-width) {
+      @media (max-width: 375px) {
         font-size: 18px;
       }
     }
