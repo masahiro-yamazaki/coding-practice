@@ -310,7 +310,7 @@ $pc-min-width: 960px;
 
 // 温泉について
 .hot-spring {
-  margin-top: 122px;
+  margin: 122px 0 78px;
   min-height: 545px;
   @media (min-width: $pc-min-width) {
     display: flex;
