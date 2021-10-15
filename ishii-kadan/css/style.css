@@ -604,4 +604,39 @@
   font: normal normal 500 16px/32px YuMincho;
   margin-top: 20px;
 }
+
+.info {
+  width: 100%;
+  min-height: 697px;
+}
+
+.info .info-inner {
+  width: 90%;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.info .info-inner .info-icon {
+  padding-top: 60px;
+  text-align: center;
+}
+
+.info .info-inner .info-title {
+  font: normal normal 500 36px/36px YuMincho;
+  margin: 22px 0 46px;
+  text-align: center;
+}
+
+.info .info-inner .info-tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.info .info-inner .info-tabs p:not(:last-child) {
+  margin-right: 53px;
+}
 /*# sourceMappingURL=style.css.map */

@@ -420,3 +420,30 @@ $pc-min-width: 960px;
     }
   }
 }
+
+// お知らせ
+.info {
+  width: 100%;
+  min-height: 697px;
+  .info-inner {
+    width: 90%;
+    max-width: 1180px;
+    margin: 0 auto;
+    .info-icon {
+      padding-top: 60px;
+      text-align: center;
+    }
+    .info-title {
+      font: normal normal 500 36px/36px YuMincho;
+      margin: 22px 0 46px;
+      text-align: center;
+    }
+    .info-tabs {
+      display: flex;
+      justify-content: center;
+      p:not(:last-child) {
+        margin-right: 53px;
+      }
+    }
+  }
+}
