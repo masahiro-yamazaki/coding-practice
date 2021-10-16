@@ -634,6 +634,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 29px;
 }
 
 .info .info-inner .info-tabs p {
@@ -651,9 +652,56 @@
 
 .info .info-inner .info-contents {
   display: none;
+  padding-bottom: 60px;
 }
 
 .info .info-inner .info-contents.show {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.info .info-inner .info-contents .info-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 130px;
+  background: #F6F6F6;
+  padding: 15px 10px;
+  margin-top: 20px;
+}
+
+@media (min-width: 960px) {
+  .info .info-inner .info-contents .info-content {
+    width: calc(50% - 23px);
+  }
+  .info .info-inner .info-contents .info-content:nth-child(2n) {
+    margin-left: 46px;
+  }
+}
+
+.info .info-inner .info-contents .info-content .info-img {
+  width: 103px;
+}
+
+.info .info-inner .info-contents .info-content .info-img img {
+  width: 103px;
+  height: 100px;
+}
+
+.info .info-inner .info-contents .info-content .info-detail {
+  padding-left: 30px;
+}
+
+.info .info-inner .info-contents .info-content .info-detail .info-date {
+  font: normal normal 500 14px/14px YuMincho;
+  margin-bottom: 2px;
+}
+
+.info .info-inner .info-contents .info-content .info-detail .info-message {
+  font: normal normal 500 16px/32px YuMincho;
 }
 /*# sourceMappingURL=style.css.map */

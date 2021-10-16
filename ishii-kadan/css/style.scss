@@ -441,6 +441,7 @@ $pc-min-width: 960px;
     .info-tabs {
       display: flex;
       justify-content: center;
+      margin-bottom: 29px;
       p {
         cursor: pointer;
         &:not(:last-child) {
@@ -454,8 +455,41 @@ $pc-min-width: 960px;
     }
     .info-contents {
       display: none;
+      padding-bottom: 60px;
       &.show {
-        display: block;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .info-content {
+        display: flex;
+        width: 100%;
+        height: 130px;
+        background: #F6F6F6;
+        padding: 15px 10px;
+        margin-top: 20px;
+        @media (min-width: $pc-min-width) {
+          width: calc(50% - 23px);
+          &:nth-child(2n) {
+            margin-left: 46px;
+          }
+        }
+        .info-img {
+          width: 103px;
+          img {
+            width: 103px;
+            height: 100px;
+          }
+        }
+        .info-detail {
+          padding-left: 30px;
+          .info-date {
+            font: normal normal 500 14px/14px YuMincho;
+            margin-bottom: 2px;
+          }
+          .info-message {
+            font: normal normal 500 16px/32px YuMincho;
+          }
+        }
       }
     }
   }
