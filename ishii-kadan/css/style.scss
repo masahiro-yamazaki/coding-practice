@@ -453,11 +453,9 @@ $pc-min-width: 960px;
       }
     }
     .info-contents {
-      div {
-        display: none;
-        &.show {
-          display: block;
-        }
+      display: none;
+      &.show {
+        display: block;
       }
     }
   }

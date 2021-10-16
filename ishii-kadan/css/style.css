@@ -649,11 +649,11 @@
   cursor: auto;
 }
 
-.info .info-inner .info-contents div {
+.info .info-inner .info-contents {
   display: none;
 }
 
-.info .info-inner .info-contents div.show {
+.info .info-inner .info-contents.show {
   display: block;
 }
 /*# sourceMappingURL=style.css.map */

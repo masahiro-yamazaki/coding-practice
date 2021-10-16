@@ -31,6 +31,6 @@ $(function () {
     const tabIndex = $('.info-tabs p').index(this);
     $('.info-tabs > p').removeClass('active');
     $(this).addClass('active');
-    $('.info-contents > div').removeClass('show').eq(tabIndex).addClass('show');
+    $('.info-contents').removeClass('show').eq(tabIndex).addClass('show');
   });
 });
