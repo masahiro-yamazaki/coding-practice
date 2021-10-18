@@ -243,24 +243,49 @@ body {
 }
 
 .footer {
+  height: 582px;
   .footer-contents {
     background-image: url('../img/bg3.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 458px;
+    height: 522px;
     padding-top: 64px;
     .footer-menus {
-      margin: 64px auto 0;
+      margin: 0 auto;
       writing-mode: vertical-rl;
       a {
         display: block;
-        font: normal normal medium 18px/18px YuMincho;
+        font: normal normal 500 18px/18px YuMincho;
         letter-spacing: 14px;
+        margin-bottom: -14px;
         &:not(:last-child) {
           margin-left: 34px;
         }
+      }
+    }
+    .footer-logo {
+      margin: 96px auto 72px;
+      width: 145px;
+      img {
+        width: 145px;
+        height: 92px;
+      }
+    }
+    .footer-address {
+      font: normal normal 500 16px/16px YuMincho;
+      text-align: center;
+      margin-bottom: 23px;
+      span:first-child {
+        margin-right: 21px;
+      }
+    }
+    .footer-tel-fax {
+      font: normal normal 500 16px/16px YuMincho;
+      text-align: center;
+      span:first-child {
+        margin-right: 20px;
       }
     }
   }
