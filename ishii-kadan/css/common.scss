@@ -241,3 +241,24 @@ body {
     }
   }
 }
+
+.footer {
+  .footer-menu {
+    background-image: url('../img/bg3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 522px;
+  }
+  .footer-copyright {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    color: #ffffff;
+    font: normal normal 500 12px/12px YuMincho;
+  }
+}
