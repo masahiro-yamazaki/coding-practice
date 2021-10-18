@@ -243,13 +243,26 @@ body {
 }
 
 .footer {
-  .footer-menu {
+  .footer-contents {
     background-image: url('../img/bg3.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 522px;
+    height: 458px;
+    padding-top: 64px;
+    .footer-menus {
+      margin: 64px auto 0;
+      writing-mode: vertical-rl;
+      a {
+        display: block;
+        font: normal normal medium 18px/18px YuMincho;
+        letter-spacing: 14px;
+        &:not(:last-child) {
+          margin-left: 34px;
+        }
+      }
+    }
   }
   .footer-copyright {
     width: 100%;
