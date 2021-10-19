@@ -577,6 +577,13 @@
   }
 }
 
+@media (max-width: 519px) {
+  .plan .plan-inner .plan-contents {
+    margin: 0 auto;
+    width: 90%;
+  }
+}
+
 @media (min-width: 960px) {
   .plan .plan-inner .plan-contents .plan-content {
     max-width: 331px;
@@ -586,13 +593,14 @@
 
 @media (max-width: 959px) {
   .plan .plan-inner .plan-contents .plan-content {
+    width: 100%;
     padding-bottom: 50px;
   }
 }
 
 .plan .plan-inner .plan-contents .plan-content .plan-img {
   width: 100%;
-  height: 209px;
+  height: auto;
 }
 
 .plan .plan-inner .plan-contents .plan-content .plan-content-title {
