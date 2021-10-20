@@ -43,4 +43,13 @@
           justify-content: center;
   font: normal normal 500 16px/32px YuMincho;
 }
+
+@media (max-width: 519px) {
+  .preface .preface-inner p {
+    text-align: center;
+  }
+  .preface .preface-inner p span {
+    display: block;
+  }
+}
 /*# sourceMappingURL=room.css.map */
