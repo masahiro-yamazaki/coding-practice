@@ -391,14 +391,13 @@ $pc-min-width: 960px;
         display: flex;
         justify-content: space-between;
       }
-      @media (max-width: $ipad-max-width) {
+      @media (min-width: $ipad-min-width) and (max-width: $ipad-max-width) {
         margin: 0 auto;
         width: 60%;
         min-width: 320px;
       }
       @media (max-width: $sp-max-width) {
         margin: 0 auto;
-        width: 90%;
       }
       .plan-content {
         @media (min-width: $pc-min-width) {
