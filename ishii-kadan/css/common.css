@@ -315,6 +315,21 @@ body {
   height: 80px;
 }
 
+.breadcrumb {
+  margin-top: 36px;
+}
+
+.breadcrumb .breadcrumb-inner {
+  max-width: 1180px;
+  width: 90%;
+  margin: 0 auto;
+  font: normal normal 500 16px/16px YuMincho;
+}
+
+.breadcrumb .breadcrumb-inner span {
+  margin-left: 6px;
+}
+
 .footer {
   height: 582px;
 }
