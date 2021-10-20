@@ -712,6 +712,12 @@
   font: normal normal 500 16px/32px YuMincho;
 }
 
+@media (max-width: 519px) {
+  .info .info-inner .info-contents .info-content .info-detail .info-message {
+    font: normal normal 500 16px/20px YuMincho;
+  }
+}
+
 .access {
   width: 100%;
   padding-bottom: 110px;

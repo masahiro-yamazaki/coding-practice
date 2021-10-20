@@ -492,6 +492,9 @@ $pc-min-width: 960px;
           }
           .info-message {
             font: normal normal 500 16px/32px YuMincho;
+            @media (max-width: $sp-max-width) {
+              font: normal normal 500 16px/20px YuMincho;
+            }
           }
         }
       }
