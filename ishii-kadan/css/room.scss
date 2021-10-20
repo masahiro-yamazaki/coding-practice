@@ -1,0 +1,23 @@
+// PC/iPad/SPのブレイクポイント指定
+// ブレイクポイント指定の理由は以下の記事を参照
+// https://hashimotosan.hatenablog.jp/entry/2020/12/06/182327
+$sp-max-width: 519px;
+$ipad-min-width: 520px;
+$ipad-max-width: 959px;
+$pc-min-width: 960px;
+
+.first-view {
+  width: 100%;
+  height: 500px;
+  background-image: url('../img/oheya-header.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .first-view-copy {
+    font: normal normal 800 34px/34px YuMincho;
+    color: #ffffff;
+  }
+}
