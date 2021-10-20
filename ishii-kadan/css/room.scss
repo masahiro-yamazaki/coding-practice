@@ -21,3 +21,16 @@ $pc-min-width: 960px;
     color: #ffffff;
   }
 }
+
+.preface {
+  padding: 90px 0 70px;
+  .preface-inner {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    font: normal normal 500 16px/32px YuMincho;
+  }
+}

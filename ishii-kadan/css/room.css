@@ -20,4 +20,27 @@
   font: normal normal 800 34px/34px YuMincho;
   color: #ffffff;
 }
+
+.preface {
+  padding: 90px 0 70px;
+}
+
+.preface .preface-inner {
+  width: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font: normal normal 500 16px/32px YuMincho;
+}
 /*# sourceMappingURL=room.css.map */
