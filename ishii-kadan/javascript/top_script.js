@@ -1,14 +1,4 @@
 $(function () {
-  // AOS
-  AOS.init({
-    offset: 100,
-    delay: 200,
-    duration: 2000,
-    easing: 'ease-out',
-    anchorPlacement: 'bottom-top',
-    once: true
-  });
-
   // トップページのヘッダースクロール時に背景色を変更
   $(window).on('scroll', function () {
     if ($('.header').height() < $(this).scrollTop()) {

@@ -1,4 +1,14 @@
 $(function () {
+  // AOS
+  AOS.init({
+    offset: 100,
+    delay: 200,
+    duration: 2000,
+    easing: 'ease-out',
+    anchorPlacement: 'bottom-top',
+    once: true
+  });
+
   // ハンバーガーメニュー
   $('#js-hmenu-button').click(function () {
     $('body').toggleClass('no-scroll');
