@@ -45,9 +45,15 @@ $pc-min-width: 960px;
 
 .lower-page-info {
   min-height: 522px;
-  padding-bottom: 84px;
-  &:last-of-type {
-    padding-bottom: 150px;
+  padding-bottom: 150px;
+  @media (min-width: $ipad-min-width) and (max-width: 768px) {
+    padding-bottom: 165px;
+  }
+  @media (min-width: 769px) {
+    padding-bottom: 84px;
+    &:last-of-type {
+      padding-bottom: 150px;
+    }
   }
   .lower-page-info-inner {
     position: relative;

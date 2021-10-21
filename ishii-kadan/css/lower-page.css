@@ -55,11 +55,22 @@
 
 .lower-page-info {
   min-height: 522px;
-  padding-bottom: 84px;
+  padding-bottom: 150px;
 }
 
-.lower-page-info:last-of-type {
-  padding-bottom: 150px;
+@media (min-width: 520px) and (max-width: 768px) {
+  .lower-page-info {
+    padding-bottom: 165px;
+  }
+}
+
+@media (min-width: 769px) {
+  .lower-page-info {
+    padding-bottom: 84px;
+  }
+  .lower-page-info:last-of-type {
+    padding-bottom: 150px;
+  }
 }
 
 .lower-page-info .lower-page-info-inner {
