@@ -46,6 +46,9 @@ $pc-min-width: 960px;
 .lower-page-info {
   min-height: 522px;
   padding-bottom: 84px;
+  &:last-of-type {
+    padding-bottom: 150px;
+  }
   .lower-page-info-inner {
     position: relative;
     width: 90%;

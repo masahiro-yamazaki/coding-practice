@@ -58,6 +58,10 @@
   padding-bottom: 84px;
 }
 
+.lower-page-info:last-of-type {
+  padding-bottom: 150px;
+}
+
 .lower-page-info .lower-page-info-inner {
   position: relative;
   width: 90%;
