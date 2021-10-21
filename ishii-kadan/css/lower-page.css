@@ -68,7 +68,7 @@
 .lower-page-info .lower-page-info-inner .lower-page-info-img {
   max-width: 525px;
   max-height: 300px;
-  width: 100%;
+  width: 90%;
   height: auto;
 }
 
@@ -98,10 +98,19 @@
   z-index: -1;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 520px) and (max-width: 768px) {
   .lower-page-info .lower-page-info-inner .lower-page-info-main {
     top: 35vw;
     width: 90%;
+    padding-left: 15%;
+  }
+}
+
+@media (max-width: 519px) {
+  .lower-page-info .lower-page-info-inner .lower-page-info-main {
+    top: 40vw;
+    width: 90%;
+    padding-left: 10%;
   }
 }
 

@@ -54,7 +54,7 @@ $pc-min-width: 960px;
     .lower-page-info-img {
       max-width: 525px;
       max-height: 300px;
-      width: 100%;
+      width: 90%;
       height: auto;
       @media (min-width: $ipad-min-width) and (max-width: 768px) {
         width: 80%;
@@ -75,9 +75,15 @@ $pc-min-width: 960px;
       background-repeat: no-repeat;
       background-size: cover;
       z-index: -1;
-      @media (max-width: 768px) {
+      @media (min-width: $ipad-min-width) and (max-width: 768px) {
         top: 35vw; // (画像の縦幅 - 10px)にしたい
         width: 90%;
+        padding-left: 15%;
+      }
+      @media (max-width: $sp-max-width) {
+        top: 40vw;
+        width: 90%;
+        padding-left: 10%;
       }
       .lower-page-info-title {
         font: normal normal 500 24px/24px YuMincho;
