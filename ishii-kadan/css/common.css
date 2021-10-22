@@ -229,6 +229,7 @@ body {
   .modal-area .modal-wrapper {
     width: 90%;
     left: 5%;
+    padding: 0 30px;
   }
 }
 
