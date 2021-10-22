@@ -78,7 +78,7 @@ $pc-min-width: 960px;
       right: 0px;
       width: 70%;
       min-height: 381px;
-      padding: 0 25px 0 22%;
+      padding: 0 25px 20px 22%;
       background-image: url('../img/bg.png');
       background-position: center;
       background-repeat: no-repeat;
@@ -104,6 +104,25 @@ $pc-min-width: 960px;
       }
       .lower-page-info-remarks {
         font: normal normal 500 14px/21px YuMincho;
+      }
+    }
+  }
+  &:nth-of-type(2n) {
+    .lower-page-info-img {
+      position: absolute;
+      top: 0px;
+      right: 0px;
+    }
+    .lower-page-info-main {
+      left: 0px;
+      padding: 0 22% 20px 60px;
+      @media (min-width: $ipad-min-width) and (max-width: 768px) {
+        padding-left: 40px;
+        padding-right: 15%;
+      }
+      @media (max-width: $sp-max-width) {
+        padding-left: 20px;
+        padding-right: 10%;
       }
     }
   }
