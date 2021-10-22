@@ -32,7 +32,7 @@ $pc-min-width: 960px;
     align-items: center;
     justify-content: center;
     font: normal normal 500 16px/32px YuMincho;
-    @media (max-width: $sp-max-width) {
+    @media (max-width: $ipad-max-width) {
       p {
         text-align: center;
         span {

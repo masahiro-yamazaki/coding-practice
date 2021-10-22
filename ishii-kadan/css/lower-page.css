@@ -43,7 +43,7 @@
   font: normal normal 500 16px/32px YuMincho;
 }
 
-@media (max-width: 519px) {
+@media (max-width: 959px) {
   .preface .preface-inner p {
     text-align: center;
   }
