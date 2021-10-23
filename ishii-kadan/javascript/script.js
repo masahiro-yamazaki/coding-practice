@@ -20,9 +20,11 @@ $(function () {
     if ($(this).attr('aria-expanded') == 'false') {
       $(this).attr('aria-expanded', true);
       $('.hmenu').attr('aria-hidden', 'false');
+      $('.hmenu-link').attr('tabindex', '0');
     } else {
       $(this).attr('aria-expanded', false);
       $('.hmenu').attr('aria-hidden', 'true');
+      $('.hmenu-link').attr('tabindex', '-1');
     }
   });
 
