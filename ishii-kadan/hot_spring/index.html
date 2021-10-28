@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang='ja'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0'>
+  <title>温泉 - 石井花壇 | 温海温泉旅館【公式サイト】</title>
+  <meta name='description' content='日本古来の素材と現代的表現を併せ持つ温泉旅館、石井花壇。 伝統的「和」の息づく空間で、至極のひとときをお過ごしください。'>
+  <meta name='robots' content='noindex'>
+  <link rel='stylesheet' href='../css/reset.css'>
+  <link rel='stylesheet' href='../css/common.css'>
+  <link rel='stylesheet' href='../css/lower-page.css'>
+  <!-- favicon.icoは16×16と32×32のマルチアイコン -->
+  <link rel='shortcut icon' href='../favicon.ico'>
+  <link href='https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&amp;display=swap' rel='stylesheet'>
+  <link href='https://use.fontawesome.com/releases/v5.6.1/css/all.css' rel='stylesheet'>
+  <link href='https://unpkg.com/aos@2.3.1/dist/aos.css' rel='stylesheet'>
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css'>
+</head>
+
+<body>
+  <!-- ヘッダー -->
+  <header class='header'>
+    <div class='header-logo-menu'>
+      <a class='header-logo' href='../index.html'>
+        <img src='../img/sub-header-logo@2x.png' alt='石井花壇'>
+      </a>
+      <!-- PCのみ表示 -->
+      <div class='header-menu'>
+        <a href='../room/index.html'>お部屋</a>
+        <a href='../food/index.html'>お料理</a>
+        <a href=''>温泉</a>
+      </div>
+    </div>
+    <div class='header-reservation-hmenu'>
+      <button class='header-reservation'>
+        <img src='../img/calender@2x.png' alt='宿泊予約'>
+        <span>宿泊予約</span>
+      </button>
+      <!-- iPad/SPのみ表示 -->
+      <button id='js-hmenu-button' class='header-hmenu-button'
+            aria-controls='js-glabal-menu' aria-expanded='false' area-label='メニューを開閉する'>
+        <i class='fa fa-2x fa-bars js-hmenu-open-icon show'></i>
+        <i class='fa fa-2x fa-times js-hmenu-close-icon'></i>
+      </button>
+    </div>
+  </header>
+  <!-- ハンバーガーメニュー -->
+  <div id='js-global-menu' class='hmenu' aria-hidden='true'>
+    <div class='hmenu-contents'>
+      <div><a class='hmenu-link' tabindex='-1' href='../room/index.html'>お部屋</a></div>
+      <div><a class='hmenu-link' tabindex='-1' href='../food/index.html'>お料理</a></div>
+      <div><a class='hmenu-link' tabindex='-1' href=''>温泉</a></div>
+    </div>
+  </div>
+  <!-- モーダルエリア -->
+  <section class='modal-area'>
+    <div class='modal-background'></div>
+    <div class='modal-wrapper'>
+      <button class='close-icon'><img src='../img/close.png'></button>
+      <form class='modal-form'>
+        <div class='modal-title'>宿泊予約</div>
+        <div class='modal-content-title'>お名前</div>
+        <input type='text' class='modal-content' placeholder='例：石井正悟'>
+        <div class='modal-content-title'>メールアドレス</div>
+        <input type='text' class='modal-content' placeholder='例：Example@example.com'>
+        <div class='modal-content-title'>ご希望プラン（空いているプランのみ表示されます）</div>
+        <select class='modal-content modal-content-plan-select default-color'>
+          <option>プランを選択してください</option>
+          <option>【期間限定】海辺の四季旬彩、贅沢美味懐石プラン</option>
+          <option>平日に優雅に楽しむ、特別宿泊プラン</option>
+          <option>絶景貸切露天と個室会席を満喫できるファミリープラン</option>
+        </select>
+        <div class='modal-content-title'>日時選択</div>
+        <input type='text' name='datepicker' id='js-datepicker'
+               class='modal-content' placeholder='日時を選択してください'>
+        <button class='reservation-submit-button'>送信する</button>
+      </form>
+    </div>
+  </section>
+  <!-- ヘッダーの余白 -->
+  <section class='header-margin'>
+  </section>
+  <!-- ファーストビュー -->
+  <section class='first-view' style='background-image: url("../img/onsen-header.png");'>
+    <div class='first-view-copy'>温泉</div>
+  </section>
+  <!-- パンくずリスト -->
+  <section class='breadcrumb'>
+    <div class='breadcrumb-inner'>
+      <a href='../index.html'>トップ</a>
+      <span>></span>
+      <span>温泉</span>
+    </div>
+  </section>
+  <!-- 序文 -->
+  <section class='preface'>
+    <div class='preface-inner'>
+      <p>心も身体も癒やす汐の温泉。</p>
+      <p><span>湯あたりしにくく、赤ちゃんから</span><span>年配の方までどなたでもゆっくりと</span><span>安心して入っていただけます。</span></p>
+      <p><span>柔らかく優しい湯に</span><span>じっくりと漬かれば、</span><span>心身共にリラックスできます。</span></p>
+    </div>
+  </section>
+  <!-- 貸し切り露天風呂「雲居の湯」 -->
+  <section class='lower-page-info' data-aos='fade-up'>
+    <div class='lower-page-info-inner'>
+      <img src='../img/onsen01.png' class='lower-page-info-img'>
+      <div class='lower-page-info-main'>
+        <div class='lower-page-info-title'>貸し切り露天風呂「雲居の湯」</div>
+        <div class='lower-page-info-description'>
+          <p>弱酸性の湯質が優しく肌を包み込むような心地よさ</p>
+          <p>最上階の露天風呂「雲居の湯」では、湯冷めしにくい食塩泉を熱海の町並みを遠方に望みながら・・・</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- 美肌を促す乳白色の硫黄泉を -->
+  <section class='lower-page-info' data-aos='fade-up'>
+    <div class='lower-page-info-inner'>
+      <img src='../img/onsen02.png' class='lower-page-info-img'>
+      <div class='lower-page-info-main'>
+        <div class='lower-page-info-title'>美肌を促す乳白色の硫黄泉を</div>
+        <div class='lower-page-info-description'>
+          <p>まじりっけなしの白いにごり湯。鳥海山から引いた酸性の強い硫酸塩泉を、 たっぷりと掛け流しています。</p>
+          <p>四季の移り変わりを、天然温泉の湯に浸りながら味わってください。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- 温泉の効能 -->
+  <section class='effect' data-aos='fade-up'>
+    <div class='effect-inner'>
+      <div class='effect-title'>温泉の効能</div>
+      <table class='effect-table'>
+        <tr>
+          <td>効能</td>
+          <td>神経痛・慢性関節リューマチ・腰痛・冷え性・慢性婦人病・うちみなど</td>
+        </tr>
+        <tr>
+          <td>泉質</td>
+          <td>ナトリウム・カルシウム-塩化物泉</td>
+        </tr>
+        <tr>
+          <td>飲用効果</td>
+          <td>弱塩化物泉は肌にやわらかなため、高齢者や病後の回復期によく、飲用すれば慢性便秘や慢性消化 器病に効果があります。</td>
+        </tr>
+      </table>
+    </div>
+  </section>
+  <!-- フッター -->
+  <footer class='footer'>
+    <div class='footer-contents'>
+      <div class='footer-menus'>
+        <a href='../room/index.html'>お部屋</a>
+        <a href='../food/index.html'>お料理</a>
+        <a href=''>温泉</a>
+      </div>
+      <div class='footer-logo'><img src='../img/footer-logo.png'></div>
+      <div class='footer-address'>
+        <span>〒000-0000</span>
+        <span>山形県鶴岡市xxxxxxxxxxx</span>
+      </div>
+      <div class='footer-tel-fax'>
+        <span>TEL.000-0000-0000</span>
+        <span>TEL.000-0000-0000</span>
+      </div>
+    </div>
+    <div class='footer-copyright'>Copyright © 石井花壇 All Rights Reserved.</div>
+  </footer>
+
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+  <script src='https://cdn.jsdelivr.net/npm/flatpickr'></script>
+  <script src='https://unpkg.com/aos@2.3.1/dist/aos.js'></script>
+  <script src='../javascript/script.js'></script>
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement":
+      [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item":
+          {
+            "@id": "https://masahiro-yamazaki.conohawing.com/ishii-kadan/index.html",
+            "name": "トップ"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item":
+          {
+            "@id": "https://masahiro-yamazaki.conohawing.com/ishii-kadan/room/index.html",
+            "name": "お部屋"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item":
+          {
+            "@id": "https://masahiro-yamazaki.conohawing.com/ishii-kadan/food/index.html",
+            "name": "お料理"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item":
+          {
+            "@id": "https://masahiro-yamazaki.conohawing.com/ishii-kadan/hot_spring/index.html",
+            "name": "温泉"
+          }
+        }
+      ]
+    }
+  </script>
+</body>
+</html>

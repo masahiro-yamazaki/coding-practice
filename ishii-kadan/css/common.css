@@ -1,0 +1,414 @@
+@charset "UTF-8";
+.no-scroll {
+  overflow: hidden;
+}
+
+body {
+  font-family: 'Times New Roman', '游明朝', 'Yu Mincho', '游明朝体', 'YuMincho', 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', 'HiraMinProN-W3', 'HGS明朝E', 'ＭＳ Ｐ明朝', 'MS PMincho', serif;
+}
+
+.header {
+  width: 100%;
+  height: 80px;
+  background-color: #ffffff;
+  position: fixed;
+  z-index: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.header.header--black {
+  background-color: transparent;
+}
+
+.header .header-logo-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .header-logo-menu .header-logo {
+  margin-left: 20px;
+}
+
+.header .header-logo-menu .header-logo img {
+  width: 200px;
+  height: 40px;
+}
+
+@media (max-width: 519px) {
+  .header .header-logo-menu .header-logo img {
+    width: 120px;
+    height: 24px;
+  }
+}
+
+.header .header-logo-menu .header-logo img.header-image--scrolled {
+  display: none;
+}
+
+.header .header-logo-menu .header-menu {
+  margin-left: 120px;
+}
+
+@media (max-width: 959px) {
+  .header .header-logo-menu .header-menu {
+    display: none;
+  }
+}
+
+.header .header-logo-menu .header-menu a {
+  margin-right: 30px;
+}
+
+.header .header-logo-menu .header-menu.header-menu--white a {
+  color: #ffffff;
+}
+
+.header .header-reservation-hmenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .header-reservation-hmenu .header-reservation {
+  margin-right: 20px;
+  padding: 16px 37px;
+  width: 170px;
+  height: 54px;
+  background-color: #978F10;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.header .header-reservation-hmenu .header-reservation img {
+  width: 22px;
+  height: 22px;
+}
+
+.header .header-reservation-hmenu .header-reservation span {
+  font: normal normal 800 16px/22px YuMincho;
+  margin-left: 6px;
+  vertical-align: top;
+}
+
+@media (max-width: 959px) {
+  .header .header-reservation-hmenu .header-reservation {
+    margin-right: 10px;
+    padding: 4px 10px;
+    width: 100px;
+    height: 24px;
+  }
+  .header .header-reservation-hmenu .header-reservation img {
+    width: 16px;
+    height: 16px;
+  }
+  .header .header-reservation-hmenu .header-reservation span {
+    font: normal normal 800 14px/16px YuMincho;
+    margin-left: 4px;
+  }
+}
+
+.header .header-reservation-hmenu .header-hmenu-button {
+  margin-right: 20px;
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+@media (min-width: 960px) {
+  .header .header-reservation-hmenu .header-hmenu-button {
+    display: none;
+  }
+}
+
+.header .header-reservation-hmenu .header-hmenu-button i {
+  background-color: #ffffff;
+  color: #000000;
+  display: none;
+}
+
+.header .header-reservation-hmenu .header-hmenu-button i.show {
+  display: block;
+}
+
+.header .header-reservation-hmenu .header-hmenu-button.header-hmenu-button--white {
+  background-color: transparent;
+}
+
+.header .header-reservation-hmenu .header-hmenu-button.header-hmenu-button--white i {
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.hmenu {
+  top: 80px;
+  width: 100%;
+  height: calc(100% - 80px);
+  background: #ffffff;
+  position: fixed;
+  z-index: 100;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.hmenu.show {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+@media (min-width: 960px) {
+  .hmenu.show {
+    display: none;
+  }
+}
+
+.hmenu .hmenu-contents {
+  position: absolute;
+  top: calc(50% - 40px);
+  left: calc(50% - 30px);
+}
+
+.hmenu .hmenu-contents div {
+  text-align: center;
+  font: normal normal 700 20px/20px YuMincho;
+}
+
+.hmenu .hmenu-contents div:not(:last-child) {
+  padding-bottom: 30px;
+}
+
+.modal-area {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 101;
+  visibility: hidden;
+}
+
+.modal-area.show {
+  visibility: visible;
+}
+
+.modal-area .modal-background {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: rgba(30, 30, 30, 0.7);
+}
+
+.modal-area .modal-wrapper {
+  position: absolute;
+  top: calc(50% - 275px);
+  left: calc(50% - 300px);
+  width: 550px;
+  height: 600px;
+  background: #ffffff;
+  padding: 0 60px;
+}
+
+@media (max-width: 610px) {
+  .modal-area .modal-wrapper {
+    width: 90%;
+    left: 5%;
+    padding: 0 30px;
+  }
+}
+
+.modal-area .modal-wrapper .close-icon {
+  position: absolute;
+  top: 20px;
+  right: 22px;
+  width: 18px;
+  height: 18px;
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-area .modal-wrapper .modal-title {
+  font: normal normal 500 20px/20px YuMincho;
+  text-align: center;
+  padding: 29px 0 30.5px;
+  border-bottom: 1px solid #E7E7E7;
+  margin-bottom: 35.5px;
+}
+
+.modal-area .modal-wrapper .modal-content-title {
+  font: normal normal medium 16px/16px YuMincho;
+  margin-bottom: 14px;
+}
+
+.modal-area .modal-wrapper .modal-content {
+  max-width: 429px;
+  width: 100%;
+  height: 32px;
+  border: 1px solid #E7E7E7;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 9px 10px;
+  margin-bottom: 14px;
+}
+
+.modal-area .modal-wrapper .modal-content::-webkit-input-placeholder {
+  color: #6b6767;
+}
+
+.modal-area .modal-wrapper .modal-content:-ms-input-placeholder {
+  color: #6b6767;
+}
+
+.modal-area .modal-wrapper .modal-content::-ms-input-placeholder {
+  color: #6b6767;
+}
+
+.modal-area .modal-wrapper .modal-content::placeholder {
+  color: #6b6767;
+}
+
+.modal-area .modal-wrapper .modal-content.modal-content-plan-select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: 8px 10px;
+}
+
+.modal-area .modal-wrapper .modal-content.modal-content-plan-select.default-color {
+  color: #6b6767;
+}
+
+.modal-area .modal-wrapper .modal-content.modal-content-plan-select option:first-child {
+  display: none;
+}
+
+.modal-area .modal-wrapper .reservation-submit-button {
+  margin: 50px auto 90px;
+  max-width: 198px;
+  width: 100%;
+  height: 42px;
+  display: block;
+  background: #ffffff;
+  border: 1px solid #707070;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font: normal normal 500 16px/16px YuMincho;
+  cursor: pointer;
+}
+
+.header-margin {
+  width: 100%;
+  height: 80px;
+}
+
+.breadcrumb {
+  margin-top: 36px;
+}
+
+.breadcrumb .breadcrumb-inner {
+  max-width: 1180px;
+  width: 90%;
+  margin: 0 auto;
+  font: normal normal 500 16px/16px YuMincho;
+}
+
+.breadcrumb .breadcrumb-inner span {
+  margin-left: 6px;
+}
+
+.footer {
+  height: 582px;
+}
+
+.footer .footer-contents {
+  background-image: url("../img/bg3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 522px;
+  padding-top: 64px;
+}
+
+.footer .footer-contents .footer-menus {
+  margin: 0 auto;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+}
+
+.footer .footer-contents .footer-menus a {
+  display: block;
+  font: normal normal 500 18px/18px YuMincho;
+  letter-spacing: 14px;
+  margin-bottom: -14px;
+}
+
+.footer .footer-contents .footer-menus a:not(:last-child) {
+  margin-left: 34px;
+}
+
+.footer .footer-contents .footer-logo {
+  margin: 96px auto 72px;
+  width: 145px;
+}
+
+.footer .footer-contents .footer-logo img {
+  width: 145px;
+  height: 92px;
+}
+
+.footer .footer-contents .footer-address {
+  font: normal normal 500 16px/16px YuMincho;
+  text-align: center;
+  margin-bottom: 23px;
+}
+
+.footer .footer-contents .footer-address span:first-child {
+  margin-right: 21px;
+}
+
+.footer .footer-contents .footer-tel-fax {
+  font: normal normal 500 16px/16px YuMincho;
+  text-align: center;
+}
+
+.footer .footer-contents .footer-tel-fax span:first-child {
+  margin-right: 20px;
+}
+
+.footer .footer-copyright {
+  width: 100%;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #000000;
+  color: #ffffff;
+  font: normal normal 500 12px/12px YuMincho;
+}
+/*# sourceMappingURL=common.css.map */

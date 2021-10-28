@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang='ja'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0'>
+  <title>お部屋 - 石井花壇 | 温海温泉旅館【公式サイト】</title>
+  <meta name='description' content='日本古来の素材と現代的表現を併せ持つ温泉旅館、石井花壇。 伝統的「和」の息づく空間で、至極のひとときをお過ごしください。'>
+  <meta name='robots' content='noindex'>
+  <link rel='stylesheet' href='../css/reset.css'>
+  <link rel='stylesheet' href='../css/common.css'>
+  <link rel='stylesheet' href='../css/lower-page.css'>
+  <!-- favicon.icoは16×16と32×32のマルチアイコン -->
+  <link rel='shortcut icon' href='../favicon.ico'>
+  <link href='https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&amp;display=swap' rel='stylesheet'>
+  <link href='https://use.fontawesome.com/releases/v5.6.1/css/all.css' rel='stylesheet'>
+  <link href='https://unpkg.com/aos@2.3.1/dist/aos.css' rel='stylesheet'>
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css'>
+</head>
+
+<body>
+  <!-- ヘッダー -->
+  <header class='header'>
+    <div class='header-logo-menu'>
+      <a class='header-logo' href='../index.html'>
+        <img src='../img/sub-header-logo@2x.png' alt='石井花壇'>
+      </a>
+      <!-- PCのみ表示 -->
+      <div class='header-menu'>
+        <a href=''>お部屋</a>
+        <a href='../food/index.html'>お料理</a>
+        <a href='../hot_spring/index.html'>温泉</a>
+      </div>
+    </div>
+    <div class='header-reservation-hmenu'>
+      <button class='header-reservation'>
+        <img src='../img/calender@2x.png' alt='宿泊予約'>
+        <span>宿泊予約</span>
+      </button>
+      <!-- iPad/SPのみ表示 -->
+      <button id='js-hmenu-button' class='header-hmenu-button'
+            aria-controls='js-glabal-menu' aria-expanded='false' area-label='メニューを開閉する'>
+        <i class='fa fa-2x fa-bars js-hmenu-open-icon show'></i>
+        <i class='fa fa-2x fa-times js-hmenu-close-icon'></i>
+      </button>
+    </div>
+  </header>
+  <!-- ハンバーガーメニュー -->
+  <div id='js-global-menu' class='hmenu' aria-hidden='true'>
+    <div class='hmenu-contents'>
+      <div><a class='hmenu-link' tabindex='-1' href=''>お部屋</a></div>
+      <div><a class='hmenu-link' tabindex='-1' href='../food/index.html'>お料理</a></div>
+      <div><a class='hmenu-link' tabindex='-1' href='../hot_spring/index.html'>温泉</a></div>
+    </div>
+  </div>
+  <!-- モーダルエリア -->
+  <section class='modal-area'>
+    <div class='modal-background'></div>
+    <div class='modal-wrapper'>
+      <button class='close-icon'><img src='../img/close.png'></button>
+      <form class='modal-form'>
+        <div class='modal-title'>宿泊予約</div>
+        <div class='modal-content-title'>お名前</div>
+        <input type='text' class='modal-content' placeholder='例：石井正悟'>
+        <div class='modal-content-title'>メールアドレス</div>
+        <input type='text' class='modal-content' placeholder='例：Example@example.com'>
+        <div class='modal-content-title'>ご希望プラン（空いているプランのみ表示されます）</div>
+        <select class='modal-content modal-content-plan-select default-color'>
+          <option>プランを選択してください</option>
+          <option>【期間限定】海辺の四季旬彩、贅沢美味懐石プラン</option>
+          <option>平日に優雅に楽しむ、特別宿泊プラン</option>
+          <option>絶景貸切露天と個室会席を満喫できるファミリープラン</option>
+        </select>
+        <div class='modal-content-title'>日時選択</div>
+        <input type='text' name='datepicker' id='js-datepicker'
+               class='modal-content' placeholder='日時を選択してください'>
+        <button class='reservation-submit-button'>送信する</button>
+      </form>
+    </div>
+  </section>
+  <!-- ヘッダーの余白 -->
+  <section class='header-margin'>
+  </section>
+  <!-- ファーストビュー -->
+  <section class='first-view' style='background-image: url("../img/oheya-header.png");'>
+    <div class='first-view-copy'>お部屋</div>
+  </section>
+  <!-- パンくずリスト -->
+  <section class='breadcrumb'>
+    <div class='breadcrumb-inner'>
+      <a href='../index.html'>トップ</a>
+      <span>></span>
+      <span>お部屋</span>
+    </div>
+  </section>
+  <!-- 序文 -->
+  <section class='preface'>
+    <div class='preface-inner'>
+      <p><span>創業より受け継がれてきた</span><span>石井花壇の和の造り</span></p>
+      <p><span>温海の雄大な絶景を堪能して</span><span>いただけるように設計された客室</span></p>
+      <p>ゆるやかに流れ行く時間に身を委ねて</p>
+    </div>
+  </section>
+  <!-- 温泉付き客室 -->
+  <section class='lower-page-info' data-aos='fade-up'>
+    <div class='lower-page-info-inner'>
+      <img src='../img/oheya01.png' class='lower-page-info-img'>
+      <div class='lower-page-info-main'>
+        <div class='lower-page-info-title'>温泉付き客室</div>
+        <div class='lower-page-info-description'>
+          <p>温海の源泉かけ流し露天風呂付き客室になります。</p>
+          <p>あなただけの上質な安らぎのひとときを。</p>
+        </div>
+        <div class='lower-page-info-remarks'>
+          <p>＊部屋数に限りがございます。</p>
+          <p>＊洗い場はないため、お体を先に大浴場でお流しになって頂く必要があります。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- 庭園付き客室 -->
+  <section class='lower-page-info' data-aos='fade-up'>
+    <div class='lower-page-info-inner'>
+      <img src='../img/oheya02.png' class='lower-page-info-img'>
+      <div class='lower-page-info-main'>
+        <div class='lower-page-info-title'>庭園付き客室</div>
+        <div class='lower-page-info-description'>
+          <p>庭園付きの客室になります。</p>
+          <p>お庭を見ながら、ほっとするひとときをお過ごしください。</p>
+        </div>
+        <div class='lower-page-info-remarks'>
+          <p>＊お庭は複数のお客様と囲む形になります。</p>
+          <p>＊部屋数に限りがあります。</p>
+          <p>＊ご希望の方は「お抹茶/500円」をルームサービスさせていただきます。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- 一般客室 -->
+  <section class='lower-page-info' data-aos='fade-up'>
+    <div class='lower-page-info-inner'>
+      <img src='../img/oheya03.png' class='lower-page-info-img'>
+      <div class='lower-page-info-main'>
+        <div class='lower-page-info-title'>一般客室</div>
+        <div class='lower-page-info-description'>
+          <p>最もベーシックな客室になります。伝統の中にモダンさを取り入れた内装となっており、とても過ごしやすくしていただけます。</p>
+        </div>
+        <div class='lower-page-info-remarks'>
+          <p>＊全室お部屋より日本海を望むことができます。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- フッター -->
+  <footer class='footer'>
+    <div class='footer-contents'>
+      <div class='footer-menus'>
+        <a href=''>お部屋</a>
+        <a href='../food/index.html'>お料理</a>
+        <a href='../hot_spring/index.html'>温泉</a>
+      </div>
+      <div class='footer-logo'><img src='../img/footer-logo.png'></div>
+      <div class='footer-address'>
+        <span>〒000-0000</span>
+        <span>山形県鶴岡市xxxxxxxxxxx</span>
+      </div>
+      <div class='footer-tel-fax'>
+        <span>TEL.000-0000-0000</span>
+        <span>TEL.000-0000-0000</span>
+      </div>
+    </div>
+    <div class='footer-copyright'>Copyright © 石井花壇 All Rights Reserved.</div>
+  </footer>
+
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+  <script src='https://cdn.jsdelivr.net/npm/flatpickr'></script>
+  <script src='https://unpkg.com/aos@2.3.1/dist/aos.js'></script>
+  <script src='../javascript/script.js'></script>
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement":
+      [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item":
+          {
+            "@id": "https://masahiro-yamazaki.conohawing.com/ishii-kadan/index.html",
+            "name": "トップ"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item":
+          {
+            "@id": "https://masahiro-yamazaki.conohawing.com/ishii-kadan/room/index.html",
+            "name": "お部屋"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item":
+          {
+            "@id": "https://masahiro-yamazaki.conohawing.com/ishii-kadan/food/index.html",
+            "name": "お料理"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item":
+          {
+            "@id": "https://masahiro-yamazaki.conohawing.com/ishii-kadan/hot_spring/index.html",
+            "name": "温泉"
+          }
+        }
+      ]
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+// PC/iPad/SPのブレイクポイント指定
+// ブレイクポイント指定の理由は以下の記事を参照
+// https://hashimotosan.hatenablog.jp/entry/2020/12/06/182327
+$sp-max-width: 519px;
+$ipad-min-width: 520px;
+$ipad-max-width: 959px;
+$pc-min-width: 960px;
+
+.first-view {
+  // background-imageは各ページで指定
+  width: 100%;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .first-view-copy {
+    font: normal normal 800 34px/34px YuMincho;
+    color: #ffffff;
+  }
+}
+
+.preface {
+  padding: 90px 0 70px;
+  .preface-inner {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    font: normal normal 500 16px/32px YuMincho;
+    @media (max-width: $ipad-max-width) {
+      p {
+        text-align: center;
+        span {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.lower-page-info {
+  min-height: 522px;
+  padding-bottom: 150px;
+  @media (min-width: $ipad-min-width) and (max-width: 768px) {
+    padding-bottom: 165px;
+  }
+  @media (min-width: 769px) {
+    padding-bottom: 84px;
+    &:last-of-type {
+      padding-bottom: 150px;
+    }
+  }
+  .lower-page-info-inner {
+    position: relative;
+    width: 90%;
+    max-width: 1180px;
+    margin: 0 auto;
+    .lower-page-info-img {
+      max-width: 525px;
+      max-height: 300px;
+      width: 90%;
+      height: auto;
+      @media (min-width: $ipad-min-width) and (max-width: 768px) {
+        width: 80%;
+      }
+      @media (min-width: 769px) {
+        width: 45%;
+      }
+    }
+    .lower-page-info-main {
+      position: absolute;
+      top: 57px;
+      right: 0px;
+      width: 70%;
+      min-height: 381px;
+      padding: 0 25px 20px 22%;
+      background-image: url('../img/bg.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: -1;
+      @media (min-width: $ipad-min-width) and (max-width: 768px) {
+        top: 35vw; // (画像の縦幅 - 10px)にしたい
+        width: 90%;
+        padding-left: 15%;
+      }
+      @media (max-width: $sp-max-width) {
+        top: 40vw;
+        width: 90%;
+        padding-left: 10%;
+      }
+      .lower-page-info-title {
+        font: normal normal 500 24px/24px YuMincho;
+        margin: 60px 0 44px;
+      }
+      .lower-page-info-description {
+        font: normal normal 500 16px/32px YuMincho;
+        margin: 0 0 41.5px;
+      }
+      .lower-page-info-remarks {
+        font: normal normal 500 14px/21px YuMincho;
+      }
+    }
+  }
+  &:nth-of-type(2n) {
+    .lower-page-info-img {
+      position: absolute;
+      top: 0px;
+      right: 0px;
+    }
+    .lower-page-info-main {
+      left: 0px;
+      padding: 0 22% 20px 60px;
+      @media (min-width: $ipad-min-width) and (max-width: 768px) {
+        padding-left: 40px;
+        padding-right: 15%;
+      }
+      @media (max-width: $sp-max-width) {
+        padding-left: 20px;
+        padding-right: 10%;
+      }
+    }
+  }
+}
+
+.effect {
+  padding: 6.5px 0 96.5px;
+  .effect-inner {
+    max-width: 1180px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 95px 0 74px;
+    border-top: 1px solid #E7E7E7;
+    border-bottom: 1px solid #E7E7E7;
+    .effect-title {
+      font: normal normal 500 26px/26px YuMincho;
+      text-align: center;
+      margin: 0 0 51.5px;
+    }
+    .effect-table {
+      max-width: 880px;
+      width: 80%;
+      margin: 0 auto;
+      border-collapse: collapse;
+      border-top: 1px solid #E7E7E7;
+      border-bottom: 1px solid #E7E7E7;
+      tr {
+        border-bottom: 1px solid #E7E7E7;
+        td {
+          font: normal normal 500 15px/32px YuMincho;
+          padding: 9px 0;
+          &:first-child {
+            width: 20%;
+          }
+        }
+      }
+    }
+  }
+}

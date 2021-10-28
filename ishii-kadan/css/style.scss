@@ -1,0 +1,580 @@
+// トップページ
+// 下層ページと共通するCSSはcommon.scssで定義
+
+// PC/iPad/SPのブレイクポイント指定
+// ブレイクポイント指定の理由は以下の記事を参照
+// https://hashimotosan.hatenablog.jp/entry/2020/12/06/182327
+$sp-max-width: 519px;
+$ipad-min-width: 520px;
+$ipad-max-width: 959px;
+$pc-min-width: 960px;
+
+// https://www.esz.co.jp/blog/185.html
+@keyframes anime {
+  0% {
+    opacity: 0;
+  }
+  16% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+    z-index: -1;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+// ファーストビュー
+.first-view {
+  width: 100%;
+  height: 1079px;
+  position: relative;
+  overflow: hidden;
+
+  .first-view-img {
+    width: 100%;
+    height: 1079px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -2;
+    opacity: 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: anime 30s 0s infinite;
+    &:nth-child(2) {
+      animation-delay: 10s;
+    }
+    &:nth-child(3) {
+      animation-delay: 20s;
+    }
+  }
+
+  .first-view-copy {
+    position: absolute;
+    top: 362px;
+    right: 25%;
+    writing-mode: vertical-rl;
+    @media (max-width: $ipad-max-width) {
+      right: 20%;
+    }
+    p {
+      font: normal normal 800 34px/34px YuMincho;
+      color: #FFFFFF;
+      letter-spacing: 8px;
+      &:first-child {
+        margin-left: 51px;
+      }
+      @media (max-width: $sp-max-width) {
+        font: normal normal 800 28px/28px YuMincho;
+        &:first-child {
+          margin-left: 30px;
+        }
+      }
+    }
+  }
+}
+
+// 序文
+.preface {
+  width: 100%;
+  height: 681px;
+  background-image: url('../img/bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  .preface-inner {
+    max-width: 1180px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+    .preface-title {
+      font: normal normal 500 28px/28px YuMincho;
+      letter-spacing: 14px;
+      writing-mode: vertical-rl;
+      margin: 149px 101px 0 118px;
+      @media (max-width: 1180px) {
+        margin-left: 90px;
+      }
+      @media (max-width: $ipad-max-width) {
+        margin-left: 70px;
+        margin-right: 40px;
+      }
+      @media (max-width: 768px) {
+        margin-left: 50px;
+        margin-right: 20px;
+      }
+      @media (max-width: $sp-max-width) {
+        margin-left: 30px;
+        margin-right: 10px;
+      }
+      @media (max-width: 375px) {
+        font-size: 20px;
+        line-height: 20px;
+        letter-spacing: 8px;
+        margin-left: 25px;
+        margin-right: 0px;
+      }
+      p:first-child {
+        text-indent: -3em;
+      }
+      p:nth-child(2) {
+        margin-right: 33px;
+        @media (max-width: $ipad-max-width) {
+          margin-right: 20px;
+        }
+        @media (max-width: 768px) {
+          margin-right: 12px;
+        }
+        @media (max-width: $sp-max-width) {
+          margin-right: 6px;
+        }  
+        @media (max-width: 374px) {
+          margin-right: 4px;
+        }  
+      }
+    }
+    .preface-content {
+      font: normal normal 500 16px/16px YuMincho;
+      letter-spacing: 6px;
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+      margin: 149px 0 0 118px;
+      @media (max-width: 1180px) {
+        margin-left: 90px;
+      }
+      @media (max-width: $ipad-max-width) {
+        margin-left: 70px;
+      }
+      @media (max-width: 768px) {
+        margin-left: 50px;
+      }
+      @media (max-width: $sp-max-width) {
+        margin-left: 30px;
+      }
+      @media (max-width: 375px) {
+        font-size: 12px;
+        line-height: 12px;
+        margin-left: 25px;
+      }
+      p:not(:first-child) {
+        margin: 0 22px 0 0;
+        @media (max-width: $ipad-max-width) {
+          margin-right: 12px;
+        }
+        @media (max-width: 768px) {
+          margin-right: 8px;
+        }
+        @media (max-width: $sp-max-width) {
+          margin-right: 5px;
+        }
+        @media (max-width: 375px) {
+          margin-right: 4px;
+        }
+      }
+    }
+    .preface-name {
+      font: normal normal 500 22px/22px YuMincho;
+      letter-spacing: 10px;
+      writing-mode: vertical-rl;
+      margin-top: 443px;
+      @media (max-width: 375px) {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+// お部屋について
+.room {
+  margin-top: 106px;
+  min-height: 545px;
+  @media (min-width: $pc-min-width) {
+    display: flex;
+  }
+  .room-img-block {
+    @media (min-width: $pc-min-width) {
+      width: 55%;
+    }
+    .room-img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .room-about {
+    @media (min-width: $pc-min-width) {
+      width: 45%;
+      padding: 0 5%;
+    }
+    @media (max-width: $ipad-max-width) {
+      width: 90%;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .room-title {
+      margin-top: 22px;
+      p {
+        font: normal normal 500 36px/62px YuMincho;
+        @media (max-width: $ipad-max-width) {
+          font: normal normal 500 30px/48px YuMincho;
+        }
+        @media (max-width: $sp-max-width) {
+          font: normal normal 500 24px/40px YuMincho;
+        }
+      }
+    }
+    .room-content {
+      margin-top: 75px;
+      p {
+        font: normal normal 500 16px/32px YuMincho;
+      }
+    }
+    .room-button {
+      width: 200px;
+      height: 56px;
+      background: #ffffff;
+      box-sizing: border-box;
+      border: 1px solid #707070;
+      font: normal normal 500 16px/32px YuMincho;
+      margin-top: 75px;
+      cursor: pointer;
+    }
+  }
+}
+
+// 料理について
+.food {
+  margin-top: 122px;
+  min-height: 545px;
+  @media (min-width: $pc-min-width) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .food-img-block {
+    @media (min-width: $pc-min-width) {
+      width: 55%;
+    }
+    .food-img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .food-about {
+    @media (min-width: $pc-min-width) {
+      width: 45%;
+      padding: 0 5%;
+    }
+    @media (max-width: $ipad-max-width) {
+      width: 90%;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .food-title {
+      margin-top: 22px;
+      p {
+        font: normal normal 500 36px/62px YuMincho;
+        @media (max-width: $ipad-max-width) {
+          font: normal normal 500 30px/48px YuMincho;
+        }
+        @media (max-width: $sp-max-width) {
+          font: normal normal 500 24px/40px YuMincho;
+        }
+      }
+    }
+    .food-content {
+      margin-top: 75px;
+      p {
+        font: normal normal 500 16px/32px YuMincho;
+      }
+    }
+    .food-button {
+      width: 200px;
+      height: 56px;
+      background: #ffffff;
+      box-sizing: border-box;
+      border: 1px solid #707070;
+      font: normal normal 500 16px/32px YuMincho;
+      margin-top: 75px;
+      cursor: pointer;
+    }
+  }
+}
+
+// 温泉について
+.hot-spring {
+  margin: 122px 0 78px;
+  min-height: 545px;
+  @media (min-width: $pc-min-width) {
+    display: flex;
+  }
+  .hot-spring-img-block {
+    @media (min-width: $pc-min-width) {
+      width: 55%;
+    }
+    .hot-spring-img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .hot-spring-about {
+    @media (min-width: $pc-min-width) {
+      width: 45%;
+      padding: 0 5%;
+    }
+    @media (max-width: $ipad-max-width) {
+      width: 90%;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .hot-spring-title {
+      margin-top: 22px;
+      p {
+        font: normal normal 500 36px/62px YuMincho;
+        @media (max-width: $ipad-max-width) {
+          font: normal normal 500 30px/48px YuMincho;
+        }
+        @media (max-width: $sp-max-width) {
+          font: normal normal 500 24px/40px YuMincho;
+        }
+      }
+    }
+    .hot-spring-content {
+      margin-top: 75px;
+      p {
+        font: normal normal 500 16px/32px YuMincho;
+      }
+    }
+    .hot-spring-button {
+      width: 200px;
+      height: 56px;
+      background: #ffffff;
+      box-sizing: border-box;
+      border: 1px solid #707070;
+      font: normal normal 500 16px/32px YuMincho;
+      margin-top: 75px;
+      cursor: pointer;
+    }
+  }
+}
+
+// プラン
+.plan {
+  width: 100%;
+  min-height: 775px;
+  background-image: url('../img/bg02.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  .plan-inner {
+    width: 90%;
+    max-width: 1180px;
+    margin: 0 auto;
+    .plan-icon {
+      padding-top: 60px;
+      text-align: center;
+    }
+    .plan-title {
+      font: normal normal 500 36px/36px YuMincho;
+      margin: 22px 0 66px;
+      text-align: center;
+    }
+    .plan-contents {
+      @media (min-width: $pc-min-width) {
+        display: flex;
+        justify-content: space-between;
+      }
+      @media (min-width: $ipad-min-width) and (max-width: $ipad-max-width) {
+        margin: 0 auto;
+        width: 60%;
+        min-width: 320px;
+      }
+      @media (max-width: $sp-max-width) {
+        margin: 0 auto;
+      }
+      .plan-content {
+        @media (min-width: $pc-min-width) {
+          max-width: 331px;
+          width: 30%;
+        }
+        @media (max-width: $ipad-max-width) {
+          width: 100%;
+          padding-bottom: 50px;
+        }
+        .plan-img {
+          width: 100%;
+          height: auto;
+        }
+        .plan-content-title {
+          font: normal normal 500 20px/32px YuMincho;
+          margin-top: 20px;
+        }
+        .plan-content-description {
+          font: normal normal 500 16px/32px YuMincho;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}
+
+// お知らせ
+.info {
+  width: 100%;
+  min-height: 697px;
+  .info-inner {
+    width: 90%;
+    max-width: 1180px;
+    margin: 0 auto;
+    .info-icon {
+      padding-top: 60px;
+      text-align: center;
+    }
+    .info-title {
+      font: normal normal 500 36px/36px YuMincho;
+      margin: 22px 0 46px;
+      text-align: center;
+    }
+    .info-tabs {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 29px;
+      p {
+        cursor: pointer;
+        &:not(:last-child) {
+          margin-right: 53px;
+        }
+        &.active {
+          border-bottom: 1px solid #707070;
+          cursor: auto;
+        }
+      }
+    }
+    .info-contents {
+      display: none;
+      padding-bottom: 60px;
+      &.show {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .info-content {
+        display: flex;
+        width: 100%;
+        height: 130px;
+        background: #F6F6F6;
+        padding: 15px 10px;
+        margin-top: 20px;
+        @media (min-width: $pc-min-width) {
+          width: calc(50% - 23px);
+          &:nth-child(2n) {
+            margin-left: 46px;
+          }
+        }
+        .info-img {
+          width: 103px;
+          img {
+            width: 103px;
+            height: 100px;
+          }
+        }
+        .info-detail {
+          padding-left: 30px;
+          .info-date {
+            font: normal normal 500 14px/14px YuMincho;
+            margin-bottom: 2px;
+          }
+          .info-message {
+            font: normal normal 500 16px/32px YuMincho;
+            @media (max-width: $sp-max-width) {
+              font: normal normal 500 16px/20px YuMincho;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// アクセス
+.access {
+  width: 100%;
+  padding-bottom: 110px;
+  background-image: url('../img/bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  .access-inner {
+    width: 90%;
+    max-width: 1180px;
+    margin: 0 auto;
+    .access-icon {
+      padding-top: 60px;
+      text-align: center;
+    }
+    .access-title {
+      font: normal normal 500 36px/36px YuMincho;
+      margin: 22px 0 84px;
+      text-align: center;
+    }
+    .access-info {
+      @media (min-width: 769px) {
+        display: flex;
+      }
+      .access-picture {
+        @media (min-width: 769px) {
+          width: 55%;
+        }
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+      .access-detail {
+        @media (min-width: 769px) {
+          width: 45%;
+          padding-top: 4px;
+          padding-left: 83px;
+        }
+        @media (max-width: 768px) {
+          margin-top: 30px;
+        }  
+        p {
+          font: normal normal 500 16px/32px YuMincho;
+          &.access-detail-title {
+            font: normal normal 800 16px/16px YuMincho;
+            margin: 16px 0;
+          }
+          &.access-pickup {
+            margin-top: 8px;
+          }
+        }
+      }
+    }
+    .access-map {
+      max-width: 792px;
+      width: 100%;
+      height: 0;
+      padding-bottom: 63.8%;
+      position: relative;
+      overflow: hidden;
+      margin: 69px auto 0;
+      @media (max-width: 768px) {
+        margin-top: 30px;
+      }
+      iframe {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}
