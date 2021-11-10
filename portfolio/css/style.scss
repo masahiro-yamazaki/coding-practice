@@ -187,23 +187,23 @@ $pc-min-width: 768px;
 }
 
 /* プロフィール */
+.el_title {
+  font: bold 36px/40px sans-serif;
+  color: #333333;
+  text-align: center;
+}
+
+.el_subTitle {
+  font: bold 16px/20px sans-serif;
+  color: #333333;
+  text-align: center;
+  padding-top: 10px;
+}
+
 .profile {
-  min-height: 500px;
+  min-height: 530px;
+  padding-top: 30px;
   background-color: white;
-
-  .profile-title {
-    font: bold 36px/40px sans-serif;
-    color: #333333;
-    text-align: center;
-    padding-top: 30px;
-  }
-
-  .profile-sub-title {
-    font: bold 16px/20px sans-serif;
-    color: #333333;
-    text-align: center;
-    padding-top: 10px;
-  }
 
   .profile-contents {
     padding: 30px;
