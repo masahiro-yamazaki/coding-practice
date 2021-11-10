@@ -156,28 +156,33 @@ $pc-min-width: 768px;
 }
 
 /* メイン画像 */
-.main {
-  .main-image {
-    background: url('../img/web_production.png');
-    height: 450px;
-    padding-top: 150px;
+.ly_main {
+  height: 600px;
+}
 
-    .main-message {
-      height: 200px;
-      background-color: rgba(139, 202, 154, 0.7);
-      color: white;
-      padding: 100px 30px 0;
+.bl_mainImage {
+  height: 100%;
+  padding-top: 150px;
+  background-image: url('../img/web_production.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-      p {
-        color: white;
-        font: bold 48px/60px sans-serif;
-        text-align: center;
+.bl_mainMessageBackground {
+  height: 200px;
+  background-color: rgba(139, 202, 154, 0.7);
+  color: white;
+  padding: 100px 30px 0;
+}
 
-        @media (max-width: $sp-max-width) {
-          font: bold 36px/40px sans-serif;
-        }
-      }
-    }
+.el_mainMessage {
+  color: white;
+  font: bold 36px/40px sans-serif;
+  text-align: center;
+
+  @media (min-width: $pc-min-width) {
+    font: bold 48px/60px sans-serif;
   }
 }
 

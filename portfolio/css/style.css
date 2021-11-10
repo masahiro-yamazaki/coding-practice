@@ -173,28 +173,35 @@ a {
 }
 
 /* メイン画像 */
-.main .main-image {
-  background: url("../img/web_production.png");
-  height: 450px;
-  padding-top: 150px;
+.ly_main {
+  height: 600px;
 }
 
-.main .main-image .main-message {
+.bl_mainImage {
+  height: 100%;
+  padding-top: 150px;
+  background-image: url("../img/web_production.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bl_mainMessageBackground {
   height: 200px;
   background-color: rgba(139, 202, 154, 0.7);
   color: white;
   padding: 100px 30px 0;
 }
 
-.main .main-image .main-message p {
+.el_mainMessage {
   color: white;
-  font: bold 48px/60px sans-serif;
+  font: bold 36px/40px sans-serif;
   text-align: center;
 }
 
-@media (max-width: 767px) {
-  .main .main-image .main-message p {
-    font: bold 36px/40px sans-serif;
+@media (min-width: 768px) {
+  .el_mainMessage {
+    font: bold 48px/60px sans-serif;
   }
 }
 
