@@ -1,0 +1,431 @@
+@charset "UTF-8";
+/* 共通項目 */
+body {
+  margin: 0;
+  font-family: adobe-arabic, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+a {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 色指定 */
+/* PC/SPのブレイクポイント指定 */
+/* ヘッダー */
+.header {
+  position: relative;
+  min-height: 60px;
+  background-color: #66CC99;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+.header .header-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 30px;
+}
+
+.header .header-inner .header-title {
+  color: white;
+  font: bold 20px/20px sans-serif;
+}
+
+@media (min-width: 768px) {
+  .header .header-inner .header-title {
+    width: calc((100% - 200px) / 2);
+  }
+}
+
+@media (max-width: 767px) {
+  .header .header-inner .header-title {
+    font: bold 14px/20px sans-serif;
+  }
+}
+
+.header .header-inner .header-menu {
+  padding: 0 20px;
+}
+
+@media (max-width: 767px) {
+  .header .header-inner .header-menu {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .header .header-inner .header-menu {
+    width: calc((100% - 200px) / 2);
+  }
+}
+
+.header .header-inner .header-menu a {
+  color: white;
+  font: 16px/16px sans-serif;
+  margin-right: 40px;
+}
+
+.header .header-inner .header-menu a:hover {
+  opacity: 0.5;
+}
+
+.header .header-inner .header-contact {
+  min-width: 200px;
+}
+
+@media (max-width: 767px) {
+  .header .header-inner .header-contact {
+    display: none;
+  }
+}
+
+.header .header-inner .header-contact .header-contact-button {
+  background-color: white;
+  color: #66CC99;
+  font: bold 16px/16px sans-serif;
+  padding: 10px 20px;
+  border-radius: 12px;
+  -webkit-box-shadow: 0px 2px 5px 0px #999999;
+          box-shadow: 0px 2px 5px 0px #999999;
+}
+
+.header .header-inner .header-contact .header-contact-button:hover {
+  background-color: #66CC99;
+  color: white;
+}
+
+.header .header-menu-button-sp {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  height: 30px;
+  cursor: pointer;
+  border: 3px solid rgba(255, 255, 255, 0.7);
+  border-radius: 3px;
+  margin: 0 21px 0 0;
+}
+
+@media (min-width: 768px) {
+  .header .header-menu-button-sp {
+    display: none;
+  }
+}
+
+.header .header-menu-button-sp i {
+  color: white;
+  padding: 8px 12px;
+}
+
+/* ハンバーガーメニュー */
+.hamburgar-menu-sp {
+  top: -120px;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  height: 120px;
+  padding: 25px 0;
+  text-align: center;
+  background: #E6FFE9;
+  border-top: 1px solid #66CC99;
+  border-bottom: 1px solid #66CC99;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.hamburgar-menu-sp div {
+  padding: 10px 0;
+}
+
+.hamburgar-menu-sp div a {
+  font: normal normal bold 16px/20px Noto Sans JP;
+  color: #333333;
+}
+
+.hamburgar-menu-sp div a:hover {
+  opacity: 0.5;
+}
+
+.hamburgar-menu-sp.show {
+  -webkit-transform: translateY(180px);
+          transform: translateY(180px);
+}
+
+/* ヘッダー部分の余白 */
+.header-margin {
+  width: 100%;
+  height: 60px;
+}
+
+/* メイン画像 */
+.main .main-image {
+  background: url("../img/web_production.png");
+  height: 450px;
+  padding-top: 150px;
+}
+
+.main .main-image .main-message {
+  height: 200px;
+  background-color: rgba(139, 202, 154, 0.7);
+  color: white;
+  padding: 100px 30px 0;
+}
+
+.main .main-image .main-message p {
+  color: white;
+  font: bold 48px/60px sans-serif;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .main .main-image .main-message p {
+    font: bold 36px/40px sans-serif;
+  }
+}
+
+/* プロフィール */
+.profile {
+  min-height: 500px;
+  background-color: white;
+}
+
+.profile .profile-title {
+  font: bold 36px/40px sans-serif;
+  color: #333333;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.profile .profile-sub-title {
+  font: bold 16px/20px sans-serif;
+  color: #333333;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.profile .profile-contents {
+  padding: 30px;
+}
+
+@media (min-width: 768px) {
+  .profile .profile-contents {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.profile .profile-contents .profile-photo {
+  padding: 0 30px;
+}
+
+@media (min-width: 768px) {
+  .profile .profile-contents .profile-photo {
+    width: 50%;
+  }
+}
+
+.profile .profile-contents .profile-photo img {
+  width: 100%;
+  height: auto;
+}
+
+.profile .profile-contents .profile-description {
+  padding: 0 30px;
+}
+
+@media (min-width: 768px) {
+  .profile .profile-contents .profile-description {
+    width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .profile .profile-contents .profile-description {
+    margin-top: 30px;
+  }
+}
+
+.profile .profile-contents .profile-description p {
+  font: 16px/20px sans-serif;
+}
+
+.profile .profile-contents .profile-description p.profile-name {
+  font: bold 28px/32px sans-serif;
+  margin: 0 0 20px;
+}
+
+/* 実績紹介 */
+.works {
+  min-height: 500px;
+  background-color: #E6FFE9;
+  padding-bottom: 30px;
+}
+
+.works .works-inner {
+  width: 90%;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.works .works-inner .works-title {
+  font: bold 36px/40px sans-serif;
+  color: #333333;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.works .works-inner .works-sub-title {
+  font: bold 16px/20px sans-serif;
+  color: #333333;
+  text-align: center;
+  padding: 10px 0 40px;
+}
+
+.works .works-inner .works-contents .works-content {
+  margin-bottom: 35px;
+}
+
+.works .works-inner .works-contents .works-content .works-content-title {
+  font: bold 20px/28px sans-serif;
+  margin-bottom: 20px;
+}
+
+.works .works-inner .works-contents .works-content .works-content-title .works-link {
+  background-color: #66CC99;
+  color: white;
+  font: 14px/14px sans-serif;
+  padding: 8px 16px;
+  border-radius: 12px;
+  margin-left: 10px;
+  -webkit-box-shadow: 0px 2px 5px 0px #999999;
+          box-shadow: 0px 2px 5px 0px #999999;
+}
+
+.works .works-inner .works-contents .works-content .works-content-title .works-link:hover {
+  background-color: white;
+  color: #66CC99;
+}
+
+/* サービス紹介 */
+.service {
+  min-height: 500px;
+  background-color: white;
+  padding-bottom: 30px;
+}
+
+.service .service-inner {
+  width: 90%;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.service .service-inner .service-title {
+  font: bold 36px/40px sans-serif;
+  color: #333333;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.service .service-inner .service-sub-title {
+  font: bold 16px/20px sans-serif;
+  color: #333333;
+  text-align: center;
+  padding: 10px 0 40px;
+}
+
+.service .service-inner .service-contents .service-content {
+  margin-bottom: 35px;
+}
+
+.service .service-inner .service-contents .service-content .service-content-title {
+  font: bold 20px/28px sans-serif;
+  margin-bottom: 20px;
+}
+
+/* お問い合わせ */
+.contact {
+  height: 400px;
+  background-color: #E6FFE9;
+}
+
+.contact .contact-inner {
+  width: 90%;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.contact .contact-inner .contact-title {
+  font: bold 36px/40px sans-serif;
+  color: #333333;
+  text-align: center;
+  padding-top: 60px;
+}
+
+@media (max-width: 767px) {
+  .contact .contact-inner .contact-title {
+    font: bold 32px/40px sans-serif;
+  }
+}
+
+.contact .contact-inner .contact-description {
+  text-align: center;
+  font: 16px/20px sans-serif;
+  color: #333333;
+  margin: 30px 0 0;
+}
+
+.contact .contact-inner .contact-button-wrapper {
+  margin: 60px 0 0;
+  text-align: center;
+}
+
+.contact .contact-inner .contact-button-wrapper .contact-button {
+  background-color: #66CC99;
+  color: white;
+  font: bold 28px/28px sans-serif;
+  padding: 20px 36px;
+  border-radius: 12px;
+  -webkit-box-shadow: 0px 2px 5px 0px #999999;
+          box-shadow: 0px 2px 5px 0px #999999;
+}
+
+.contact .contact-inner .contact-button-wrapper .contact-button:hover {
+  background-color: white;
+  color: #66CC99;
+}
+
+/* フッター */
+.footer {
+  min-height: 80px;
+  background-color: #66CC99;
+}
+
+.footer .footer-inner {
+  width: 90%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 32px 0;
+}
+
+.footer .footer-inner .footer-copyright {
+  font: 16px/16px sans-serif;
+  color: white;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */
