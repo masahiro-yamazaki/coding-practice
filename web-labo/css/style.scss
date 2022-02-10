@@ -32,7 +32,7 @@ $pc-min-width: 768px;
 .header {
   position: relative;
   min-height: 60px;
-  background-color: $base-color;
+  background-color: #FFFFFF;
   position: fixed;
   width: 100%;
   z-index: 100;
@@ -42,8 +42,8 @@ $pc-min-width: 768px;
     padding: 20px 30px;
 
     .header-title {
-      color: white;
-      font: bold 20px/20px sans-serif;
+      color: #201612;
+      font: bold 24px/24px sans-serif;
 
       @media (min-width: $pc-min-width) {
         width: calc((100% - 200px) / 2);
@@ -65,8 +65,9 @@ $pc-min-width: 768px;
       }
 
       a {
-        color: white;
+        color: #201612;
         font: 16px/16px sans-serif;
+        font-weight: 700;
         margin-right: 40px;
 
         &:hover {

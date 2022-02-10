@@ -27,7 +27,7 @@ a {
 .header {
   position: relative;
   min-height: 60px;
-  background-color: #66CC99;
+  background-color: #FFFFFF;
   position: fixed;
   width: 100%;
   z-index: 100;
@@ -41,8 +41,8 @@ a {
 }
 
 .header .header-inner .header-title {
-  color: white;
-  font: bold 20px/20px sans-serif;
+  color: #201612;
+  font: bold 24px/24px sans-serif;
 }
 
 @media (min-width: 768px) {
@@ -74,8 +74,9 @@ a {
 }
 
 .header .header-inner .header-menu a {
-  color: white;
+  color: #201612;
   font: 16px/16px sans-serif;
+  font-weight: 700;
   margin-right: 40px;
 }
 
