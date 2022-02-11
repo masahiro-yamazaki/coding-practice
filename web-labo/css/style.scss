@@ -5,7 +5,8 @@ body {
   margin: 0;
   // font-family: adobe-arabic, sans-serif;
   font-family: Montserrat;
-  font-weight: 400;
+  font-weight: 700;
+  line-height: 1.5;
   font-style: normal;
 }
 p,
@@ -13,12 +14,19 @@ h1,
 h2,
 h3,
 h4,
-a {
+h5,
+h6,
+a,
+figure {
   margin: 0;
 }
 a {
   text-decoration: none;
   cursor: pointer;
+}
+section,
+div {
+  box-sizing: border-box;
 }
 
 /* 色指定 */
@@ -28,6 +36,17 @@ $base-light-color: #E6FFE9;
 /* PC/SPのブレイクポイント指定 */
 $sp-max-width: 767px;
 $pc-min-width: 768px;
+
+/* 共通で使うレイアウト */
+.ly_inner {
+  padding: 0 30px;
+}
+
+.hp_sp {
+  @media (min-width: $pc-min-width) {
+    display: none;
+  }
+}
 
 /* ヘッダー */
 .header {
@@ -157,29 +176,63 @@ $pc-min-width: 768px;
   height: 60px;
 }
 
-/* メイン画像 */
-.main {
-  .main-image {
-    background: url('../img/web_production.png');
-    height: 450px;
-    padding-top: 150px;
+/* ファーストビュー */
+.ly_fv {
+  height: 450px;
+  padding: 150px 0;
+  background-image: url('../img/fv-image.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
-    .main-message {
-      height: 200px;
-      background-color: rgba(139, 202, 154, 0.7);
-      color: white;
-      padding: 100px 30px 0;
+.bl_fvSubTitle {
+  color: #FFFFFF;
+  font-size: 1.25rem;
+  text-align: center;
+}
 
-      p {
-        color: white;
-        font: bold 48px/60px sans-serif;
-        text-align: center;
+.bl_fvTitle {
+  margin-top: 24px;
+  color: #FFFFFF;
+  font-size: 2.25rem;
+  text-align: center;
+}
 
-        @media (max-width: $sp-max-width) {
-          font: bold 36px/40px sans-serif;
-        }
-      }
-    }
+/* コンセプト */
+.ly_concept {
+  height: 450px;
+  padding: 50px 0;
+}
+
+.ly_concept_inner {
+  display: flex;
+}
+
+.bl_conceptIntroduction {
+  width: 55%;
+}
+
+.bl_conceptTitle {
+  color: #201612;
+  font-size: 1.5rem;
+}
+
+.bl_conceptText {
+  margin-top: 28px;
+  color: #201612;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.bl_conceptImg {
+  width: 45%;
+  img {
+    width: 100%;
+    // width: 50vw;
+    // max-width: none;
+    height: auto;
+    max-height: 350px;
   }
 }
 
