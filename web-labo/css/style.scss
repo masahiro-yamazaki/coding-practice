@@ -24,6 +24,7 @@ a {
   text-decoration: none;
   cursor: pointer;
 }
+footer,
 section,
 div {
   box-sizing: border-box;
@@ -39,6 +40,9 @@ $pc-min-width: 768px;
 
 /* 共通で使うレイアウト */
 .ly_inner {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
   padding: 0 50px;
 }
 
@@ -318,20 +322,15 @@ $pc-min-width: 768px;
 }
 
 /* フッター */
-.footer {
+.ly_footer {
   min-height: 80px;
+  padding: 28px 0;
   background-color: #000000;
+  text-align: center;
+}
 
-  .footer-inner {
-    width: 90%;
-    max-width: 1180px;
-    margin: 0 auto;
-    padding: 32px 0;
-
-    .footer-copyright {
-      font-size: 1rem;
-      color: white;
-      text-align: center;
-    }
-  }
+.el_copyright {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: white;
 }
