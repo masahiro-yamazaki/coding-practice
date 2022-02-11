@@ -213,7 +213,7 @@ $pc-min-width: 768px;
 
 /* コンセプト */
 .ly_concept {
-  height: 450px;
+  min-height: 450px;
   padding: 50px 0;
 }
 
@@ -250,9 +250,22 @@ $pc-min-width: 768px;
 
 /* 制作実績 */
 .ly_works {
-  padding: 50px 0;
-  height: 500px; // TODO: 削除
+  padding: 50px 30px;
   background-color: #F4F4F4;
+}
+
+.bl_works {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.bl_work {
+  width: 30%;
+  height: 300px;
+  border: 1px solid #201612;
+  border-radius: 4px;
+  background-color: gray; // TODO: 変更
 }
 
 /* お問い合わせ */
