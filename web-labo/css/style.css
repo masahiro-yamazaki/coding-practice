@@ -38,6 +38,18 @@ div {
   padding: 0 50px;
 }
 
+.el_title {
+  color: #201612;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.el_subTitle {
+  color: #201612;
+  font-size: 1rem;
+  text-align: center;
+}
+
 @media (min-width: 768px) {
   .hp_sp {
     display: none;
@@ -253,6 +265,13 @@ div {
   width: 100%;
   height: auto;
   max-height: 350px;
+}
+
+/* 制作実績 */
+.ly_works {
+  padding: 50px 0;
+  height: 500px;
+  background-color: #F4F4F4;
 }
 
 /* お問い合わせ */

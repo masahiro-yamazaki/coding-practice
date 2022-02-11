@@ -42,6 +42,18 @@ $pc-min-width: 768px;
   padding: 0 50px;
 }
 
+.el_title {
+  color: #201612;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.el_subTitle {
+  color: #201612;
+  font-size: 1rem;
+  text-align: center;
+}
+
 .hp_sp {
   @media (min-width: $pc-min-width) {
     display: none;
@@ -234,6 +246,13 @@ $pc-min-width: 768px;
     height: auto;
     max-height: 350px;
   }
+}
+
+/* 制作実績 */
+.ly_works {
+  padding: 50px 0;
+  height: 500px; // TODO: 削除
+  background-color: #F4F4F4;
 }
 
 /* お問い合わせ */
