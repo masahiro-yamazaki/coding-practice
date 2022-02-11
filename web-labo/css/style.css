@@ -296,53 +296,35 @@ div {
 }
 
 /* お問い合わせ */
-.contact {
+.ly_contact {
   height: 400px;
-  background-color: #E6FFE9;
+  padding: 50px 0 0;
+  background-color: #FFFFFF;
 }
 
-.contact .contact-inner {
-  width: 90%;
-  max-width: 1180px;
-  margin: 0 auto;
-}
-
-.contact .contact-inner .contact-title {
-  font: bold 36px/40px sans-serif;
-  color: #333333;
-  text-align: center;
-  padding-top: 60px;
-}
-
-@media (max-width: 767px) {
-  .contact .contact-inner .contact-title {
-    font: bold 32px/40px sans-serif;
-  }
-}
-
-.contact .contact-inner .contact-description {
-  text-align: center;
-  font: 16px/20px sans-serif;
-  color: #333333;
-  margin: 30px 0 0;
-}
-
-.contact .contact-inner .contact-button-wrapper {
-  margin: 60px 0 0;
+.bl_contactText {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 30px;
   text-align: center;
 }
 
-.contact .contact-inner .contact-button-wrapper .contact-button {
+.bl_contactButton_wrapper {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.bl_contactButton_wrapper .bl_contactButton {
   background-color: #66CC99;
   color: white;
-  font: bold 28px/28px sans-serif;
+  font-size: 28px;
   padding: 20px 36px;
   border-radius: 12px;
   -webkit-box-shadow: 0px 2px 5px 0px #999999;
           box-shadow: 0px 2px 5px 0px #999999;
 }
 
-.contact .contact-inner .contact-button-wrapper .contact-button:hover {
+.bl_contactButton_wrapper .bl_contactButton:hover {
   background-color: white;
   color: #66CC99;
 }

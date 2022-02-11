@@ -273,50 +273,34 @@ $pc-min-width: 768px;
 }
 
 /* お問い合わせ */
-.contact {
+.ly_contact {
   height: 400px;
-  background-color: $base-light-color;
+  padding: 50px 0 0;
+  background-color: #FFFFFF;
+}
 
-  .contact-inner {
-    width: 90%;
-    max-width: 1180px;
-    margin: 0 auto;
+.bl_contactText {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 30px;
+  text-align: center;
+}
 
-    .contact-title {
-      font: bold 36px/40px sans-serif;
-      color: #333333;
-      text-align: center;
-      padding-top: 60px;
+.bl_contactButton_wrapper {
+  margin-top: 60px;
+  text-align: center;
 
-      @media (max-width: $sp-max-width) {
-        font: bold 32px/40px sans-serif;
-      }
-    }
+  .bl_contactButton {
+    background-color: $base-color;
+    color: white;
+    font-size: 28px;
+    padding: 20px 36px;
+    border-radius: 12px;
+    box-shadow: 0px 2px 5px 0px #999999;
 
-    .contact-description {
-      text-align: center;
-      font: 16px/20px sans-serif;
-      color: #333333;
-      margin: 30px 0 0;
-    }
-
-    .contact-button-wrapper {
-      margin: 60px 0 0;
-      text-align: center;
-
-      .contact-button {
-        background-color: $base-color;
-        color: white;
-        font: bold 28px/28px sans-serif;
-        padding: 20px 36px;
-        border-radius: 12px;
-        box-shadow: 0px 2px 5px 0px #999999;
-
-        &:hover {
-          background-color: white;
-          color: $base-color;
-        }
-      }
+    &:hover {
+      background-color: white;
+      color: $base-color;
     }
   }
 }
