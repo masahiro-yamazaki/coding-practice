@@ -3,7 +3,8 @@
 /* 共通項目 */
 body {
   margin: 0;
-  font-family: adobe-arabic, sans-serif;
+  // font-family: adobe-arabic, sans-serif;
+  font-family: Montserrat;
   font-weight: 400;
   font-style: normal;
 }
@@ -43,13 +44,13 @@ $pc-min-width: 768px;
 
     .header-title {
       color: #201612;
-      font: bold 24px/24px sans-serif;
+      font: 700 24px/24px Montserrat;
 
       @media (min-width: $pc-min-width) {
         width: calc((100% - 200px) / 2);
       }
       @media (max-width: $sp-max-width) {
-        font: bold 14px/20px sans-serif;
+        font: 700 14px/20px Montserrat;
       }
     }
 
