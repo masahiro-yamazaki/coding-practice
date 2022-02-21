@@ -371,6 +371,10 @@ $pc-min-width: 768px;
         border-radius: 12px;
         box-shadow: 0px 2px 5px 0px #999999;
 
+        @media (max-width: $sp-max-width) {
+          font: bold 20px/20px sans-serif;
+        }
+
         &:hover {
           background-color: white;
           color: $base-color;
