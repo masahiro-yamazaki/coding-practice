@@ -1,172 +1,173 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
-    <title>Masahiro Yamazaki's Portfolio</title>
-    <meta
-      name="description"
-      content="当サイトはフリーランスエンジニアやまざきまさひろ公式サイトです。制作実績のご紹介、お仕事のご相談などを承っております。"
-    />
-    <meta name="keywords" content="Web開発, Web制作, エンジニア" />
-    <link rel="shortcut icon" href="favicon.ico">
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  </head>
 
-  <body>
-    <!-- ヘッダー -->
-    <header class="header">
-      <div class="header-inner">
-        <div class="header-title">Masahiro Yamazaki's Portfolio</div>
-        <!-- PCのみ表示 -->
-        <div class="header-menu">
-          <a href="#profile">Profile</a>
-          <a href="#works">Works</a>
-          <a href="#service">Service</a>
-        </div>
-        <div class="header-contact">
-          <a class="header-contact-button" href="https://docs.google.com/forms/d/1g0cAhrHXaaE2LM3_d1x-kw0aXeO9bqtU_IqGKxaOTAM/" target="_brank">無料相談はこちらから</a>
-        </div>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- デバイスごとにサイズを切り替える、縮小はさせないようにする -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+  <title>Masahiro Yamazaki's Portfolio</title>
+  <meta name="description" content="当サイトはフリーランスエンジニアやまざきまさひろ公式サイトです。制作実績のご紹介、お仕事のご相談などを承っております。" />
+  <meta name="keywords" content="Web開発, Web制作, エンジニア" />
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- ヘッダー -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="header-title">Masahiro Yamazaki's Portfolio</div>
+      <!-- PCのみ表示 -->
+      <div class="header-menu">
+        <a href="#profile">Profile</a>
+        <a href="#works">Works</a>
+        <a href="#service">Service</a>
       </div>
-      <!-- iPad/SPのみ表示 -->
-      <div id="js-menu-button" class="header-menu-button-sp"
-           aria-controls="js-glabal-menu" aria-expanded="false" area-label="メニューを開閉する">
-        <i class="fa fa-bars"></i>
+      <div class="header-contact">
+        <a class="header-contact-button"
+          href="https://docs.google.com/forms/d/1g0cAhrHXaaE2LM3_d1x-kw0aXeO9bqtU_IqGKxaOTAM/"
+          target="_brank">無料相談はこちらから</a>
       </div>
-    </header>
-    <!-- iPad/SPのハンバーガーメニュー -->
-    <div id="js-glabal-menu" class="hamburgar-menu-sp" aria-hidden="true">
-      <div><a href="#profile">Profile</a></div>
-      <div><a href="#works">Works</a></div>
-      <div><a href="#service">Service</a></div>
     </div>
-    <!-- ヘッダー部分の余白 -->
-    <article class="header-margin"></article>
-    <!-- メイン画像 -->
-    <article class="main" data-aos="fade-up">
-      <div class="main-image">
-        <div class="main-message">
-          <p>プログラミングを通して、</p>
-          <p>自由な働き方を実現する</p>
+    <!-- iPad/SPのみ表示 -->
+    <div id="js-menu-button" class="header-menu-button-sp" aria-controls="js-glabal-menu" aria-expanded="false"
+      area-label="メニューを開閉する">
+      <i class="fa fa-bars"></i>
+    </div>
+  </header>
+  <!-- iPad/SPのハンバーガーメニュー -->
+  <div id="js-glabal-menu" class="hamburgar-menu-sp" aria-hidden="true">
+    <div><a href="#profile">Profile</a></div>
+    <div><a href="#works">Works</a></div>
+    <div><a href="#service">Service</a></div>
+  </div>
+  <!-- ヘッダー部分の余白 -->
+  <article class="header-margin"></article>
+  <!-- メイン画像 -->
+  <article class="main" data-aos="fade-up">
+    <div class="main-image">
+      <div class="main-message">
+        <p>プログラミングを通して、</p>
+        <p>自由な働き方を実現する</p>
+      </div>
+    </div>
+  </article>
+  <!-- 自己紹介 -->
+  <article id="profile" class="profile" data-aos="fade-up">
+    <div class="profile-inner">
+      <div class="profile-title">Profile</div>
+      <div class="profile-sub-title">- プロフィール -</div>
+      <div class="profile-contents">
+        <div class="profile-photo">
+          <img src="img/profile.jpg">
+        </div>
+        <div class="profile-description">
+          <!-- TODO: 得意とする業務領域を書く -->
+          <!-- Ruby on RailsでのWebサービス開発、コードレビュー -->
+          <!-- Ruby / Rails / 各種gemのバージョンアップ -->
+          <p class="profile-name">やまざき まさひろ</p>
+          <p>1987年埼玉県川越市生まれ。</p>
+          <br />
+          <p>2018年1月からフリーランスエンジニアとして活動。Rubyの各種gemのコードリーディングや、Vue.jsでのフロントエンド開発を経験する。</p>
+          <br />
+          <p>2020年10月からプログラミング初心者のエンジニア転職サポートを開始。 3ヶ月継続サポートで「実務未経験の30代男性」がエンジニア転職を実現した。</p>
         </div>
       </div>
-    </article>
-    <!-- 自己紹介 -->
-    <article id="profile" class="profile" data-aos="fade-up">
-      <div class="profile-inner">
-        <div class="profile-title">Profile</div>
-        <div class="profile-sub-title">- プロフィール -</div>
-        <div class="profile-contents">
-          <div class="profile-photo">
-            <img src="img/profile.jpg">
+    </div>
+  </article>
+  <!-- 実績紹介 -->
+  <article id="works" class="works" data-aos="fade-up">
+    <div class="works-inner">
+      <div class="works-title">Works</div>
+      <div class="works-sub-title">- 主な実績紹介 -</div>
+      <div class="works-contents">
+        <div class="works-content">
+          <div class="works-content-title">Masahiro Yamazaki's Portfolio (本サイト) 制作</div>
+          <div>使用した技術：HTML / CSS (Sass) / JavaScript (JQuery)</div>
+        </div>
+        <div class="works-content">
+          <div class="works-content-title">病院向けサンプルサイト制作
+            <a class="works-link" href="http://masahiro-yamazaki.conohawing.com/syokyu-ex/" target="_brank">リンク
+              <i class="fas fa-external-link-alt"></i></a>
           </div>
-          <div class="profile-description">
-            <!-- TODO: 得意とする業務領域を書く -->
-            <!-- Ruby on RailsでのWebサービス開発、コードレビュー -->
-            <!-- Ruby / Rails / 各種gemのバージョンアップ -->
-            <p class="profile-name">やまざき まさひろ</p>
-            <p>1987年埼玉県川越市生まれ。</p>
-            <br/>
-            <p>2018年1月からフリーランスエンジニアとして活動。Rubyの各種gemのコードリーディングや、Vue.jsでのフロントエンド開発を経験する。</p>
-            <br/>
-            <p>2020年10月からプログラミング初心者のエンジニア転職サポートを開始。 3ヶ月継続サポートで「実務未経験の30代男性」がエンジニア転職を実現した。</p>
+          <div>使用した技術：HTML / CSS (Sass)</div>
+        </div>
+        <div class="works-content">
+          <div class="works-content-title">Web制作会社向けサンプルサイト制作
+            <a class="works-link" href="http://masahiro-yamazaki.conohawing.com/chuukyu/" target="_brank">リンク
+              <i class="fas fa-external-link-alt"></i></a>
           </div>
+          <div>使用した技術：HTML / CSS (Sass) / JavaScript (JQuery)</div>
+        </div>
+        <div class="works-content">
+          <div class="works-content-title">プログラミング初心者向け個別コンサルティング</div>
+          <div>3ヶ月継続サポートの実績：30代未経験の受講生がエンジニア転職を実現</div>
+        </div>
+        <div class="works-content">
+          <div class="works-content-title">BtoBマーケティングの効率化を目指すWebマーケティングツールの開発 (2021.7 - 現在)</div>
+          <div>使用した技術：Ruby on Rails / HTML / CSS (Sass) / React.js / GraphQL / MongoDB / PostgreSQL / Redis / Docker /
+            AWS</div>
+          <div>担当業務：機能開発 / リファクタリング / コードレビュー</div>
+        </div>
+        <div class="works-content">
+          <div class="works-content-title">ペットの飼い主と動物病院をつなぐWebサービスの開発 (2019.6 - 2021.9)</div>
+          <div>使用した技術：Ruby on Rails / Java / HTML / CSS (Sass) / Vue.js / MySQL / Redis / Docker / AWS</div>
+          <div>担当業務：機能開発 / バージョンアップ (Ruby, Rails) / リファクタリング / コードレビュー</div>
         </div>
       </div>
-    </article>
-    <!-- 実績紹介 -->
-    <article id="works" class="works" data-aos="fade-up">
-      <div class="works-inner">
-        <div class="works-title">Works</div>
-        <div class="works-sub-title">- 主な実績紹介 -</div>
-        <div class="works-contents">
-          <div class="works-content">
-            <div class="works-content-title">Masahiro Yamazaki's Portfolio (本サイト) 制作</div>
-            <div>使用した技術：HTML / CSS (Sass) / JavaScript (JQuery)</div>
-          </div>
-          <div class="works-content">
-            <div class="works-content-title">病院向けサンプルサイト制作
-              <a class="works-link" href="http://masahiro-yamazaki.conohawing.com/syokyu-ex/" target="_brank">リンク
-                <i class="fas fa-external-link-alt"></i></a>
-            </div>
-            <div>使用した技術：HTML / CSS (Sass)</div>
-          </div>
-          <div class="works-content">
-            <div class="works-content-title">Web制作会社向けサンプルサイト制作
-              <a class="works-link" href="http://masahiro-yamazaki.conohawing.com/chuukyu/" target="_brank">リンク
-                <i class="fas fa-external-link-alt"></i></a>
-            </div>
-            <div>使用した技術：HTML / CSS (Sass) / JavaScript (JQuery)</div>
-          </div>
-          <div class="works-content">
-            <div class="works-content-title">プログラミング初心者向け個別コンサルティング</div>
-            <div>3ヶ月継続サポートの実績：30代未経験の受講生がエンジニア転職を実現</div>
-          </div>
-          <div class="works-content">
-            <div class="works-content-title">BtoBマーケティングの効率化を目指すWebマーケティングツールの開発 (2021.7 - 現在)</div>
-            <div>使用した技術：Ruby on Rails / HTML / CSS (Sass) / React.js / GraphQL / MongoDB / PostgreSQL / Redis / Docker / AWS</div>
-            <div>担当業務：機能開発 / リファクタリング / コードレビュー</div>
-          </div>
-          <div class="works-content">
-            <div class="works-content-title">ペットの飼い主と動物病院をつなぐWebサービスの開発 (2019.6 - 2021.9)</div>
-            <div>使用した技術：Ruby on Rails / Java / HTML / CSS (Sass) / Vue.js / MySQL / Redis / Docker / AWS</div>
-            <div>担当業務：機能開発 / バージョンアップ (Ruby, Rails) / リファクタリング / コードレビュー</div>
-          </div>
+    </div>
+  </article>
+  <!-- サービス紹介 -->
+  <article id="service" class="service" data-aos="fade-up">
+    <div class="service-inner">
+      <div class="service-title">Service</div>
+      <div class="service-sub-title">- サービス内容 -</div>
+      <div class="service-contents">
+        <div class="service-content">
+          <div class="service-content-title">Webサービス開発 (Ruby on Rails)</div>
+          <div>Ruby on Railsでのサーバーサイド開発、リファクタリングやバグ修正を得意としています。</div>
+          <div>Vue.jsなどのフレームワークを使ったフロントエンド開発も可能です。</div>
+        </div>
+        <div class="service-content">
+          <div class="service-content-title">Webサイト制作</div>
+          <div>ランディングページ、ホームページなどWebサイトの制作を行います。</div>
+          <div>「売上を上げる」など、お客様が実現したい目的から逆算し、Webサイトの構成を提案させて頂く場合もあります。</div>
+          <div>軽微なコード修正のご依頼も対応可能です。</div>
+        </div>
+        <div class="service-content">
+          <div class="service-content-title">プログラミング未経験者・初心者向けコンサルティング</div>
+          <div>副業で「月5万円」の収入を獲得できるスキルを身につける事を目標に、Web制作の案件獲得をサポートします。</div>
         </div>
       </div>
-    </article>
-    <!-- サービス紹介 -->
-    <article id="service" class="service" data-aos="fade-up">
-      <div class="service-inner">
-        <div class="service-title">Service</div>
-        <div class="service-sub-title">- サービス内容 -</div>
-        <div class="service-contents">
-          <div class="service-content">
-            <div class="service-content-title">Webサービス開発 (Ruby on Rails)</div>
-            <div>Ruby on Railsでのサーバーサイド開発、リファクタリングやバグ修正を得意としています。</div>
-            <div>Vue.jsなどのフレームワークを使ったフロントエンド開発も可能です。</div>
-          </div>
-          <div class="service-content">
-            <div class="service-content-title">Webサイト制作</div>
-            <div>ランディングページ、ホームページなどWebサイトの制作を行います。</div>
-            <div>「売上を上げる」など、お客様が実現したい目的から逆算し、Webサイトの構成を提案させて頂く場合もあります。</div>
-            <div>軽微なコード修正のご依頼も対応可能です。</div>
-          </div>
-          <div class="service-content">
-            <div class="service-content-title">プログラミング未経験者・初心者向けコンサルティング</div>
-            <div>副業で「月5万円」の収入を獲得できるスキルを身につける事を目標に、Web制作の案件獲得をサポートします。</div>
-          </div>
-        </div>
+    </div>
+  </article>
+  <!-- お問い合わせ -->
+  <article class="contact" data-aos="fade-up">
+    <div class="contact-inner">
+      <div class="contact-title">お気軽にお問い合わせください</div>
+      <div class="contact-description">
+        <p>お見積もりは無料です。お気軽にご相談ください。</p>
+        <p>24時間以内にお返事させて頂きます。</p>
       </div>
-    </article>
-    <!-- お問い合わせ -->
-    <article class="contact" data-aos="fade-up">
-      <div class="contact-inner">
-        <div class="contact-title">お気軽にお問い合わせください</div>
-        <div class="contact-description">
-          <p>お見積もりは無料です。お気軽にご相談ください。</p>
-          <p>24時間以内にお返事させて頂きます。</p>
-        </div>
-        <div class="contact-button-wrapper">
-          <a class="contact-button" href="https://docs.google.com/forms/d/1g0cAhrHXaaE2LM3_d1x-kw0aXeO9bqtU_IqGKxaOTAM/" target="_brank">無料相談はこちらから</a>
-        </div>
+      <div class="contact-button-wrapper">
+        <a class="contact-button" href="https://docs.google.com/forms/d/1g0cAhrHXaaE2LM3_d1x-kw0aXeO9bqtU_IqGKxaOTAM/"
+          target="_brank">無料相談はこちらから</a>
       </div>
-    </article>
-    <!-- フッター -->
-    <footer class="footer">
-      <div class="footer-inner">
-        <div class="footer-copyright">Copyright © 2021 Masahiro Yamazaki's Portfolio All Rights Reserved.</div>
-      </div>
-    </footer>
+    </div>
+  </article>
+  <!-- フッター -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-copyright">Copyright © 2021 Masahiro Yamazaki's Portfolio All Rights Reserved.</div>
+    </div>
+  </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="javascript/script.js"></script>
-  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="javascript/script.js"></script>
+</body>
+
 </html>
